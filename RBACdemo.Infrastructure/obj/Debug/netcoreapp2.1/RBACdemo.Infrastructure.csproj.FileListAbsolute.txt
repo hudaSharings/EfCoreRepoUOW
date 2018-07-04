@@ -1,0 +1,11 @@
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.deps.json
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.AssemblyInfo.cs
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.json
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.dev.json

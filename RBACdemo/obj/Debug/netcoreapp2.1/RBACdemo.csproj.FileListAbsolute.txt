@@ -1,0 +1,16 @@
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.deps.json
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.runtimeconfig.json
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.runtimeconfig.dev.json
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.dll
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.pdb
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csprojResolveAssemblyReference.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csproj.CoreCompileInputs.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorAssemblyInfo.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorAssemblyInfo.cs
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.AssemblyInfoInputs.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.AssemblyInfo.cs
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorTargetAssemblyInfo.cache
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.dll
+C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.pdb
