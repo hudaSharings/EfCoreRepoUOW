@@ -1,5 +1,5 @@
 # EfCoreRepoUOW
-Sample Project For Entity framework Core 2.1 with Repository and Unit Of Work Pattern.
+Sample Project For Entity framework Core  and Asp.Net Core 2.1 with Repository and Unit Of Work Pattern.
 </br>
 <h3>Enhancement  </h3>
 <ul>
