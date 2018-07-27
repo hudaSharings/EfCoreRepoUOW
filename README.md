@@ -3,8 +3,9 @@ Sample Project For Entity framework Core 2.1 with Repository and Unit Of Work Pa
 </br>
 <h3>Enhancement  </h3>
 <ul>
- <li>AspNetCore Identity with EF Core</li>
+<li>AspNetCore Identity with EF Core</li>
 <li>Identity Server4 & JWT based Authentication </li>
+<li>SpHelper - Execute Store Procedures with Dapper</li>
 <li>Web API for Multi tenant  </li>
 <li>Client - SPA in Angular
  <ul>
