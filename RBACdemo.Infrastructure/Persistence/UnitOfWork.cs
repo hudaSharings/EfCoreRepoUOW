@@ -15,13 +15,11 @@ namespace RBACdemo.Infrastructure.Persistence
         {
             _context = context;
         }
-
+       
         public IUserRepository User {  get => new UserRepository(_context); }
 
         public IRoleRepository Role => new RoleRepository(_context);
-
-        public IPermissionRepository Permission =>  new PermissionRepository(_context);
-
+        
         public IMenuItemRepository MenuItem =>  new MenuItemRepository(_context);
 
         public int Complete()

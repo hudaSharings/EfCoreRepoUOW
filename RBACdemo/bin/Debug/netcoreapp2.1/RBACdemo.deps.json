@@ -362,8 +362,11 @@
       },
       "RBACdemo.Infrastructure/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.1.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.Design": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0"
         },
         "runtime": {
@@ -5285,7 +5288,7 @@
     "System.ValueTuple/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "sha512": "sha512-a0c51NdNEtYASNrWsJCdSub0V3E/osizD+knJXS1q/HVHVxjr+uS26I1acrDtXnNmjzS7aAfac43Suf2O/dxSg==",
       "path": "system.valuetuple/4.3.0",
       "hashPath": "system.valuetuple.4.3.0.nupkg.sha512"
     },
@@ -5306,7 +5309,7 @@
     "System.Xml.XmlDocument/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "sha512": "sha512-fAGiCsC5XYngU0FY+mMWAj93u1kiNhdJoNa8LDwSoJDQziuq4vzcbA0uWf+je8WVRpw56pbqdGd8N/Osihajqw==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
     },

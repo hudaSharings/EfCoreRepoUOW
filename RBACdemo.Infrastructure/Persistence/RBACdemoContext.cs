@@ -1,23 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RBACdemo.Infrastructure.Core.Domain;
 
 namespace RBACdemo.Infrastructure.Persistence
 {
-    public class RBACdemoContext : DbContext
+    public class RBACdemoContext : IdentityDbContext<ApplicationUser>
     {
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<Permission> Permissions { get; set; }
-        public DbSet<RolePermission> RolePermissions { get; set; }
+      
         public DbSet<MenuItem> MenuItems { get; set; }
-        public DbSet<UserMenuItem> UserMenuItems { get; set; }
-        public RBACdemoContext()
+     
+        public RBACdemoContext(DbContextOptions<RBACdemoContext> options):base(options)
         {
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=demotest.db");
+            //optionsBuilder.UseSqlite("Data Source=demotest.db");
             base.OnConfiguring(optionsBuilder);
         }
     }

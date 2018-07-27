@@ -9,3 +9,21 @@ C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infr
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.json
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.dev.json
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.deps.json
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.json
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.runtimeconfig.dev.json
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csprojAssemblyReference.cache
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.AssemblyInfoInputs.cache
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.AssemblyInfo.cs
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Authentication.JwtBearer.xml
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.xml
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csproj.CopyComplete

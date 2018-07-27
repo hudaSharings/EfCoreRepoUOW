@@ -4,9 +4,9 @@ using RBACdemo.Infrastructure.Core.Domain;
 
 namespace RBACdemo.Infrastructure.Persistence.EntityConfigs
 {
-    public class PermissionConfig : IEntityTypeConfiguration<Permission>
+    public class ApplicationUserConfig : IEntityTypeConfiguration<ApplicationUser>
     {
-        public void Configure(EntityTypeBuilder<Permission> builder)
+        public void Configure(EntityTypeBuilder<ApplicationUser> builder)
         {
             builder.HasKey(x => x.Id);
         }

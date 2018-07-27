@@ -4496,8 +4496,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.1.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.Design": "2.1.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0"
         },
         "compile": {
@@ -11505,7 +11508,7 @@
       ]
     },
     "System.ValueTuple/4.3.0": {
-      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+      "sha512": "a0c51NdNEtYASNrWsJCdSub0V3E/osizD+knJXS1q/HVHVxjr+uS26I1acrDtXnNmjzS7aAfac43Suf2O/dxSg==",
       "type": "package",
       "path": "system.valuetuple/4.3.0",
       "files": [
@@ -11658,7 +11661,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "sha512": "fAGiCsC5XYngU0FY+mMWAj93u1kiNhdJoNa8LDwSoJDQziuq4vzcbA0uWf+je8WVRpw56pbqdGd8N/Osihajqw==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -11852,29 +11855,23 @@
   },
   "packageFolders": {
     "C:\\Users\\arunkumarv\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\arunkumarv\\Documents\\Visual Studio 2017\\Projects\\RBACdemo\\RBACdemo\\RBACdemo.csproj",
+      "projectUniqueName": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo\\RBACdemo.csproj",
       "projectName": "RBACdemo",
-      "projectPath": "C:\\Users\\arunkumarv\\Documents\\Visual Studio 2017\\Projects\\RBACdemo\\RBACdemo\\RBACdemo.csproj",
+      "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo\\RBACdemo.csproj",
       "packagesPath": "C:\\Users\\arunkumarv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arunkumarv\\Documents\\Visual Studio 2017\\Projects\\RBACdemo\\RBACdemo\\obj\\",
+      "outputPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\arunkumarv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11886,8 +11883,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\arunkumarv\\Documents\\Visual Studio 2017\\Projects\\RBACdemo\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\arunkumarv\\Documents\\Visual Studio 2017\\Projects\\RBACdemo\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj"
+            "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj": {
+              "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj"
             }
           }
         }

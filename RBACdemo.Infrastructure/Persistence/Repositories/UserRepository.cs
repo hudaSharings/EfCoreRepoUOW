@@ -7,7 +7,7 @@ using System.Text;
 
 namespace RBACdemo.Infrastructure.Persistence.Repositories
 {
-    public class UserRepository :Repository<User>, IUserRepository
+    public class UserRepository :Repository<ApplicationUser>, IUserRepository
     {
         public RBACdemoContext RBACdemoContext => Context as RBACdemoContext; 
         public UserRepository(RBACdemoContext context):base(context)
