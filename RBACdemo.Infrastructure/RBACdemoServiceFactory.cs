@@ -27,6 +27,11 @@ namespace RBACdemo.Infrastructure
 
         public void config(IServiceCollection services)
         {
+            JwtValues.Audience = Configuration.GetSection("JwtTokenValues")["audience"].ToString();
+            JwtValues.Issuer = Configuration.GetSection("JwtTokenValues")["issuer"].ToString();
+            JwtValues.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
+            JwtValues.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
+
             //services.AddScoped<RBACdemoContext>();
             services.AddDbContext<RBACdemoContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("IdentityDemoConnection"))
@@ -49,9 +54,9 @@ namespace RBACdemo.Infrastructure
                 {
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = "https://localhost:44335",
-                    ValidIssuer = "https://localhost:44335",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"))
+                    ValidAudience =JwtValues.Audience, //"https://localhost:44335",
+                    ValidIssuer =JwtValues.Issuer ,//"https://localhost:44335",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtValues.SecreteKey))
 
                 };
             });

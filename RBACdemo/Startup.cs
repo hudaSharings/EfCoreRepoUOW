@@ -33,7 +33,7 @@ namespace RBACdemo
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             rbacDemoConfig.config(services);        
-
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

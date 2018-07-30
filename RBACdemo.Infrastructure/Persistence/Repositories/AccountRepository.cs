@@ -51,12 +51,12 @@ namespace RBACdemo.Infrastructure.Persistence.Repositories
                     new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
                 };
 
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("MySuperSecureKey"));
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtValues.SecreteKey));
 
             var token = new JwtSecurityToken(
-                issuer: "https://localhost:44335",
-                audience: "https://localhost:44335",
-                expires: DateTime.UtcNow.AddMinutes(2),
+                issuer: JwtValues.Issuer,//"https://localhost:44335",
+                audience:JwtValues.Audience, //"https://localhost:44335",
+                expires: DateTime.UtcNow.AddMinutes(JwtValues.ExpairesInMinutes),
                 signingCredentials: new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
                  );
 
