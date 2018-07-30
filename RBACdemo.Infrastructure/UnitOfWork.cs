@@ -9,11 +9,11 @@ namespace RBACdemo.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly RBACdemoContext _context;
+        private readonly IContextFactory _context;
 
-        public UnitOfWork(RBACdemoContext context)
+        public UnitOfWork(IContextFactory context)
         {
-            _context = context;
+            _context = context ;
         }
        
         public IUserRepository User {  get => new UserRepository(_context); }
@@ -23,10 +23,10 @@ namespace RBACdemo.Infrastructure
         public IMenuItemRepository MenuItem =>  new MenuItemRepository(_context);
 
         public int Complete()
-        => _context.SaveChanges();
+        => _context.DbContext.SaveChanges();
         
         public void Dispose()
-        =>_context.Dispose();
+        =>_context.DbContext.Dispose();
         
     }
 }

@@ -9,6 +9,7 @@ using RBACdemo.Core;
 using RBACdemo.Core.Domain;
 using RBACdemo.Core.Repositories;
 using RBACdemo.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,10 +17,11 @@ using RBACdemo.Core.Services;
 namespace RBACdemo.Controllers
 {
     [Route("api/[controller]/[action]")]
+    [AllowAnonymous]
     public class AccountController : BaseController
     {
         IAccountService _svc;
-        public AccountController(IAccountService svc)
+        public AccountController(IAccountService svc,IUserService usersvc)
         {
             _svc = svc;
         }

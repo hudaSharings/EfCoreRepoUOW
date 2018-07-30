@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using RBACdemo.Core;
 using RBACdemo.Core.Domain;
 using RBACdemo.Core.Repositories;
 using RBACdemo.Core.Services;
+using RBACdemo.Core.Settings;
 using RBACdemo.Infrastructure;
 using RBACdemo.Infrastructure.Repositories;
 using RBACdemo.Infrastructure.Services;
@@ -24,17 +26,20 @@ namespace RBACdemo.Infrastructure
         {
             Configuration = configuration;
         }
-
+       
         public void config(IServiceCollection services)
         {
+            
+
             JwtValues.Audience = Configuration.GetSection("JwtTokenValues")["audience"].ToString();
             JwtValues.Issuer = Configuration.GetSection("JwtTokenValues")["issuer"].ToString();
             JwtValues.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
             JwtValues.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
 
             //services.AddScoped<RBACdemoContext>();
+            
             services.AddDbContext<RBACdemoContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("IdentityDemoConnection"))
+               options => options.UseSqlServer(Configuration.GetConnectionString("IdentityDemoConnection"))
                 );
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<RBACdemoContext>()
@@ -61,7 +66,7 @@ namespace RBACdemo.Infrastructure
                 };
             });
 
-
+            services.AddScoped<IContextFactory, RBACdemoContextFactory>();
             services.AddTransient<UserManager<ApplicationUser>>();
             services.AddTransient<SignInManager<ApplicationUser>>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
@@ -70,7 +75,14 @@ namespace RBACdemo.Infrastructure
 
             //--
             services.AddTransient<IAccountService, AccountService>();
-            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IUserService, UserService>();
+
+            //--
+            services.AddTransient<IDataBaseManager, DataBaseManager>();
+            services.AddScoped(
+             x => new ConnectionSetting(Configuration.GetConnectionString("DefaultConnection"))
+                );
+
         }
 
     }

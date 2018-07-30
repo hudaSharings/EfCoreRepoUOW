@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RBACdemo.Core;
 using RBACdemo.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ namespace RBACdemo.Infrastructure.Repositories
     {
         protected readonly DbContext Context;
 
-        public Repository(DbContext context)
+        public Repository(IContextFactory context)
         {
-            Context = context;
+            Context = context.DbContext;
         }
         public TEntity Get(int id)
         {

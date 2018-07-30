@@ -1,4 +1,5 @@
-﻿using RBACdemo.Core.Domain;
+﻿using RBACdemo.Core;
+using RBACdemo.Core.Domain;
 using RBACdemo.Core.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace RBACdemo.Infrastructure.Repositories
     public class UserRepository :Repository<ApplicationUser>, IUserRepository
     {
         public RBACdemoContext RBACdemoContext => Context as RBACdemoContext; 
-        public UserRepository(RBACdemoContext context):base(context)
+        public UserRepository(IContextFactory context):base(context)
         {
 
         }
