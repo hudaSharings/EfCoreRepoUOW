@@ -7,8 +7,10 @@ using Microsoft.IdentityModel.Tokens;
 using RBACdemo.Infrastructure.Core;
 using RBACdemo.Infrastructure.Core.Domain;
 using RBACdemo.Infrastructure.Core.Repositories;
+using RBACdemo.Infrastructure.Core.Services;
 using RBACdemo.Infrastructure.Persistence;
 using RBACdemo.Infrastructure.Persistence.Repositories;
+using RBACdemo.Infrastructure.Persistence.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -60,6 +62,10 @@ namespace RBACdemo.Infrastructure
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAccountRepository, AccountRepository>();
+
+            //--
+            services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IUserRepository, UserRepository>();
         }
 
     }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using RBACdemo.Infrastructure.Core;
 using RBACdemo.Infrastructure.Core.Domain;
 using RBACdemo.Infrastructure.Core.Repositories;
+using RBACdemo.Infrastructure.Core.Services;
 using RBACdemo.Infrastructure.Dto;
 using RBACdemo.Infrastructure.Persistence.Repositories;
 
@@ -17,10 +18,10 @@ namespace RBACdemo.Controllers
     [Route("api/[controller]/[action]")]
     public class AccountController : BaseController
     {
-        IAccountRepository _repo;
-        public AccountController(IAccountRepository repo)
+        IAccountService _svc;
+        public AccountController(IAccountService svc)
         {
-            _repo = repo;
+            _svc = svc;
         }
         // GET: api/<controller>
         [HttpGet]
@@ -31,13 +32,13 @@ namespace RBACdemo.Controllers
         [HttpPost]
         public async Task<IdentityResult> Register([FromBody]RegisterDto user)
         {
-            return await _repo.CreateUserAsync(user as ApplicationUser, user.password);
+            return await _svc.CreateUserAsync(user as ApplicationUser, user.password);
 
         }
         [HttpPost]
         public async Task<Microsoft.AspNetCore.Identity.SignInResult> Login([FromBody]LoginDto user)
         {
-            return await _repo.SignIn(user);
+            return await _svc.SignIn(user);
 
         }
         // GET api/<controller>/5
