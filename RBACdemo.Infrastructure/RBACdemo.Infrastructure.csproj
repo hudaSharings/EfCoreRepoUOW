@@ -5,13 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Core\**" />
     <Compile Remove="Dto\**" />
+    <EmbeddedResource Remove="Core\**" />
     <EmbeddedResource Remove="Dto\**" />
+    <None Remove="Core\**" />
     <None Remove="Dto\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Core\RBACdemoContext.cs" />
     <Compile Remove="Migrations\20180727130824_InitialIdentityDemo.cs" />
     <Compile Remove="Migrations\20180727131210_dbchanged.cs" />
     <Compile Remove="Migrations\20180727131349_dbchanged.cs" />
@@ -28,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RBACdemo.Core\RBACdemo.Core.csproj" />
     <ProjectReference Include="..\RBACdemo.Dto\RBACdemo.Dto.csproj" />
   </ItemGroup>
 

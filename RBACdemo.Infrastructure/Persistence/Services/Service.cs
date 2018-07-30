@@ -1,5 +1,5 @@
-﻿using RBACdemo.Infrastructure.Core.Repositories;
-using RBACdemo.Infrastructure.Core.Services;
+﻿using RBACdemo.Core.Repositories;
+using RBACdemo.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;

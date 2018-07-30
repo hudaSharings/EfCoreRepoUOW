@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RBACdemo.Infrastructure.Core.Repositories;
+using RBACdemo.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

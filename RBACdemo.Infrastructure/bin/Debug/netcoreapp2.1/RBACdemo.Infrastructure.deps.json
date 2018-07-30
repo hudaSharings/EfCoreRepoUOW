@@ -14,6 +14,7 @@
           "Microsoft.EntityFrameworkCore.Design": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0",
+          "RBACdemo.Core": "1.0.0",
           "RBACdemo.Dto": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.0.0",
           "Microsoft.IdentityModel.Tokens": "5.2.0.0",
@@ -1015,6 +1016,16 @@
           "System.Runtime": "4.1.0"
         }
       },
+      "RBACdemo.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.1.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.0",
+          "RBACdemo.Dto": "1.0.0"
+        },
+        "runtime": {
+          "RBACdemo.Core.dll": {}
+        }
+      },
       "RBACdemo.Dto/1.0.0": {
         "runtime": {
           "RBACdemo.Dto.dll": {}
@@ -1709,6 +1720,11 @@
       "sha512": "sha512-k1S4Gc6IGwtHGT8188RSeGaX86Qw/wnrgNLshJvsdNUOPP9etMmo8S07c+UlOAx4K/xLuN9ivA1bD0LVurtIxQ==",
       "path": "system.threading.tasks/4.0.11",
       "hashPath": "system.threading.tasks.4.0.11.nupkg.sha512"
+    },
+    "RBACdemo.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "RBACdemo.Dto/1.0.0": {
       "type": "project",

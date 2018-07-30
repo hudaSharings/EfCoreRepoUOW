@@ -1493,6 +1493,21 @@
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
       },
+      "RBACdemo.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.1.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.0",
+          "RBACdemo.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RBACdemo.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RBACdemo.Core.dll": {}
+        }
+      },
       "RBACdemo.Dto/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4727,6 +4742,11 @@
         "system.threading.tasks.nuspec"
       ]
     },
+    "RBACdemo.Core/1.0.0": {
+      "type": "project",
+      "path": "../RBACdemo.Core/RBACdemo.Core.csproj",
+      "msbuildProject": "../RBACdemo.Core/RBACdemo.Core.csproj"
+    },
     "RBACdemo.Dto/1.0.0": {
       "type": "project",
       "path": "../RBACdemo.Dto/RBACdemo.Dto.csproj",
@@ -4742,6 +4762,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "RBACdemo.Core >= 1.0.0",
       "RBACdemo.Dto >= 1.0.0"
     ]
   },
@@ -4775,6 +4796,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj": {
+              "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj"
+            },
             "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
               "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
             }

@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using RBACdemo.Dto;
-using RBACdemo.Infrastructure.Core.Domain;
-using RBACdemo.Infrastructure.Core.Repositories;
-using RBACdemo.Infrastructure.Core.Services;
-using RBACdemo.Infrastructure.Dto;
+using RBACdemo.Core.Domain;
+using RBACdemo.Core.Repositories;
+using RBACdemo.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;

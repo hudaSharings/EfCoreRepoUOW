@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using RBACdemo.Dto;
-using RBACdemo.Infrastructure.Core;
-using RBACdemo.Infrastructure.Core.Domain;
-using RBACdemo.Infrastructure.Core.Repositories;
-using RBACdemo.Infrastructure.Core.Services;
-using RBACdemo.Infrastructure.Dto;
-using RBACdemo.Infrastructure.Persistence.Repositories;
+using RBACdemo.Core;
+using RBACdemo.Core.Domain;
+using RBACdemo.Core.Repositories;
+using RBACdemo.Core.Services;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

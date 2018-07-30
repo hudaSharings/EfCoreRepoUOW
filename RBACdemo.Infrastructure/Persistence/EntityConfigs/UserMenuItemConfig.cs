@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using RBACdemo.Infrastructure.Core.Domain;
+using RBACdemo.Core.Domain;
 
 namespace RBACdemo.Infrastructure.Persistence.EntityConfigs
 {

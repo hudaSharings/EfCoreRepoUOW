@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Dto
+namespace RBACdemo.Dto
 {
    public partial class RegisterDto
     {

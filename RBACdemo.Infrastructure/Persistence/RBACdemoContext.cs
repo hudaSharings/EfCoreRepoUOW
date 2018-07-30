@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using RBACdemo.Infrastructure.Core.Domain;
+using RBACdemo.Core.Domain;
 
 namespace RBACdemo.Infrastructure.Persistence
 {

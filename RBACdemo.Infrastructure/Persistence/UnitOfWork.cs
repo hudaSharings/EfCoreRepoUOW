@@ -1,5 +1,5 @@
-﻿using RBACdemo.Infrastructure.Core;
-using RBACdemo.Infrastructure.Core.Repositories;
+﻿using RBACdemo.Core;
+using RBACdemo.Core.Repositories;
 using RBACdemo.Infrastructure.Persistence.Repositories;
 using System;
 using System.Collections.Generic;

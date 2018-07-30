@@ -33,3 +33,5 @@ D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.Raz
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csproj.CopyComplete
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.pdb
