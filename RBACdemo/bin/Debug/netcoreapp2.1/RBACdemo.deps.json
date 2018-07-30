@@ -26,6 +26,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.0",
           "Microsoft.NETCore.App": "2.1.0",
+          "RBACdemo.Dto": "1.0.0",
           "RBACdemo.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -360,6 +361,14 @@
           "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "RBACdemo.Dto/1.0.0": {
+        "runtime": {
+          "RBACdemo.Dto.dll": {}
+        },
+        "compile": {
+          "RBACdemo.Dto.dll": {}
+        }
+      },
       "RBACdemo.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity": "2.1.0",
@@ -367,7 +376,8 @@
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.Design": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0"
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0",
+          "RBACdemo.Dto": "1.0.0"
         },
         "runtime": {
           "RBACdemo.Infrastructure.dll": {}
@@ -3438,6 +3448,11 @@
       "sha512": "sha512-6q2qXc7GA11ZFh3ATFj9LjzF0HfMtlN1hDi8QATSoML4sR+inquXdionvyX8nUegutOAGXjKDp+8MziaUV5Pkg==",
       "path": "sqlitepclraw.provider.e_sqlite3.netstandard11/1.1.11",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.11.nupkg.sha512"
+    },
+    "RBACdemo.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "RBACdemo.Infrastructure/1.0.0": {
       "type": "project",

@@ -4492,6 +4492,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "RBACdemo.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/RBACdemo.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RBACdemo.Dto.dll": {}
+        }
+      },
       "RBACdemo.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -4501,7 +4511,8 @@
           "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.Design": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0"
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.0",
+          "RBACdemo.Dto": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RBACdemo.Infrastructure.dll": {}
@@ -11840,6 +11851,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "RBACdemo.Dto/1.0.0": {
+      "type": "project",
+      "path": "../RBACdemo.Dto/RBACdemo.Dto.csproj",
+      "msbuildProject": "../RBACdemo.Dto/RBACdemo.Dto.csproj"
+    },
     "RBACdemo.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../RBACdemo.Infrastructure/RBACdemo.Infrastructure.csproj",
@@ -11850,6 +11866,7 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "RBACdemo.Dto >= 1.0.0",
       "RBACdemo.Infrastructure >= 1.0.0"
     ]
   },
@@ -11883,6 +11900,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
+              "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
+            },
             "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj": {
               "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Infrastructure\\RBACdemo.Infrastructure.csproj"
             }

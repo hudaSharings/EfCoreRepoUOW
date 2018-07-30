@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RBACdemo.Dto\RBACdemo.Dto.csproj" />
     <ProjectReference Include="..\RBACdemo.Infrastructure\RBACdemo.Infrastructure.csproj" />
   </ItemGroup>
 

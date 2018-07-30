@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using RBACdemo.Dto;
 using RBACdemo.Infrastructure.Core.Domain;
 using RBACdemo.Infrastructure.Core.Repositories;
 using RBACdemo.Infrastructure.Dto;

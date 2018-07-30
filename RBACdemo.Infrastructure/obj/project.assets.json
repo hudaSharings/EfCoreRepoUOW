@@ -1492,6 +1492,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "RBACdemo.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/RBACdemo.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RBACdemo.Dto.dll": {}
+        }
       }
     }
   },
@@ -4716,6 +4726,11 @@
         "system.threading.tasks.4.0.11.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "RBACdemo.Dto/1.0.0": {
+      "type": "project",
+      "path": "../RBACdemo.Dto/RBACdemo.Dto.csproj",
+      "msbuildProject": "../RBACdemo.Dto/RBACdemo.Dto.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4726,7 +4741,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 2.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "RBACdemo.Dto >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4758,7 +4774,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
+              "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

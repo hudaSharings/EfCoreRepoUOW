@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Dto\**" />
+    <EmbeddedResource Remove="Dto\**" />
+    <None Remove="Dto\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Core\RBACdemoContext.cs" />
     <Compile Remove="Migrations\20180727130824_InitialIdentityDemo.cs" />
     <Compile Remove="Migrations\20180727131210_dbchanged.cs" />
@@ -19,6 +25,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RBACdemo.Dto\RBACdemo.Dto.csproj" />
   </ItemGroup>
 
   <ItemGroup>

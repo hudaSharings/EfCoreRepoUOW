@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using RBACdemo.Dto;
 using RBACdemo.Infrastructure.Core;
 using RBACdemo.Infrastructure.Core.Domain;
 using RBACdemo.Infrastructure.Core.Repositories;
@@ -32,11 +33,11 @@ namespace RBACdemo.Controllers
         [HttpPost]
         public async Task<IdentityResult> Register([FromBody]RegisterDto user)
         {
-            return await _svc.CreateUserAsync(user as ApplicationUser, user.password);
+            return await _svc.CreateUserAsync(user, user.password);
 
         }
         [HttpPost]
-        public async Task<Microsoft.AspNetCore.Identity.SignInResult> Login([FromBody]LoginDto user)
+        public async Task<LoginResultDto> Login([FromBody]LoginDto user)
         {
             return await _svc.SignIn(user);
 

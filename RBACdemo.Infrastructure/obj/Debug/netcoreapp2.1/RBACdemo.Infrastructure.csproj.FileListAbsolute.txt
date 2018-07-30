@@ -27,3 +27,5 @@ D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\Microsoft.IdentityModel.Tokens.xml
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\System.IdentityModel.Tokens.Jwt.xml
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\obj\Debug\netcoreapp2.1\RBACdemo.Infrastructure.csproj.CopyComplete
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Infrastructure\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using RBACdemo.Dto;
 using RBACdemo.Infrastructure.Core.Domain;
 using RBACdemo.Infrastructure.Core.Repositories;
 using RBACdemo.Infrastructure.Core.Services;
@@ -23,9 +24,15 @@ namespace RBACdemo.Infrastructure.Persistence.Services
             return await _repository.AddUserToRole(user, role);
         }
 
-        public async Task<IdentityResult> CreateUserAsync(ApplicationUser user, string password)
+        public async Task<IdentityResult> CreateUserAsync(RegisterDto user, string password)
         {
-            return await _repository.CreateUserAsync(user, password);
+            var _user = new ApplicationUser
+            {
+                UserName = user.UserName,
+                Email = user.Email
+            };
+
+            return await _repository.CreateUserAsync(_user, password);
         }
 
         public async Task<LoginResultDto> SignIn(LoginDto login)

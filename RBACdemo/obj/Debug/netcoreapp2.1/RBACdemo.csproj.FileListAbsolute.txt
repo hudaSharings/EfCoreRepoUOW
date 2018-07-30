@@ -31,3 +31,5 @@ D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Inf
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorTargetAssemblyInfo.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csproj.CopyComplete
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb

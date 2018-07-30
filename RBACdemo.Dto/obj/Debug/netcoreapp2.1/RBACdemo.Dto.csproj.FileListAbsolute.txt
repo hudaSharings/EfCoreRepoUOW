@@ -1,0 +1,8 @@
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csproj.CoreCompileInputs.cache
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfoInputs.cache
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.deps.json
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb

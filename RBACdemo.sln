@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo", "RBACdemo\RBACdemo.csproj", "{01ACEF25-860A-41FB-AADD-3C0C48B408F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo", "RBACdemo\RBACdemo.csproj", "{01ACEF25-860A-41FB-AADD-3C0C48B408F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo.Infrastructure", "RBACdemo.Infrastructure\RBACdemo.Infrastructure.csproj", "{2FD1CB62-037F-4F98-BA23-3620751FBB00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo.Infrastructure", "RBACdemo.Infrastructure\RBACdemo.Infrastructure.csproj", "{2FD1CB62-037F-4F98-BA23-3620751FBB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo.Dto", "RBACdemo.Dto\RBACdemo.Dto.csproj", "{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2FD1CB62-037F-4F98-BA23-3620751FBB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FD1CB62-037F-4F98-BA23-3620751FBB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FD1CB62-037F-4F98-BA23-3620751FBB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
