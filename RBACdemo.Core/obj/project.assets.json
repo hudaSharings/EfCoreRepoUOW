@@ -2834,7 +2834,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "TcYJwQY16bE6KTdh68UoWz8YEveyRb6W9Z2YMW/H4V9c58H6v4scTacS+QxDVHteDRBE2IVTPwrshBKr3n/72A==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -4030,23 +4030,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arunkumarv\\.nuget\\packages\\": {},
+    "C:\\Users\\Huda\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Huda\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj",
       "projectName": "RBACdemo.Core",
-      "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj",
-      "packagesPath": "C:\\Users\\arunkumarv\\.nuget\\packages\\",
-      "outputPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Core\\obj\\",
+      "projectPath": "C:\\Users\\Huda\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Core\\RBACdemo.Core.csproj",
+      "packagesPath": "C:\\Users\\Huda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Huda\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\arunkumarv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Huda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4059,8 +4059,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
-              "projectPath": "D:\\Huda\\hudasharings\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
+            "C:\\Users\\Huda\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
+              "projectPath": "C:\\Users\\Huda\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
             }
           }
         }

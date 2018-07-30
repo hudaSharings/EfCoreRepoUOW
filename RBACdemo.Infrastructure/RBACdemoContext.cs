@@ -8,7 +8,8 @@ namespace RBACdemo.Infrastructure
     {
       
         public DbSet<MenuItem> MenuItems { get; set; }
-     
+
+        
         public RBACdemoContext(DbContextOptions<RBACdemoContext> options):base(options)
         {
 

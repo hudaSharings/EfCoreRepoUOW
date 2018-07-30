@@ -9,11 +9,11 @@ namespace RBACdemo.Infrastructure.Configurations
 {
   public  class EFConfiguration
     {
-        public static void ConfigureService(IServiceCollection services, IConfigurationRoot configuration)
+        public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
 
             services.AddDbContext<RBACdemoContext>(
-              options => options.UseSqlServer(configuration.GetConnectionString("IdentityDemoConnection"))
+              options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
                );
            
         }

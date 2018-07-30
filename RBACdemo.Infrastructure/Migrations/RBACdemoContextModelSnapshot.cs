@@ -15,7 +15,7 @@ namespace RBACdemo.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.0-rtm-30799")
+                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -129,7 +129,7 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("RBACdemo.Infrastructure.Core.Domain.ApplicationUser", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
@@ -180,7 +180,7 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("RBACdemo.Infrastructure.Core.Domain.MenuItem", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.MenuItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -211,7 +211,7 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("MenuItems");
                 });
 
-            modelBuilder.Entity("RBACdemo.Infrastructure.Core.Domain.UserMenuItem", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -254,7 +254,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.ApplicationUser")
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -262,7 +262,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.ApplicationUser")
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -275,7 +275,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.ApplicationUser")
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -283,20 +283,20 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.ApplicationUser")
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("RBACdemo.Infrastructure.Core.Domain.UserMenuItem", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.MenuItem", "MenuItem")
+                    b.HasOne("RBACdemo.Core.Domain.MenuItem", "MenuItem")
                         .WithMany("UserMenuItems")
                         .HasForeignKey("MenuItemId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("RBACdemo.Infrastructure.Core.Domain.ApplicationUser", "User")
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser", "User")
                         .WithMany("UserMenuItems")
                         .HasForeignKey("UserId1");
                 });

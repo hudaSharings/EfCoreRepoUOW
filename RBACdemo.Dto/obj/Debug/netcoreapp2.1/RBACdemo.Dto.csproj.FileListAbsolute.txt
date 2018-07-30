@@ -6,3 +6,12 @@ D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.deps.json
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csprojAssemblyReference.cache
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csproj.CoreCompileInputs.cache
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfoInputs.cache
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb

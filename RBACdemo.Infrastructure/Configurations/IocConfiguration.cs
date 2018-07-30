@@ -16,7 +16,7 @@ namespace RBACdemo.Infrastructure.Configurations
 {
   public static  class IocConfiguration
     {
-        public static void ConfigureService(IServiceCollection services, IConfigurationRoot configuration)
+        public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IContextFactory, RBACdemoContextFactory>();
             services.AddTransient<UserManager<ApplicationUser>>();

@@ -10,7 +10,7 @@ namespace RBACdemo.Infrastructure.Configurations
 {
   public  class AspNetIdentityConfiguration
     {
-        public static void ConfigureService(IServiceCollection services, IConfigurationRoot configuration)
+        public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
             services.AddIdentity<ApplicationUser, IdentityRole>()
                            .AddEntityFrameworkStores<RBACdemoContext>()
