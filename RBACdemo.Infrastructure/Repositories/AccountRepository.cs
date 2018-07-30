@@ -10,7 +10,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RBACdemo.Infrastructure.Persistence.Repositories
+namespace RBACdemo.Infrastructure.Repositories
 {
     public class AccountRepository : IAccountRepository
     {

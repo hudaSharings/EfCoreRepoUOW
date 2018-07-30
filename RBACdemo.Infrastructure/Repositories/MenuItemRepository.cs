@@ -4,12 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Persistence.Repositories
+namespace RBACdemo.Infrastructure.Repositories
 {
-   public class RoleRepository:Repository<Role>,IRoleRepository
+   public class MenuItemRepository :Repository<MenuItem>, IMenuItemRepository
     {
         public RBACdemoContext _context => Context as RBACdemoContext;
-        public RoleRepository(RBACdemoContext context):base(context)
+        public MenuItemRepository(RBACdemoContext context) : base(context)
         {
 
         }

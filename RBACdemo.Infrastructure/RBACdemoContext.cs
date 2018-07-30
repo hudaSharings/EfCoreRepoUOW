@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using RBACdemo.Core.Domain;
 
-namespace RBACdemo.Infrastructure.Persistence
+namespace RBACdemo.Infrastructure
 {
     public class RBACdemoContext : IdentityDbContext<ApplicationUser>
     {

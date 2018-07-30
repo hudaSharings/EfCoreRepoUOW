@@ -1,11 +1,11 @@
 ﻿using RBACdemo.Core;
 using RBACdemo.Core.Repositories;
-using RBACdemo.Infrastructure.Persistence.Repositories;
+using RBACdemo.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Persistence
+namespace RBACdemo.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Persistence
+namespace RBACdemo.Infrastructure
 {
     class RBACdemoUOM
     {

@@ -14,24 +14,24 @@ C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorTargetAssemblyInfo.cache
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.dll
 C:\Users\arunkumarv\Documents\Visual Studio 2017\Projects\RBACdemo\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.pdb
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csprojAssemblyReference.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csproj.CoreCompileInputs.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorAssemblyInfo.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorAssemblyInfo.cs
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.AssemblyInfoInputs.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.AssemblyInfo.cs
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.dll
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csprojAssemblyReference.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.deps.json
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.runtimeconfig.json
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.runtimeconfig.dev.json
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.dll
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Infrastructure.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.pdb
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.RazorTargetAssemblyInfo.cache
 D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.csproj.CopyComplete
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.dll
-D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\bin\Debug\netcoreapp2.1\RBACdemo.Core.pdb
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.dll
+D:\Huda\hudasharings\EfCoreRepoUOW\RBACdemo\obj\Debug\netcoreapp2.1\RBACdemo.pdb

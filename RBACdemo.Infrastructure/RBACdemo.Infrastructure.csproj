@@ -7,10 +7,13 @@
   <ItemGroup>
     <Compile Remove="Core\**" />
     <Compile Remove="Dto\**" />
+    <Compile Remove="Persistence\**" />
     <EmbeddedResource Remove="Core\**" />
     <EmbeddedResource Remove="Dto\**" />
+    <EmbeddedResource Remove="Persistence\**" />
     <None Remove="Core\**" />
     <None Remove="Dto\**" />
+    <None Remove="Persistence\**" />
   </ItemGroup>
 
   <ItemGroup>

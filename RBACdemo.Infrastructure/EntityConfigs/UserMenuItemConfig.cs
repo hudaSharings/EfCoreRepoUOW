@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using RBACdemo.Core.Domain;
 
-namespace RBACdemo.Infrastructure.Persistence.EntityConfigs
+namespace RBACdemo.Infrastructure.EntityConfigs
 {
     public class UserMenuItemConfig : IEntityTypeConfiguration<UserMenuItem>
     {

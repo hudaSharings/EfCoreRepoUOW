@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Persistence.Repositories
+namespace RBACdemo.Infrastructure.Repositories
 {
     public class UserRepository :Repository<ApplicationUser>, IUserRepository
     {

@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RBACdemo.Infrastructure.Persistence.Services
+namespace RBACdemo.Infrastructure.Services
 {
     public class AccountService : IAccountService
     {

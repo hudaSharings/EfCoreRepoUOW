@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace RBACdemo.Infrastructure.Persistence.Services
+namespace RBACdemo.Infrastructure.Services
 {
     public class Service<T> : IService<T> where T : class
     {

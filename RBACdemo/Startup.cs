@@ -10,10 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using RBACdemo.Infrastructure.Persistence.Repositories;
+using RBACdemo.Infrastructure.Repositories;
 using RBACdemo.Core.Repositories;
-using RBACdemo.Infrastructure.Persistence;
 using RBACdemo.Infrastructure;
+
 
 namespace RBACdemo
 {
