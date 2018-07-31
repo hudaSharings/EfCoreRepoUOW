@@ -14,7 +14,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
   </ul>
 </li>
 <li>AspNetCore Identity with EF Core</li>
-<li>Identity Server4 & JWT based Authentication </li>
+<li> JWT based Authentication </li>
 <li>SpHelper - Execute Store Procedures with Dapper</li>
 <li>Client - SPA in Angular
  <ul>
