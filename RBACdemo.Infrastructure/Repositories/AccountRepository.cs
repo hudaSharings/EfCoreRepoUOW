@@ -9,6 +9,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using RBACdemo.Core.Settings;
 
 namespace RBACdemo.Infrastructure.Repositories
 {
@@ -51,12 +52,12 @@ namespace RBACdemo.Infrastructure.Repositories
                     new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
                 };
 
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtValues.SecreteKey));
+            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtSetting.SecreteKey));
 
             var token = new JwtSecurityToken(
-                issuer: JwtValues.Issuer,//"https://localhost:44335",
-                audience:JwtValues.Audience, //"https://localhost:44335",
-                expires: DateTime.UtcNow.AddMinutes(JwtValues.ExpairesInMinutes),
+                issuer: JwtSetting.Issuer,//"https://localhost:44335",
+                audience: JwtSetting.Audience, //"https://localhost:44335",
+                expires: DateTime.UtcNow.AddMinutes(JwtSetting.ExpairesInMinutes),
                 signingCredentials: new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256)
                  );
 

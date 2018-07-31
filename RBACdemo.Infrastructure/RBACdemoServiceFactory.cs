@@ -30,10 +30,10 @@ namespace RBACdemo.Infrastructure
        
         public void config(IServiceCollection services)
         {
-            JwtValues.Audience = Configuration.GetSection("JwtTokenValues")["audience"].ToString();
-            JwtValues.Issuer = Configuration.GetSection("JwtTokenValues")["issuer"].ToString();
-            JwtValues.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
-            JwtValues.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
+            JwtSetting.Audience = Configuration.GetSection("JwtTokenValues")["audience"].ToString();
+            JwtSetting.Issuer = Configuration.GetSection("JwtTokenValues")["issuer"].ToString();
+            JwtSetting.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
+            JwtSetting.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
 
             
             EFConfiguration.ConfigureService(services, Configuration);
