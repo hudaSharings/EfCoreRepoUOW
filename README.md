@@ -6,7 +6,13 @@ Sample Project For Entity framework Core  and Asp.Net Core 2.1 with Repository a
 <li>AspNetCore Identity with EF Core</li>
 <li>Identity Server4 & JWT based Authentication </li>
 <li>SpHelper - Execute Store Procedures with Dapper</li>
-<li>Web API with Action filter for Multi tenant  </li>
+ <li>Web API
+ <ul>
+  <li>Action filter for Multi tenants</li>
+  <li>Exception Middleware</li>
+  <li>Logger</li>
+  </ul>
+</li>
 <li>Client - SPA in Angular
  <ul>
   <li>Role Based Menu Rendering</li>
