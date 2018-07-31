@@ -35,6 +35,7 @@ namespace RBACdemo.Infrastructure
             JwtValues.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
             JwtValues.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
 
+            
             EFConfiguration.ConfigureService(services, Configuration);
             AspNetIdentityConfiguration.ConfigureService(services, Configuration);
             AuthenticationConfiguration.ConfigureService(services, Configuration);

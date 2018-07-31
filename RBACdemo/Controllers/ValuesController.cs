@@ -7,9 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RBACdemo.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     
+   
     public class ValuesController : BaseController
     {
         // GET api/values

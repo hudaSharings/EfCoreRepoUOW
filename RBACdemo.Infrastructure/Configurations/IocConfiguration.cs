@@ -24,11 +24,11 @@ namespace RBACdemo.Infrastructure.Configurations
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAccountRepository, AccountRepository>();
-
+            services.AddTransient<IMenuItemRepository, MenuItemRepository>();
             //--
             services.AddTransient<IAccountService, AccountService>();
             services.AddTransient<IUserService, UserService>();
-
+            services.AddTransient<IMenuItemService, MenuItemService>();
             //--
             services.AddTransient<IDataBaseManager, DataBaseManager>();
             services.AddScoped(

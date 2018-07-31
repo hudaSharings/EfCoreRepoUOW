@@ -13,7 +13,7 @@ namespace RBACdemo.Infrastructure.Configurations
         {
 
             services.AddDbContext<RBACdemoContext>(
-              options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
+              options => options.UseSqlServer(configuration.GetConnectionString("IdentityDemoConnection"))
                );
            
         }

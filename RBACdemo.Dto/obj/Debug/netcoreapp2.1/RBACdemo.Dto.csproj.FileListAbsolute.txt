@@ -15,3 +15,12 @@ C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.
 C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
 C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
 C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.deps.json
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\bin\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csproj.CoreCompileInputs.cache
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfoInputs.cache
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
+C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csprojAssemblyReference.cache

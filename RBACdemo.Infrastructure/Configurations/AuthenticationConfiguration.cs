@@ -12,8 +12,27 @@ namespace RBACdemo.Infrastructure.Configurations
     {
         public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
 
-          
+            }).AddJwtBearer(option =>
+            {
+                option.SaveToken = true;
+                option.RequireHttpsMetadata = false;
+                option.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = JwtValues.Audience, //"https://localhost:44335",
+                    ValidIssuer = JwtValues.Issuer,//"https://localhost:44335",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtValues.SecreteKey))
+
+                };
+            });
+
         }
     }
 }

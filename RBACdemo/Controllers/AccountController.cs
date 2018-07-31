@@ -21,9 +21,13 @@ namespace RBACdemo.Controllers
     public class AccountController : BaseController
     {
         IAccountService _svc;
-        public AccountController(IAccountService svc,IUserService usersvc)
+
+        IMenuItemService _mnuSvc;
+
+        public AccountController(IAccountService svc, IUserService usersvc, IMenuItemService mnuSvc)
         {
             _svc = svc;
+            _mnuSvc = mnuSvc;
         }
         // GET: api/<controller>
         [HttpGet]
@@ -47,7 +51,7 @@ namespace RBACdemo.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            return _mnuSvc.SingleOrDefault(x => x.CreatedBy == id)?.Name;
         }
 
         // POST api/<controller>
