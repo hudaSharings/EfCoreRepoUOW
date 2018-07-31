@@ -13,7 +13,9 @@ using Microsoft.Extensions.Options;
 using RBACdemo.Infrastructure.Repositories;
 using RBACdemo.Core.Repositories;
 using RBACdemo.Infrastructure;
-
+using RBACdemo.Filters;
+using FluentValidation.AspNetCore;
+using RBACdemo.Dto;
 
 namespace RBACdemo
 {
@@ -28,12 +30,18 @@ namespace RBACdemo
 
         public IConfiguration Configuration { get; }
 
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            rbacDemoConfig.config(services);        
-            
+            rbacDemoConfig.config(services);
+            //services.AddScoped<ValidateModelAttribute>();
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(typeof(ValidateModelAttribute));
+            })
+        .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterDtoValidation>());
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

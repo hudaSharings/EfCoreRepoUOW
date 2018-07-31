@@ -10,6 +10,7 @@ using RBACdemo.Core.Domain;
 using RBACdemo.Core.Repositories;
 using RBACdemo.Core.Services;
 using Microsoft.AspNetCore.Authorization;
+using RBACdemo.Filters;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -17,6 +18,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace RBACdemo.Controllers
 {
     [Route("api/[controller]/[action]")]
+    //[ServiceFilter(typeof(ValidateModelAttribute))]
     [AllowAnonymous]
     public class AccountController : BaseController
     {
