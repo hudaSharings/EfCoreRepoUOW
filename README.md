@@ -6,7 +6,7 @@ Sample Project For Entity framework Core  and Asp.Net Core 2.1 with Repository a
 
  <li>Web API
  <ul>
-  <li>Fluent Validator as Model Validator<li/>
+  <li>Fluent Validator as Model Validator</li>
   <li>Action filter for Multi tenants</li>
   <li>Exception Middleware</li>
   <li>Logger</li>
