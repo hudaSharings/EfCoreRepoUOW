@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "08cb75b63d1b8327ba867229e1f1db4979dea59d"
+    "signature": "87737e23d5f3a047d609ae0ba059ed11090492a8"
   },
   "compilationOptions": {
     "defines": [
@@ -28,7 +28,11 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "RBACdemo.Dto": "1.0.0",
-          "RBACdemo.Infrastructure": "1.0.0"
+          "RBACdemo.Infrastructure": "1.0.0",
+          "Serilog": "2.7.2-dev-01024",
+          "Serilog.Extensions.Logging": "2.0.2",
+          "Serilog.Sinks.File": "4.0.1-dev-00796",
+          "Serilog.Sinks.RollingFile": "3.3.1-dev-00771"
         },
         "runtime": {
           "RBACdemo.dll": {}
@@ -275,6 +279,75 @@
           "Microsoft.NETCore.Platforms": "2.1.0"
         }
       },
+      "Serilog/2.7.2-dev-01024": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Collections.NonGeneric": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.7.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging/2.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "Serilog": "2.7.2-dev-01024"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/4.0.1-dev-00796": {
+        "dependencies": {
+          "Serilog": "2.7.2-dev-01024",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.File.dll": {}
+        }
+      },
+      "Serilog.Sinks.RollingFile/3.3.1-dev-00771": {
+        "dependencies": {
+          "Serilog.Sinks.File": "4.0.1-dev-00796",
+          "System.IO": "4.3.0",
+          "System.IO.FileSystem.Primitives": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "3.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Sinks.RollingFile.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.11": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.11",
@@ -403,6 +476,13 @@
         "dependencies": {
           "System.ComponentModel": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Threading.Timer/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0",
           "System.Runtime": "4.3.0"
         }
       },
@@ -3477,6 +3557,34 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "Serilog/2.7.2-dev-01024": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6wK/tnA9bEfbYG3fdkPUIZA/dZvA8UWRc6cagfeGr2+P3ZiAvT0lwkJPUvBvd9zoZhd0Ro42pKGLHISgNnVC5A==",
+      "path": "serilog/2.7.2-dev-01024",
+      "hashPath": "serilog.2.7.2-dev-01024.nupkg.sha512"
+    },
+    "Serilog.Extensions.Logging/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PYAkzUn/VV16Es7U06BfEhNZEltnYWu0WFCM4d2lLY/dvlA7xMwFXBuGRxR0XvEBPoOxPorjhFLy9txwiMO6rg==",
+      "path": "serilog.extensions.logging/2.0.2",
+      "hashPath": "serilog.extensions.logging.2.0.2.nupkg.sha512"
+    },
+    "Serilog.Sinks.File/4.0.1-dev-00796": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JuQGhrb1ejK9JJLgZ8B6Ef7Z6iwq6dHXaj1rOuBVTY3zz12Qg2w6YYTCxw4tvka2A8wOGz1C3ZCN4GmKtxpK7w==",
+      "path": "serilog.sinks.file/4.0.1-dev-00796",
+      "hashPath": "serilog.sinks.file.4.0.1-dev-00796.nupkg.sha512"
+    },
+    "Serilog.Sinks.RollingFile/3.3.1-dev-00771": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZqT4qp+BIEOYloDodia3at6I733dONgust+zjhQWES/NBbM1Jqa/PELLiYexROt6MMquMBdwbO2k4yZl59Td7g==",
+      "path": "serilog.sinks.rollingfile/3.3.1-dev-00771",
+      "hashPath": "serilog.sinks.rollingfile.3.3.1-dev-00771.nupkg.sha512"
+    },
     "SQLitePCLRaw.bundle_green/1.1.11": {
       "type": "package",
       "serviceable": true,
@@ -3532,6 +3640,13 @@
       "sha512": "sha512-j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
       "path": "system.componentmodel.primitives/4.3.0",
       "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Timer/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-saGfUV8uqVW6LeURiqxcGhZ24PzuRNaUBtbhVeuUAvky1naH395A/1nY0P2bWvrw/BreRtIB/EzTDkGBpqCwEw==",
+      "path": "system.threading.timer/4.0.1",
+      "hashPath": "system.threading.timer.4.0.1.nupkg.sha512"
     },
     "System.ValueTuple/4.5.0": {
       "type": "package",

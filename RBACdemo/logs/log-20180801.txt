@@ -1,0 +1,23 @@
+2018-08-01 14:02:14.093 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-01 14:02:14.093 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-01 14:02:14.392 +05:30 [Information] Request finished in 306.168ms 200 
+2018-08-01 14:02:15.021 +05:30 [Information] Request finished in 808.6376ms 404 
+2018-08-01 14:02:17.539 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-01 14:02:17.677 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-01 14:02:20.546 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-01 14:02:24.448 +05:30 [Error] sample demo test
+RBACdemo.POCO.ApiException: sample demo test
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 50
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-01 14:02:24.462 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-01 14:02:24.493 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 6800.9026ms
+2018-08-01 14:02:24.504 +05:30 [Information] Request finished in 6962.3076ms 500 application/json; charset=utf-8

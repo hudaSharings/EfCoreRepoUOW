@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.Extensions.Logging;
 using RBACdemo.POCO;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,10 @@ namespace RBACdemo.Filters
 {
     public class ApiExceptionFilter :ExceptionFilterAttribute
     {
-        
-        public ApiExceptionFilter()
+        private ILogger<ApiExceptionFilter> _logger;
+        public ApiExceptionFilter(ILogger<ApiExceptionFilter> logger)
         {
-
+            _logger = logger;
         }
         public override void OnException(ExceptionContext context)
         {
@@ -24,7 +25,7 @@ namespace RBACdemo.Filters
             result.StatusCode = 500;
             context.HttpContext.Response.StatusCode = (int)result.StatusCode;
             context.Result = new  JsonResult(result);
-            
+            _logger.LogError(500 ,exception, result.Message);
             base.OnException(context);
         }
     }

@@ -47,8 +47,8 @@ namespace RBACdemo.Controllers
         [HttpPost]
         public async Task<LoginResultDto> Login([FromBody]LoginDto user)
         {
-
-            return await _svc.SignIn(user);
+            throw new ApiException("sample demo test", 500);
+            //return await _svc.SignIn(user);
 
         }
         // GET api/<controller>/5

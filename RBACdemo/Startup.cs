@@ -16,16 +16,22 @@ using RBACdemo.Infrastructure;
 using RBACdemo.Filters;
 using FluentValidation.AspNetCore;
 using RBACdemo.Dto;
+using Serilog;
+using System.IO;
 
 namespace RBACdemo
 {
     public class Startup
     {
         RBACdemoServiceFactory rbacDemoConfig;
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration , IHostingEnvironment env)
         {
             Configuration = configuration;
             rbacDemoConfig = new RBACdemoServiceFactory(Configuration);
+            Log.Logger = new LoggerConfiguration()
+        .MinimumLevel.Debug()
+        .WriteTo.RollingFile(Path.Combine(env.ContentRootPath, "logs\\log-{Date}.txt"))
+        .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
@@ -42,12 +48,13 @@ namespace RBACdemo
                 options.Filters.Add(typeof(ApiExceptionFilter));
             })
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterDtoValidation>());
-
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddSerilog();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
