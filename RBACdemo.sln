@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo", "RBACdemo\RBACde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo.Infrastructure", "RBACdemo.Infrastructure\RBACdemo.Infrastructure.csproj", "{2FD1CB62-037F-4F98-BA23-3620751FBB00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo.Dto", "RBACdemo.Dto\RBACdemo.Dto.csproj", "{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo.Dto", "RBACdemo.Dto\RBACdemo.Dto.csproj", "{1FAD5E58-355C-4DA1-9F8A-C5C146365B55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo.Core", "RBACdemo.Core\RBACdemo.Core.csproj", "{4E216A44-0498-4AE8-B51F-924F2D296514}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RBACdemo.Core", "RBACdemo.Core\RBACdemo.Core.csproj", "{4E216A44-0498-4AE8-B51F-924F2D296514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RBACdemo.Utility", "RBACdemo.Utility\RBACdemo.Utility.csproj", "{D3128B48-8B5C-4C70-9F20-13DC82B54DFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4E216A44-0498-4AE8-B51F-924F2D296514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E216A44-0498-4AE8-B51F-924F2D296514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E216A44-0498-4AE8-B51F-924F2D296514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3128B48-8B5C-4C70-9F20-13DC82B54DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3128B48-8B5C-4C70-9F20-13DC82B54DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3128B48-8B5C-4C70-9F20-13DC82B54DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3128B48-8B5C-4C70-9F20-13DC82B54DFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
