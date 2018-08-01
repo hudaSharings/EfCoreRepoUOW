@@ -3353,6 +3353,16 @@
         "runtime": {
           "bin/placeholder/RBACdemo.Dto.dll": {}
         }
+      },
+      "RBACdemo.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/RBACdemo.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RBACdemo.Utility.dll": {}
+        }
       }
     }
   },
@@ -9791,6 +9801,11 @@
       "type": "project",
       "path": "../RBACdemo.Dto/RBACdemo.Dto.csproj",
       "msbuildProject": "../RBACdemo.Dto/RBACdemo.Dto.csproj"
+    },
+    "RBACdemo.Utility/1.0.0": {
+      "type": "project",
+      "path": "../RBACdemo.Utility/RBACdemo.Utility.csproj",
+      "msbuildProject": "../RBACdemo.Utility/RBACdemo.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -9804,7 +9819,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "RBACdemo.Core >= 1.0.0",
-      "RBACdemo.Dto >= 1.0.0"
+      "RBACdemo.Dto >= 1.0.0",
+      "RBACdemo.Utility >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9842,6 +9858,9 @@
             },
             "C:\\Users\\arunkumarv\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj": {
               "projectPath": "C:\\Users\\arunkumarv\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Dto\\RBACdemo.Dto.csproj"
+            },
+            "C:\\Users\\arunkumarv\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Utility\\RBACdemo.Utility.csproj": {
+              "projectPath": "C:\\Users\\arunkumarv\\Documents\\GitHub\\EfCoreRepoUOW\\RBACdemo.Utility\\RBACdemo.Utility.csproj"
             }
           }
         }

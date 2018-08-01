@@ -14,7 +14,7 @@ using System.Text;
 
 namespace RBACdemo.Infrastructure.Configurations
 {
-  public static  class IocConfiguration
+  public static  class IocConfigurationRepository
     {
         public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
@@ -25,16 +25,8 @@ namespace RBACdemo.Infrastructure.Configurations
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IMenuItemRepository, MenuItemRepository>();
-            //--
-            services.AddTransient<IAccountService, AccountService>();
-            services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IMenuItemService, MenuItemService>();
-            //--
-            services.AddTransient<IDataBaseManager, DataBaseManager>();
-            services.AddScoped(
-             x => new ConnectionSetting(configuration.GetConnectionString("DefaultConnection"))
-                );
-
+            
+            
         }
     }
 }

@@ -4653,13 +4653,24 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.1",
           "RBACdemo.Core": "1.0.0",
-          "RBACdemo.Dto": "1.0.0"
+          "RBACdemo.Dto": "1.0.0",
+          "RBACdemo.Utility": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RBACdemo.Infrastructure.dll": {}
         },
         "runtime": {
           "bin/placeholder/RBACdemo.Infrastructure.dll": {}
+        }
+      },
+      "RBACdemo.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/RBACdemo.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RBACdemo.Utility.dll": {}
         }
       }
     }
@@ -12269,6 +12280,11 @@
       "type": "project",
       "path": "../RBACdemo.Infrastructure/RBACdemo.Infrastructure.csproj",
       "msbuildProject": "../RBACdemo.Infrastructure/RBACdemo.Infrastructure.csproj"
+    },
+    "RBACdemo.Utility/1.0.0": {
+      "type": "project",
+      "path": "../RBACdemo.Utility/RBACdemo.Utility.csproj",
+      "msbuildProject": "../RBACdemo.Utility/RBACdemo.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {

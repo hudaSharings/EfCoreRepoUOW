@@ -36,6 +36,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RBACdemo.Core\RBACdemo.Core.csproj" />
     <ProjectReference Include="..\RBACdemo.Dto\RBACdemo.Dto.csproj" />
+    <ProjectReference Include="..\RBACdemo.Utility\RBACdemo.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -35,12 +35,17 @@ namespace RBACdemo.Infrastructure
             JwtSetting.SecreteKey = Configuration.GetSection("JwtTokenValues")["securityKey"].ToString();
             JwtSetting.ExpairesInMinutes=Convert.ToInt32(Configuration.GetSection("JwtTokenValues")["expairesInMinutes"]);
 
-            
             EFConfiguration.ConfigureService(services, Configuration);
             AspNetIdentityConfiguration.ConfigureService(services, Configuration);
             AuthenticationConfiguration.ConfigureService(services, Configuration);
-            IocConfiguration.ConfigureService(services, Configuration);
-           
+            IocConfigurationRepository.ConfigureService(services, Configuration);
+            IocConfigurationService.ConfigureService(services, Configuration);
+
+            services.AddTransient<IDataBaseManager, DataBaseManager>();
+            services.AddScoped(
+             x => new ConnectionSetting(Configuration.GetConnectionString("DefaultConnection"))
+                );
+            services.AddScoped<SpHelper>();
         }
 
     }
