@@ -39,6 +39,7 @@ namespace RBACdemo.Infrastructure.Repositories
                 var token = GenerateToken(login);
                 retres.Token = new JwtSecurityTokenHandler().WriteToken(token);
                 retres.Expiration = token.ValidTo;
+                retres.username = login.Username;
             }
             
             return retres;

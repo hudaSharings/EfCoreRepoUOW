@@ -39,6 +39,7 @@ namespace RBACdemo
             services.AddMvc(options =>
             {
                 options.Filters.Add(typeof(ValidateModelAttribute));
+                options.Filters.Add(typeof(ApiExceptionFilter));
             })
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterDtoValidation>());
 

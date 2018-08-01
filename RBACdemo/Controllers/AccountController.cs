@@ -11,6 +11,7 @@ using RBACdemo.Core.Repositories;
 using RBACdemo.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using RBACdemo.Filters;
+using RBACdemo.POCO;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -46,6 +47,7 @@ namespace RBACdemo.Controllers
         [HttpPost]
         public async Task<LoginResultDto> Login([FromBody]LoginDto user)
         {
+
             return await _svc.SignIn(user);
 
         }
