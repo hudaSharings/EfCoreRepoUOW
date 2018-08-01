@@ -6,8 +6,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
 
  <li>Web API
  <ul>
-  <li>Fluent Validator as Model Validator</li>
-  <li>Action filter for Multi tenants</li>
+  <li>Fluent Validator as Model Validator</li> 
   <li>Action filter for ModelState Validation</li>
   <li>Action filter for Exception Handling</li>
   <li>Logger</li>
@@ -15,6 +14,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
 </li>
 <li> JWT based Authentication </li>
 <li>AspNetCore Identity with EF Core</li>
+<li>Context Factory for Multi tenants</li>
 <li>SpHelper - Execute Store Procedures with Dapper</li>
 <li>Client - SPA in Angular
  <ul>
