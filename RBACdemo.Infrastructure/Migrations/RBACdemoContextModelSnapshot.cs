@@ -17,6 +17,7 @@ namespace RBACdemo.Infrastructure.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("Relational:Sequence:shared.OrderNumbers", "'OrderNumbers', 'shared', '100', '1', '', '', 'Int32', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -182,7 +183,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("RBACdemo.Core.Domain.MenuItem", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -196,9 +197,17 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("IsDisbalbed");
 
+                    b.Property<long>("MenuItemNo")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValueSql("NEXT VALUE FOR shared.OrderNumbers");
+
                     b.Property<string>("Name");
 
                     b.Property<int>("ParentId");
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
 
                     b.Property<int>("UpdatedBy");
 
@@ -213,7 +222,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -225,21 +234,23 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("IsDisbalbed");
 
-                    b.Property<int>("MenuItemId");
+                    b.Property<long?>("MenuItemNo");
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
 
                     b.Property<int>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
-                    b.Property<int>("UserId");
-
-                    b.Property<string>("UserId1");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MenuItemId");
+                    b.HasIndex("MenuItemNo");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("UserMenuItem");
                 });
@@ -293,12 +304,11 @@ namespace RBACdemo.Infrastructure.Migrations
                 {
                     b.HasOne("RBACdemo.Core.Domain.MenuItem", "MenuItem")
                         .WithMany("UserMenuItems")
-                        .HasForeignKey("MenuItemId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("MenuItemNo");
 
                     b.HasOne("RBACdemo.Core.Domain.ApplicationUser", "User")
                         .WithMany("UserMenuItems")
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

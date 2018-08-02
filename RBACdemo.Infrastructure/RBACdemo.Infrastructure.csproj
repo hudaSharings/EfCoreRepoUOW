@@ -21,6 +21,8 @@
     <Compile Remove="Migrations\20180727131210_dbchanged.cs" />
     <Compile Remove="Migrations\20180727131349_dbchanged.cs" />
     <Compile Remove="Migrations\20180727132146_tetdb.cs" />
+    <Compile Remove="Migrations\20180730173308_athometest1.cs" />
+    <Compile Remove="Migrations\20180802134929_Sequence.cs" />
   </ItemGroup>
 
   <ItemGroup>

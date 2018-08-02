@@ -521,13 +521,22 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "2.1.1",
           "RBACdemo.Core": "1.0.0",
-          "RBACdemo.Dto": "1.0.0"
+          "RBACdemo.Dto": "1.0.0",
+          "RBACdemo.Utility": "1.0.0"
         },
         "runtime": {
           "RBACdemo.Infrastructure.dll": {}
         },
         "compile": {
           "RBACdemo.Infrastructure.dll": {}
+        }
+      },
+      "RBACdemo.Utility/1.0.0": {
+        "runtime": {
+          "RBACdemo.Utility.dll": {}
+        },
+        "compile": {
+          "RBACdemo.Utility.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3666,6 +3675,11 @@
       "sha512": ""
     },
     "RBACdemo.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RBACdemo.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
