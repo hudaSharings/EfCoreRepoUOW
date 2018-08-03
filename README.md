@@ -11,6 +11,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
   <li>Action filter for Exception Handling</li>
   <li>Serilog Logger</li>
   <li>option to enabling CORS  for Specific Origins</li>
+  <li>Swagger UI- api helper</li>
   </ul>
 </li>
 <li> JWT based Authentication </li>
