@@ -18,13 +18,17 @@ using FluentValidation.AspNetCore;
 using RBACdemo.Dto;
 using Serilog;
 using System.IO;
+using NSwag.AspNetCore;
+using System.Reflection;
+using NJsonSchema;
+using Microsoft.AspNetCore.Mvc.Cors.Internal;
 
 namespace RBACdemo
 {
     public class Startup
     {
         RBACdemoServiceFactory rbacDemoConfig;
-        public Startup(IConfiguration configuration , IHostingEnvironment env)
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             Configuration = configuration;
             rbacDemoConfig = new RBACdemoServiceFactory(Configuration);
@@ -46,9 +50,16 @@ namespace RBACdemo
             {
                 options.Filters.Add(typeof(ValidateModelAttribute));
                 options.Filters.Add(typeof(ApiExceptionFilter));
+               
             })
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<RegisterDtoValidation>());
-           
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder.WithOrigins(Configuration.GetSection("CorsValues")["AllowedOrigins"]));
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,9 +74,16 @@ namespace RBACdemo
             {
                 app.UseHsts();
             }
+            app.UseCors("AllowSpecificOrigin");
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseSwaggerUi(typeof(Startup).GetTypeInfo().Assembly, settings =>
+            {
+                settings.GeneratorSettings.DefaultPropertyNameHandling =
+                    PropertyNameHandling.CamelCase;
+            });
+
         }
     }
 }

@@ -1,0 +1,650 @@
+2018-08-03 16:30:46.951 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 16:30:46.969 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 16:30:47.388 +05:30 [Information] Request finished in 445.5138ms 200 
+2018-08-03 16:30:49.049 +05:30 [Information] Request finished in 2115.7956ms 404 
+2018-08-03 16:32:09.659 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:32:09.729 +05:30 [Information] Request finished in 8.751ms 404 
+2018-08-03 16:32:12.921 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:32:12.940 +05:30 [Information] Request finished in 8.6977ms 404 
+2018-08-03 16:32:44.387 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 16:32:44.862 +05:30 [Information] Request finished in 477.9021ms 200 application/json;charset=utf-8
+2018-08-03 16:32:45.562 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/favicon.ico  
+2018-08-03 16:32:45.589 +05:30 [Information] Request finished in 20.3516ms 404 
+2018-08-03 16:33:28.485 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:33:28.537 +05:30 [Information] Request finished in 10.3647ms 404 
+2018-08-03 16:33:33.721 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:33:33.729 +05:30 [Information] Request finished in 21.4091ms 404 
+2018-08-03 16:35:49.190 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 16:35:49.190 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 16:35:49.419 +05:30 [Information] Request finished in 256.5149ms 200 
+2018-08-03 16:35:50.336 +05:30 [Information] Request finished in 1159.7547ms 404 
+2018-08-03 16:35:52.565 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/  
+2018-08-03 16:35:52.589 +05:30 [Information] Request finished in 13.4101ms 404 
+2018-08-03 16:35:56.064 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/  
+2018-08-03 16:35:56.077 +05:30 [Information] Request finished in 8.9302ms 404 
+2018-08-03 16:36:02.758 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/swagger/  
+2018-08-03 16:36:02.766 +05:30 [Information] Request finished in 8.7583ms 404 
+2018-08-03 16:36:25.492 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 16:36:25.824 +05:30 [Information] Request finished in 341.7365ms 404 
+2018-08-03 16:36:36.544 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 16:36:36.816 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 16:36:36.834 +05:30 [Information] Authorization failed.
+2018-08-03 16:36:36.842 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 16:36:36.851 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 16:36:36.861 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 16:36:36.871 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 44.6129ms
+2018-08-03 16:36:36.879 +05:30 [Information] Request finished in 334.4315ms 401 
+2018-08-03 16:36:43.103 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 16:36:43.322 +05:30 [Information] Request finished in 218.4684ms 200 application/json;charset=utf-8
+2018-08-03 16:40:01.324 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:40:01.324 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 16:40:01.482 +05:30 [Information] Request finished in 166.916ms 200 
+2018-08-03 16:40:01.992 +05:30 [Information] Request finished in 669.323ms 404 
+2018-08-03 16:40:47.163 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:40:47.485 +05:30 [Information] Request finished in 331.7989ms 404 
+2018-08-03 16:40:49.979 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:40:49.981 +05:30 [Information] Request finished in 2.4118ms 404 
+2018-08-03 16:40:52.273 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:40:52.273 +05:30 [Information] Request finished in 0.5028ms 404 
+2018-08-03 16:44:54.357 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 16:44:54.357 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:44:54.497 +05:30 [Information] Request finished in 160.3065ms 200 
+2018-08-03 16:44:55.025 +05:30 [Information] Request finished in 656.0757ms 404 
+2018-08-03 16:45:43.848 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:45:44.163 +05:30 [Information] Request finished in 324.1383ms 404 
+2018-08-03 16:50:58.492 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 16:50:58.840 +05:30 [Information] Request finished in 357.1093ms 404 
+2018-08-03 16:51:05.199 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 16:51:07.081 +05:30 [Information] Request finished in 1881.471ms 200 application/json; charset=utf-8
+2018-08-03 16:51:13.374 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 16:51:13.375 +05:30 [Information] Request finished in 0.6654ms 302 
+2018-08-03 16:51:13.384 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-03 16:51:13.427 +05:30 [Information] Request finished in 43.5922ms 200 text/html; charset=utf-8
+2018-08-03 16:51:13.455 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/typography.css  
+2018-08-03 16:51:13.463 +05:30 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.464 +05:30 [Information] Request finished in 8.7292ms 200 text/css
+2018-08-03 16:51:13.475 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/reset.css  
+2018-08-03 16:51:13.475 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/object-assign-pollyfill.js  
+2018-08-03 16:51:13.478 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/screen.css  
+2018-08-03 16:51:13.479 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.slideto.min.js  
+2018-08-03 16:51:13.480 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.wiggle.min.js  
+2018-08-03 16:51:13.494 +05:30 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.494 +05:30 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.494 +05:30 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.494 +05:30 [Information] Request finished in 19.9325ms 200 application/javascript
+2018-08-03 16:51:13.494 +05:30 [Information] Request finished in 14.1537ms 200 application/javascript
+2018-08-03 16:51:13.494 +05:30 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.494 +05:30 [Information] Request finished in 19.9524ms 200 text/css
+2018-08-03 16:51:13.495 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery-1.8.0.min.js  
+2018-08-03 16:51:13.494 +05:30 [Information] Request finished in 15.3903ms 200 application/javascript
+2018-08-03 16:51:13.494 +05:30 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.502 +05:30 [Information] Request finished in 23.8778ms 200 text/css
+2018-08-03 16:51:13.505 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.ba-bbq.min.js  
+2018-08-03 16:51:13.506 +05:30 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.506 +05:30 [Information] Request finished in 0.9524ms 200 application/javascript
+2018-08-03 16:51:13.507 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/handlebars-4.0.5.js  
+2018-08-03 16:51:13.508 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/lodash.min.js  
+2018-08-03 16:51:13.508 +05:30 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.508 +05:30 [Information] Request finished in 0.5499ms 200 application/javascript
+2018-08-03 16:51:13.518 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/swagger-ui.js  
+2018-08-03 16:51:13.518 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/backbone-min.js  
+2018-08-03 16:51:13.519 +05:30 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.519 +05:30 [Information] Request finished in 0.4691ms 200 application/javascript
+2018-08-03 16:51:13.554 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack_extended.js  
+2018-08-03 16:51:13.555 +05:30 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.555 +05:30 [Information] Request finished in 0.8614ms 200 application/javascript
+2018-08-03 16:51:13.555 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack.js  
+2018-08-03 16:51:13.555 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jsoneditor.min.js  
+2018-08-03 16:51:13.557 +05:30 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.557 +05:30 [Information] Request finished in 2.3009ms 200 application/javascript
+2018-08-03 16:51:13.559 +05:30 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.560 +05:30 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.561 +05:30 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.585 +05:30 [Information] Request finished in 78.4526ms 200 application/javascript
+2018-08-03 16:51:13.585 +05:30 [Information] Request finished in 90.6169ms 200 application/javascript
+2018-08-03 16:51:13.586 +05:30 [Information] Request finished in 30.0959ms 200 application/javascript
+2018-08-03 16:51:13.590 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/marked.js  
+2018-08-03 16:51:13.591 +05:30 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.591 +05:30 [Information] Request finished in 0.7333ms 200 application/javascript
+2018-08-03 16:51:13.618 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/swagger-oauth.js  
+2018-08-03 16:51:13.619 +05:30 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.619 +05:30 [Information] Request finished in 0.7538ms 200 application/javascript
+2018-08-03 16:51:13.762 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/logo_small.png  
+2018-08-03 16:51:13.762 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/print.css  
+2018-08-03 16:51:13.762 +05:30 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.763 +05:30 [Information] Request finished in 0.6296ms 200 image/png
+2018-08-03 16:51:13.763 +05:30 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.763 +05:30 [Information] Request finished in 0.9365ms 200 text/css
+2018-08-03 16:51:13.945 +05:30 [Information] Sending file. Request path: '"/swagger-ui.js"'. Physical path: '"N/A"'
+2018-08-03 16:51:13.945 +05:30 [Information] Request finished in 427.6643ms 200 application/javascript
+2018-08-03 16:51:14.345 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 16:51:14.346 +05:30 [Information] Request finished in 0.5048ms 200 application/json; charset=utf-8
+2018-08-03 16:51:14.399 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-32x32.png  
+2018-08-03 16:51:14.399 +05:30 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-08-03 16:51:14.399 +05:30 [Information] Request finished in 0.6134ms 200 image/png
+2018-08-03 16:51:14.930 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-16x16.png  
+2018-08-03 16:51:14.930 +05:30 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-08-03 16:51:14.930 +05:30 [Information] Request finished in 0.868ms 200 image/png
+2018-08-03 16:51:21.975 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/throbber.gif  
+2018-08-03 16:51:21.975 +05:30 [Information] Sending file. Request path: '"/images/throbber.gif"'. Physical path: '"N/A"'
+2018-08-03 16:51:21.975 +05:30 [Information] Request finished in 0.8786ms 200 image/gif
+2018-08-03 16:53:59.554 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-03 16:53:59.555 +05:30 [Information] Request finished in 1.0984ms 200 text/html; charset=utf-8
+2018-08-03 16:54:00.119 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 16:54:00.120 +05:30 [Information] Request finished in 0.435ms 200 application/json; charset=utf-8
+2018-08-03 16:54:00.451 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-32x32.png  
+2018-08-03 16:54:00.451 +05:30 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-08-03 16:54:00.452 +05:30 [Information] Request finished in 0.7197ms 200 image/png
+2018-08-03 17:11:33.875 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 17:11:33.876 +05:30 [Information] Request finished in 0.8097ms 200 application/json; charset=utf-8
+2018-08-03 17:29:55.254 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/  
+2018-08-03 17:29:55.964 +05:30 [Information] Request finished in 719.9547ms 404 
+2018-08-03 17:29:56.106 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/  
+2018-08-03 17:29:56.108 +05:30 [Information] Request finished in 1.8255ms 404 
+2018-08-03 17:30:00.485 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/  
+2018-08-03 17:30:00.485 +05:30 [Information] Request finished in 0.7174ms 404 
+2018-08-03 17:30:06.413 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:30:06.461 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:30:06.477 +05:30 [Information] Authorization failed.
+2018-08-03 17:30:06.484 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:30:06.492 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:30:06.501 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:30:06.507 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 40.159ms
+2018-08-03 17:30:06.507 +05:30 [Information] Request finished in 94.1895ms 401 
+2018-08-03 17:30:21.836 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:30:21.837 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:30:21.838 +05:30 [Information] Authorization failed.
+2018-08-03 17:30:21.838 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:30:21.838 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:30:21.838 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:30:21.838 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 1.1577ms
+2018-08-03 17:30:21.839 +05:30 [Information] Request finished in 2.3426ms 401 
+2018-08-03 17:30:25.615 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/  
+2018-08-03 17:30:25.615 +05:30 [Information] Request finished in 0.4224ms 404 
+2018-08-03 17:30:30.719 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/  
+2018-08-03 17:30:30.719 +05:30 [Information] Request finished in 0.4548ms 404 
+2018-08-03 17:30:51.620 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:30:51.620 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:30:51.775 +05:30 [Information] Request finished in 169.2804ms 200 
+2018-08-03 17:30:52.361 +05:30 [Information] Request finished in 750.742ms 404 
+2018-08-03 17:31:28.089 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:31:28.190 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:31:28.216 +05:30 [Information] Authorization failed.
+2018-08-03 17:31:28.230 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:31:28.247 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:31:28.263 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:31:28.278 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 73.2823ms
+2018-08-03 17:31:28.293 +05:30 [Information] Request finished in 197.2818ms 401 
+2018-08-03 17:31:37.712 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:31:37.727 +05:30 [Information] Request finished in 13.4264ms 404 
+2018-08-03 17:32:01.647 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-03 17:32:01.656 +05:30 [Information] Policy execution failed.
+2018-08-03 17:32:01.662 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:32:01.756 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:32:07.421 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:32:12.232 +05:30 [Error] sample demo test
+RBACdemo.POCO.ApiException: sample demo test
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 50
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-03 17:32:12.279 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:32:12.314 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 10548.5316ms
+2018-08-03 17:32:12.384 +05:30 [Information] Request finished in 10675.9728ms 500 application/json; charset=utf-8
+2018-08-03 17:34:20.707 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:34:20.707 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:34:20.867 +05:30 [Information] Request finished in 175.3939ms 200 
+2018-08-03 17:34:21.528 +05:30 [Information] Request finished in 819.0973ms 404 
+2018-08-03 17:34:25.881 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-03 17:34:25.890 +05:30 [Information] Policy execution failed.
+2018-08-03 17:34:25.900 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:34:26.011 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:34:26.023 +05:30 [Information] Policy execution failed.
+2018-08-03 17:34:26.029 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:34:29.241 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:34:32.135 +05:30 [Error] sample demo test
+RBACdemo.POCO.ApiException: sample demo test
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 50
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-03 17:34:32.149 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:34:32.182 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 6155.2121ms
+2018-08-03 17:34:32.193 +05:30 [Information] Request finished in 6311.6382ms 500 application/json; charset=utf-8
+2018-08-03 17:36:13.095 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:36:13.095 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:36:13.243 +05:30 [Information] Request finished in 161.404ms 200 
+2018-08-03 17:36:13.899 +05:30 [Information] Request finished in 738.3379ms 404 
+2018-08-03 17:36:39.577 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:39.678 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:39.706 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:39.720 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:39.736 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:39.752 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:39.765 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 73.718ms
+2018-08-03 17:36:39.780 +05:30 [Information] Request finished in 195.7125ms 401 
+2018-08-03 17:36:50.714 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:50.723 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:50.734 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:50.743 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:50.751 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:50.758 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:50.765 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 34.6415ms
+2018-08-03 17:36:50.783 +05:30 [Information] Request finished in 66.1677ms 401 
+2018-08-03 17:36:53.842 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:53.853 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:53.865 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:53.889 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:53.897 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:53.906 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:53.913 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 53.6378ms
+2018-08-03 17:36:53.923 +05:30 [Information] Request finished in 80.0658ms 401 
+2018-08-03 17:36:57.324 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:57.336 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:57.345 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:57.358 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:57.367 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:57.375 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:57.384 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 39.0817ms
+2018-08-03 17:36:57.396 +05:30 [Information] Request finished in 69.3611ms 401 
+2018-08-03 17:36:58.898 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:58.910 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:58.921 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:58.930 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:58.938 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:58.945 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:58.952 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 35.5056ms
+2018-08-03 17:36:58.964 +05:30 [Information] Request finished in 63.6045ms 401 
+2018-08-03 17:36:59.806 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:36:59.816 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:36:59.830 +05:30 [Information] Authorization failed.
+2018-08-03 17:36:59.837 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:36:59.844 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:36:59.854 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:36:59.864 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 37.3513ms
+2018-08-03 17:36:59.872 +05:30 [Information] Request finished in 76.2109ms 401 
+2018-08-03 17:37:00.680 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 17:37:00.689 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 17:37:00.697 +05:30 [Information] Authorization failed.
+2018-08-03 17:37:00.705 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 17:37:00.714 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 17:37:00.722 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 17:37:00.732 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 33.4109ms
+2018-08-03 17:37:00.836 +05:30 [Information] Request finished in 67.6237ms 401 
+2018-08-03 17:37:11.684 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-03 17:37:11.693 +05:30 [Information] Policy execution failed.
+2018-08-03 17:37:11.701 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:37:11.748 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:37:11.755 +05:30 [Information] Policy execution failed.
+2018-08-03 17:37:11.761 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:37:25.863 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:37:30.753 +05:30 [Error] sample demo test
+RBACdemo.POCO.ApiException: sample demo test
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 52
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-03 17:37:30.765 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:37:30.789 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 19031.8287ms
+2018-08-03 17:37:30.803 +05:30 [Information] Request finished in 19114.5792ms 500 application/json; charset=utf-8
+2018-08-03 17:37:34.813 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/account/Get/1  
+2018-08-03 17:37:34.938 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '07/31/2018 13:06:53', Current time: '08/03/2018 12:07:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-08-03 17:37:34.946 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '07/31/2018 13:06:53', Current time: '08/03/2018 12:07:34'."
+2018-08-03 17:37:34.957 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Get (RBACdemo)"
+2018-08-03 17:37:37.371 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Get (RBACdemo)" with arguments (["1"]) - Validation state: Valid
+2018-08-03 17:38:04.282 +05:30 [Error] Invalid column name 'MenuItemNo'.
+Invalid column name 'TimeStamp'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'MenuItemNo'.
+Invalid column name 'TimeStamp'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.SingleOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RBACdemo.Infrastructure.Repositories.Repository`1.SingleOrDefault(Expression`1 predicate) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\Repository.cs:line 34
+   at RBACdemo.Infrastructure.Services.Service`1.SingleOrDefault(Expression`1 predicate) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\Service.cs:line 55
+   at RBACdemo.Controllers.AccountController.Get(Int32 id) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 60
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:4570dd9b-0a7c-43c7-87e9-3e32682e57f8
+Error Number:207,State:1,Class:16
+2018-08-03 17:38:04.306 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:38:04.314 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Get (RBACdemo)" in 29347.76ms
+2018-08-03 17:38:04.321 +05:30 [Information] Request finished in 29508.5476ms 500 application/json; charset=utf-8
+2018-08-03 17:39:09.147 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:39:09.478 +05:30 [Information] Request finished in 340.1875ms 404 
+2018-08-03 17:39:30.213 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:39:30.213 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:39:30.362 +05:30 [Information] Request finished in 166.3621ms 200 
+2018-08-03 17:39:30.956 +05:30 [Information] Request finished in 735.2374ms 404 
+2018-08-03 17:40:03.731 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-03 17:40:03.741 +05:30 [Information] Policy execution failed.
+2018-08-03 17:40:03.752 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:40:03.850 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:40:03.861 +05:30 [Information] Policy execution failed.
+2018-08-03 17:40:03.868 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:40:08.172 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:40:09.362 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-03 17:40:12.806 +05:30 [Information] Executed DbCommand ("934"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-03 17:40:12.967 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4780.1804ms.
+2018-08-03 17:40:15.055 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:40:15.107 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 11242.3009ms
+2018-08-03 17:40:15.142 +05:30 [Information] Request finished in 11398.0616ms 200 application/json; charset=utf-8
+2018-08-03 17:40:44.958 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Register application/json 99
+2018-08-03 17:40:44.980 +05:30 [Information] Policy execution failed.
+2018-08-03 17:40:44.992 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:40:45.072 +05:30 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Register (RBACdemo)"
+2018-08-03 17:40:45.079 +05:30 [Information] Policy execution failed.
+2018-08-03 17:40:45.086 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:40:46.780 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Register (RBACdemo)" with arguments (["RBACdemo.Dto.RegisterDto"]) - Validation state: Valid
+2018-08-03 17:40:46.935 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-03 17:40:47.098 +05:30 [Information] Executed DbCommand ("138"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-03 17:40:47.610 +05:30 [Information] Executed DbCommand ("285"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+2018-08-03 17:40:47.645 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Register (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 858.6863ms.
+2018-08-03 17:40:49.400 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:40:49.445 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Register (RBACdemo)" in 4365.6819ms
+2018-08-03 17:40:49.454 +05:30 [Information] Request finished in 4494.2826ms 200 application/json; charset=utf-8
+2018-08-03 17:41:26.020 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 106
+2018-08-03 17:41:26.027 +05:30 [Information] Policy execution failed.
+2018-08-03 17:41:26.034 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:41:26.042 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:41:26.050 +05:30 [Information] Policy execution failed.
+2018-08-03 17:41:26.057 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:41:28.871 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:41:35.406 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-03 17:41:35.702 +05:30 [Information] Executed DbCommand ("288"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-03 17:42:32.558 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 63674.8511ms.
+2018-08-03 17:42:33.604 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:42:33.615 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 67557.8385ms
+2018-08-03 17:42:33.654 +05:30 [Information] Request finished in 67597.9016ms 200 application/json; charset=utf-8
+2018-08-03 17:42:46.450 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 104
+2018-08-03 17:42:46.458 +05:30 [Information] Policy execution failed.
+2018-08-03 17:42:46.464 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:42:46.472 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 17:42:46.478 +05:30 [Information] Policy execution failed.
+2018-08-03 17:42:46.486 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-03 17:42:47.907 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 17:42:49.873 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-03 17:42:49.980 +05:30 [Information] Executed DbCommand ("98"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-03 17:42:50.381 +05:30 [Information] Executed DbCommand ("214"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-03 17:42:50.656 +05:30 [Information] Executed DbCommand ("200"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-08-03 17:42:50.698 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-03 17:42:50.723 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2808.7396ms.
+2018-08-03 17:42:52.069 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:42:52.083 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 5603.4383ms
+2018-08-03 17:42:52.093 +05:30 [Information] Request finished in 5641.3071ms 200 application/json; charset=utf-8
+2018-08-03 17:45:30.911 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:45:30.911 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:45:31.059 +05:30 [Information] Request finished in 163.214ms 200 
+2018-08-03 17:45:31.621 +05:30 [Information] Request finished in 724.2864ms 404 
+2018-08-03 17:47:10.092 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 17:47:10.092 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 17:47:10.235 +05:30 [Information] Request finished in 165.5811ms 200 
+2018-08-03 17:47:10.807 +05:30 [Information] Request finished in 728.1417ms 404 
+2018-08-03 17:48:34.616 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/account/Get/1  
+2018-08-03 17:48:34.922 +05:30 [Information] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '07/31/2018 13:06:53', Current time: '08/03/2018 12:18:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2018-08-03 17:48:34.931 +05:30 [Information] "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '07/31/2018 13:06:53', Current time: '08/03/2018 12:18:34'."
+2018-08-03 17:48:35.015 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Get (RBACdemo)"
+2018-08-03 17:48:52.587 +05:30 [Information] Executing ObjectResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 17:48:52.641 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Get (RBACdemo)" in 17610.9731ms
+2018-08-03 17:48:52.678 +05:30 [Information] Request finished in 18050.6191ms 400 application/json; charset=utf-8
+2018-08-03 18:53:50.605 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 18:53:50.604 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 18:53:50.814 +05:30 [Information] Request finished in 207.5266ms 200 
+2018-08-03 18:53:51.584 +05:30 [Information] Request finished in 971.1541ms 404 
+2018-08-03 18:55:44.831 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 104
+2018-08-03 18:55:44.954 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-03 18:55:49.115 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-03 18:55:50.378 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-03 18:55:51.700 +05:30 [Information] Executed DbCommand ("261"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-03 18:55:52.144 +05:30 [Information] Executed DbCommand ("103"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-03 18:55:52.289 +05:30 [Information] Executed DbCommand ("77"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-08-03 18:55:52.326 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-03 18:55:52.362 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3234.6278ms.
+2018-08-03 18:55:54.702 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 18:55:54.747 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 9773.0506ms
+2018-08-03 18:55:54.779 +05:30 [Information] Request finished in 9937.3409ms 200 application/json; charset=utf-8
+2018-08-03 18:57:47.454 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 18:57:47.558 +05:30 [Information] Successfully validated the token.
+2018-08-03 18:57:47.570 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 18:57:47.589 +05:30 [Information] Authorization was successful.
+2018-08-03 18:57:51.416 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 18:57:51.425 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.5373ms.
+2018-08-03 18:57:52.333 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 18:57:52.361 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 4780.1963ms
+2018-08-03 18:57:52.390 +05:30 [Information] Request finished in 4955.7581ms 200 application/json; charset=utf-8
+2018-08-03 18:58:40.872 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 18:58:40.872 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 18:58:41.023 +05:30 [Information] Request finished in 167.0467ms 200 
+2018-08-03 18:58:41.607 +05:30 [Information] Request finished in 734.8994ms 404 
+2018-08-03 18:58:46.525 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 18:58:46.720 +05:30 [Information] Successfully validated the token.
+2018-08-03 18:58:46.790 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 18:58:46.815 +05:30 [Information] Authorization was successful.
+2018-08-03 18:58:50.735 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 18:58:50.749 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.4932ms.
+2018-08-03 18:58:51.776 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 18:58:51.812 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 5005.7393ms
+2018-08-03 18:58:51.849 +05:30 [Information] Request finished in 5297.0736ms 200 application/json; charset=utf-8
+2018-08-03 18:59:15.934 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 18:59:15.934 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 18:59:16.078 +05:30 [Information] Request finished in 158.9521ms 200 
+2018-08-03 18:59:16.648 +05:30 [Information] Request finished in 719.9855ms 404 
+2018-08-03 18:59:42.744 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 18:59:42.957 +05:30 [Information] Successfully validated the token.
+2018-08-03 18:59:43.025 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 18:59:43.051 +05:30 [Information] Authorization was successful.
+2018-08-03 18:59:46.326 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 18:59:46.341 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.5257ms.
+2018-08-03 18:59:47.511 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 18:59:47.552 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 4506.3844ms
+2018-08-03 18:59:47.592 +05:30 [Information] Request finished in 4820.5832ms 200 application/json; charset=utf-8
+2018-08-03 19:00:44.702 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 19:00:44.928 +05:30 [Information] Request finished in 231.7952ms 404 
+2018-08-03 19:00:53.561 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:00:53.651 +05:30 [Information] Successfully validated the token.
+2018-08-03 19:00:53.689 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:00:53.706 +05:30 [Information] Authorization was successful.
+2018-08-03 19:00:53.726 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 19:00:53.733 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.3661ms.
+2018-08-03 19:00:53.880 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 19:00:53.903 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 207.9421ms
+2018-08-03 19:00:53.904 +05:30 [Information] Request finished in 343.379ms 200 application/json; charset=utf-8
+2018-08-03 19:00:54.912 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:00:54.914 +05:30 [Information] Successfully validated the token.
+2018-08-03 19:00:54.914 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:00:54.915 +05:30 [Information] Authorization was successful.
+2018-08-03 19:00:54.915 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 19:00:54.916 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.045ms.
+2018-08-03 19:00:54.916 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 19:00:54.917 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 2.1847ms
+2018-08-03 19:00:54.917 +05:30 [Information] Request finished in 4.6587ms 200 application/json; charset=utf-8
+2018-08-03 19:00:55.875 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:00:55.875 +05:30 [Information] Successfully validated the token.
+2018-08-03 19:00:55.876 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:00:55.876 +05:30 [Information] Authorization was successful.
+2018-08-03 19:00:55.877 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 19:00:55.877 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0069ms.
+2018-08-03 19:00:55.877 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 19:00:55.877 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.7667ms
+2018-08-03 19:00:55.877 +05:30 [Information] Request finished in 2.8945ms 200 application/json; charset=utf-8
+2018-08-03 19:01:02.842 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:01:02.843 +05:30 [Information] "Bearer" was not authenticated. Failure message: "No SecurityTokenValidator available for token: e yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MzMzMDYzNTIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzM1IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMzUifQ.ZRI_F9gncIm5Kh8BLdNXbj_FlhVL1dIHf6FVBmWRtPs"
+2018-08-03 19:01:02.843 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:01:02.843 +05:30 [Information] Authorization failed.
+2018-08-03 19:01:02.850 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:01:02.858 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:01:02.867 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:01:02.868 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 24.5506ms
+2018-08-03 19:01:02.868 +05:30 [Information] Request finished in 26.2913ms 401 
+2018-08-03 19:01:08.671 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:01:08.671 +05:30 [Information] Successfully validated the token.
+2018-08-03 19:01:08.671 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:01:08.672 +05:30 [Information] Authorization was successful.
+2018-08-03 19:01:08.672 +05:30 [Information] Executing action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" - Validation state: Valid
+2018-08-03 19:01:08.672 +05:30 [Information] Executed action method "RBACdemo.Controllers.ValuesController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0072ms.
+2018-08-03 19:01:08.672 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-03 19:01:08.672 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.6783ms
+2018-08-03 19:01:08.672 +05:30 [Information] Request finished in 1.6811ms 200 application/json; charset=utf-8
+2018-08-03 19:02:41.420 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 19:02:41.421 +05:30 [Information] Policy execution failed.
+2018-08-03 19:02:41.421 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:02:41.422 +05:30 [Information] Request finished in 2.324ms 404 
+2018-08-03 19:03:03.483 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values  
+2018-08-03 19:03:03.483 +05:30 [Information] Policy execution failed.
+2018-08-03 19:03:03.483 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:03:03.484 +05:30 [Information] Request finished in 0.8111ms 404 
+2018-08-03 19:03:32.051 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:03:32.051 +05:30 [Information] Policy execution failed.
+2018-08-03 19:03:32.051 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:03:32.052 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:03:32.052 +05:30 [Information] Policy execution failed.
+2018-08-03 19:03:32.052 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:03:32.052 +05:30 [Information] Authorization failed.
+2018-08-03 19:03:32.053 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:03:32.053 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:03:32.053 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:03:32.053 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 1.4487ms
+2018-08-03 19:03:32.054 +05:30 [Information] Request finished in 2.5717ms 401 
+2018-08-03 19:03:47.895 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:03:47.895 +05:30 [Information] Policy execution failed.
+2018-08-03 19:03:47.895 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:03:47.895 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:03:47.895 +05:30 [Information] Policy execution failed.
+2018-08-03 19:03:47.896 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:03:47.896 +05:30 [Information] Authorization failed.
+2018-08-03 19:03:47.896 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:03:47.896 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:03:47.897 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:03:47.897 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 1.4884ms
+2018-08-03 19:03:47.898 +05:30 [Information] Request finished in 2.8862ms 401 
+2018-08-03 19:04:13.974 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:04:13.975 +05:30 [Information] Policy execution failed.
+2018-08-03 19:04:13.975 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:04:13.975 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:04:13.975 +05:30 [Information] Policy execution failed.
+2018-08-03 19:04:13.975 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:04:13.975 +05:30 [Information] Authorization failed.
+2018-08-03 19:04:13.975 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:04:13.976 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:04:13.976 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:04:13.976 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.9968ms
+2018-08-03 19:04:13.976 +05:30 [Information] Request finished in 1.9979ms 401 
+2018-08-03 19:04:42.750 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:04:42.750 +05:30 [Information] Policy execution failed.
+2018-08-03 19:04:42.750 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:04:42.750 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:04:42.751 +05:30 [Information] Policy execution failed.
+2018-08-03 19:04:42.751 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:04:42.751 +05:30 [Information] Authorization failed.
+2018-08-03 19:04:42.751 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:04:42.751 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:04:42.751 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:04:42.751 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.8892ms
+2018-08-03 19:04:42.752 +05:30 [Information] Request finished in 1.8864ms 401 
+2018-08-03 19:05:29.384 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/values/get  
+2018-08-03 19:05:29.384 +05:30 [Information] Policy execution failed.
+2018-08-03 19:05:29.384 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:05:29.385 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)"
+2018-08-03 19:05:29.385 +05:30 [Information] Policy execution failed.
+2018-08-03 19:05:29.385 +05:30 [Information] Request origin "https://www.test-cors.org" does not have permission to access the resource.
+2018-08-03 19:05:29.385 +05:30 [Information] Authorization failed.
+2018-08-03 19:05:29.385 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-03 19:05:29.386 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-03 19:05:29.386 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-03 19:05:29.386 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.9852ms
+2018-08-03 19:05:29.386 +05:30 [Information] Request finished in 2.2204ms 401 

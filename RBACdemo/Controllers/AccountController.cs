@@ -12,6 +12,7 @@ using RBACdemo.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using RBACdemo.Filters;
 using RBACdemo.POCO;
+using Microsoft.AspNetCore.Cors;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -21,6 +22,7 @@ namespace RBACdemo.Controllers
     [Route("api/[controller]/[action]")]
     //[ServiceFilter(typeof(ValidateModelAttribute))]
     [AllowAnonymous]
+   
     public class AccountController : BaseController
     {
         IAccountService _svc;
@@ -47,8 +49,8 @@ namespace RBACdemo.Controllers
         [HttpPost]
         public async Task<LoginResultDto> Login([FromBody]LoginDto user)
         {
-            throw new ApiException("sample demo test", 500);
-            //return await _svc.SignIn(user);
+           // throw new ApiException("sample demo test", 500);
+            return await _svc.SignIn(user);
 
         }
         // GET api/<controller>/5
