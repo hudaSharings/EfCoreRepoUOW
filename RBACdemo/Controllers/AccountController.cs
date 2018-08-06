@@ -26,21 +26,12 @@ namespace RBACdemo.Controllers
     public class AccountController : BaseController
     {
         IAccountService _svc;
-
-        IMenuItemService _mnuSvc;
-
-        public AccountController(IAccountService svc, IUserService usersvc, IMenuItemService mnuSvc)
+        public AccountController(IAccountService svc)
         {
             _svc = svc;
-            _mnuSvc = mnuSvc;
+            
         }
-        // GET: api/<controller>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-        [HttpPost]
+       [HttpPost]
         public async Task<IdentityResult> Register([FromBody]RegisterDto user)
         {
             return await _svc.CreateUserAsync(user, user.password);
@@ -53,29 +44,6 @@ namespace RBACdemo.Controllers
             return await _svc.SignIn(user);
 
         }
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return _mnuSvc.SingleOrDefault(x => x.CreatedBy == id)?.Name;
-        }
-
-        // POST api/<controller>
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+     
     }
 }

@@ -648,3 +648,11 @@ WHERE [userRole].[UserId] = @__userId_0"
 2018-08-03 19:05:29.386 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
 2018-08-03 19:05:29.386 +05:30 [Information] Executed action "RBACdemo.Controllers.ValuesController.Get (RBACdemo)" in 0.9852ms
 2018-08-03 19:05:29.386 +05:30 [Information] Request finished in 2.2204ms 401 
+2018-08-03 19:35:09.649 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-03 19:35:09.649 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-03 19:35:09.832 +05:30 [Information] Request finished in 190.3399ms 200 
+2018-08-03 19:35:10.555 +05:30 [Information] Request finished in 888.3311ms 302 
+2018-08-03 19:35:10.565 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-03 19:35:10.825 +05:30 [Information] Request finished in 256.4875ms 200 text/html; charset=utf-8
+2018-08-03 19:35:11.555 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-03 19:35:13.683 +05:30 [Information] Request finished in 2126.598ms 200 application/json; charset=utf-8
