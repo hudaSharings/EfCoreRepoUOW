@@ -9,7 +9,9 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
   <li>Fluent Validator as Model Validator</li> 
   <li>Action filter for ModelState Validation</li>
   <li>Action filter for Exception Handling</li>
-  <li>Logger</li>
+  <li>Serilog Logger</li>
+  <li>option to enabling CORS  for Specific Origins</li>
+  <li>Swagger UI- api helper</li>
   </ul>
 </li>
 <li> JWT based Authentication </li>
