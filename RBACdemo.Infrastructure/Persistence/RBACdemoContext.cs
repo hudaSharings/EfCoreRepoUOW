@@ -24,10 +24,12 @@ namespace RBACdemo.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new MenuItemConfig());
+            builder.ApplyConfiguration(new TenantConfig());
             builder.HasSequence<int>("OrderNumbers", schema: "shared")
-                .StartsAt(100).IncrementsBy(1);
+                .StartsAt(1).IncrementsBy(1);
+            builder.HasSequence<int>("TenantNumbers", schema: "shared")
+                .StartsAt(1).IncrementsBy(1);
 
-           
             base.OnModelCreating(builder);
         }
     }

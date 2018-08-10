@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RBACdemo.Infrastructure;
 using RBACdemo.Infrastructure.Persistence;
 
 namespace RBACdemo.Infrastructure.Migrations
@@ -18,7 +17,8 @@ namespace RBACdemo.Infrastructure.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("Relational:Sequence:shared.OrderNumbers", "'OrderNumbers', 'shared', '100', '1', '', '', 'Int32', 'False'")
+                .HasAnnotation("Relational:Sequence:shared.OrderNumbers", "'OrderNumbers', 'shared', '1', '1', '', '', 'Int32', 'False'")
+                .HasAnnotation("Relational:Sequence:shared.TenantNumbers", "'TenantNumbers', 'shared', '1', '1', '', '', 'Int32', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -164,6 +164,8 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<string>("SecurityStamp");
 
+                    b.Property<long?>("TenantNo");
+
                     b.Property<bool>("TwoFactorEnabled");
 
                     b.Property<string>("UserName")
@@ -178,6 +180,8 @@ namespace RBACdemo.Infrastructure.Migrations
                         .IsUnique()
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("TenantNo");
 
                     b.ToTable("AspNetUsers");
                 });
@@ -219,6 +223,45 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MenuItems");
+                });
+
+            modelBuilder.Entity("RBACdemo.Core.Domain.Tenant", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Companyname");
+
+                    b.Property<int>("CreatedBy");
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("DomainName");
+
+                    b.Property<DateTime>("FromDate");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<bool>("IsDisbalbed");
+
+                    b.Property<int>("TenantNo")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValueSql("NEXT VALUE FOR shared.TenantNumbers");
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<DateTime>("Todate");
+
+                    b.Property<int>("UpdatedBy");
+
+                    b.Property<DateTime>("UpdatedOn");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tenant");
                 });
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
@@ -299,6 +342,13 @@ namespace RBACdemo.Infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationUser", b =>
+                {
+                    b.HasOne("RBACdemo.Core.Domain.Tenant", "Tenant")
+                        .WithMany()
+                        .HasForeignKey("TenantNo");
                 });
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
