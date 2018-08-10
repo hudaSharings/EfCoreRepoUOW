@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RBACdemo.Infrastructure;
+using RBACdemo.Infrastructure.Persistence;
 
 namespace RBACdemo.Infrastructure.Migrations
 {

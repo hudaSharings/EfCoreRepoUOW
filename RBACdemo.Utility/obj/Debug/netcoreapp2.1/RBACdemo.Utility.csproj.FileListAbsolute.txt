@@ -1,7 +1,6 @@
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.deps.json
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.dll
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.pdb
-C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.csprojAssemblyReference.cache
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.csproj.CoreCompileInputs.cache
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.AssemblyInfoInputs.cache
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.AssemblyInfo.cs

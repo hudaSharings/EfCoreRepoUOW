@@ -2,14 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.Options;
-using RBACdemo.Core;
+using RBACdemo.Core.Persistence;
 using RBACdemo.Core.Settings;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace RBACdemo.Infrastructure
+namespace RBACdemo.Infrastructure.Persistence
 {
     public class RBACdemoContextFactory :IContextFactory
     {

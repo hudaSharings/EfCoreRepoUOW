@@ -6,6 +6,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using RBACdemo.Utility;
+using RBACdemo.Core.Persistence;
+
 namespace RBACdemo.Infrastructure
 {
     public class SpHelper

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RBACdemo.Core;
+using RBACdemo.Core.Persistence;
 using RBACdemo.Core.Repositories;
 using System;
 using System.Collections.Generic;

@@ -1,0 +1,65 @@
+2018-08-07 13:54:48.261 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-07 13:54:48.261 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-07 13:54:48.473 +05:30 [Information] Request finished in 224.7875ms 200 
+2018-08-07 13:54:49.161 +05:30 [Information] Request finished in 916.1599ms 302 
+2018-08-07 13:54:49.181 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-07 13:54:49.455 +05:30 [Information] Request finished in 266.9068ms 200 text/html; charset=utf-8
+2018-08-07 13:54:49.527 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/typography.css  
+2018-08-07 13:54:49.572 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/screen.css  
+2018-08-07 13:54:49.578 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/object-assign-pollyfill.js  
+2018-08-07 13:54:49.621 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/reset.css  
+2018-08-07 13:54:49.662 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery-1.8.0.min.js  
+2018-08-07 13:54:49.702 +05:30 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2018-08-07 13:54:49.711 +05:30 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2018-08-07 13:54:49.722 +05:30 [Information] Request finished in 159.9708ms 304 application/javascript
+2018-08-07 13:54:49.742 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.slideto.min.js  
+2018-08-07 13:54:49.758 +05:30 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2018-08-07 13:54:49.776 +05:30 [Information] The file "/css/reset.css" was not modified
+2018-08-07 13:54:49.821 +05:30 [Information] Request finished in 253.6039ms 304 text/css
+2018-08-07 13:54:49.859 +05:30 [Information] Request finished in 39.5522ms 304 application/javascript
+2018-08-07 13:54:49.891 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/handlebars-4.0.5.js  
+2018-08-07 13:54:49.907 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.wiggle.min.js  
+2018-08-07 13:54:49.916 +05:30 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2018-08-07 13:54:49.925 +05:30 [Information] Request finished in 176.2918ms 304 application/javascript
+2018-08-07 13:54:49.939 +05:30 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2018-08-07 13:54:49.946 +05:30 [Information] Request finished in 57.0461ms 304 application/javascript
+2018-08-07 13:54:49.949 +05:30 [Information] The file "/css/typography.css" was not modified
+2018-08-07 13:54:49.959 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/lodash.min.js  
+2018-08-07 13:54:49.975 +05:30 [Information] Request finished in 443.0242ms 304 text/css
+2018-08-07 13:54:49.981 +05:30 [Information] Request finished in 63.2887ms 304 application/javascript
+2018-08-07 13:54:49.987 +05:30 [Information] The file "/lib/lodash.min.js" was not modified
+2018-08-07 13:54:50.000 +05:30 [Information] Request finished in 37.443ms 304 application/javascript
+2018-08-07 13:54:50.008 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/swagger-ui.js  
+2018-08-07 13:54:50.019 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack.js  
+2018-08-07 13:54:50.022 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/backbone-min.js  
+2018-08-07 13:54:50.030 +05:30 [Information] The file "/swagger-ui.js" was not modified
+2018-08-07 13:54:50.037 +05:30 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2018-08-07 13:54:50.041 +05:30 [Information] The file "/lib/backbone-min.js" was not modified
+2018-08-07 13:54:50.050 +05:30 [Information] Request finished in 32.867ms 304 application/javascript
+2018-08-07 13:54:50.064 +05:30 [Information] Request finished in 52.4621ms 304 application/javascript
+2018-08-07 13:54:50.083 +05:30 [Information] Request finished in 30.3399ms 304 application/javascript
+2018-08-07 13:54:50.090 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack_extended.js  
+2018-08-07 13:54:50.102 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/marked.js  
+2018-08-07 13:54:50.106 +05:30 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2018-08-07 13:54:50.112 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.ba-bbq.min.js  
+2018-08-07 13:54:50.118 +05:30 [Information] The file "/lib/marked.js" was not modified
+2018-08-07 13:54:50.123 +05:30 [Information] Request finished in 49.2442ms 304 application/javascript
+2018-08-07 13:54:50.133 +05:30 [Information] Request finished in 27.8188ms 304 application/javascript
+2018-08-07 13:54:50.145 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jsoneditor.min.js  
+2018-08-07 13:54:50.157 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/swagger-oauth.js  
+2018-08-07 13:54:50.165 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/logo_small.png  
+2018-08-07 13:54:50.167 +05:30 [Information] The file "/lib/swagger-oauth.js" was not modified
+2018-08-07 13:54:50.172 +05:30 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2018-08-07 13:54:50.179 +05:30 [Information] Request finished in 45.7531ms 304 application/javascript
+2018-08-07 13:54:50.185 +05:30 [Information] The file "/images/logo_small.png" was not modified
+2018-08-07 13:54:50.189 +05:30 [Information] Request finished in 91.4744ms 304 application/javascript
+2018-08-07 13:54:50.203 +05:30 [Information] Request finished in 40.0528ms 304 image/png
+2018-08-07 13:54:50.208 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/print.css  
+2018-08-07 13:54:50.222 +05:30 [Information] The file "/css/print.css" was not modified
+2018-08-07 13:54:50.225 +05:30 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2018-08-07 13:54:50.239 +05:30 [Information] Request finished in 36.2124ms 304 text/css
+2018-08-07 13:54:50.257 +05:30 [Information] Request finished in 302.863ms 304 application/javascript
+2018-08-07 13:54:50.277 +05:30 [Information] The file "/css/screen.css" was not modified
+2018-08-07 13:54:50.312 +05:30 [Information] Request finished in 746.4937ms 304 text/css
+2018-08-07 13:54:50.895 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-07 13:54:52.512 +05:30 [Information] Request finished in 1603.2086ms 200 application/json; charset=utf-8

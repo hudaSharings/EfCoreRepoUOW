@@ -23,4 +23,3 @@ C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcor
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.AssemblyInfo.cs
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.dll
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.pdb
-C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Dto\obj\Debug\netcoreapp2.1\RBACdemo.Dto.csprojAssemblyReference.cache

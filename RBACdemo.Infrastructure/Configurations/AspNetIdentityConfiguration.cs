@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RBACdemo.Core.Domain;
+using RBACdemo.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Text;

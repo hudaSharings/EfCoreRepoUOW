@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using RBACdemo.Core.Domain;
 using RBACdemo.Infrastructure.EntityConfigs;
 
-namespace RBACdemo.Infrastructure
+namespace RBACdemo.Infrastructure.Persistence
 {
     public class RBACdemoContext : IdentityDbContext<ApplicationUser>
     {

@@ -1,9 +1,10 @@
-﻿using RBACdemo.Core;
+﻿using RBACdemo.Core.Persistence;
 using RBACdemo.Core.Domain;
 using RBACdemo.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RBACdemo.Infrastructure.Persistence;
 
 namespace RBACdemo.Infrastructure.Repositories
 {
