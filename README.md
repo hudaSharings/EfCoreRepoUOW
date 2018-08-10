@@ -14,6 +14,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
   <li>Swagger UI- api helper</li>
   </ul>
 </li>
+<li> Generic Controller </li>
 <li> JWT based Authentication </li>
 <li>AspNetCore Identity with EF Core</li>
 <li>Context Factory for Multi tenants</li>
