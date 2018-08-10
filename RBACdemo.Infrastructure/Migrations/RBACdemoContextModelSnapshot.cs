@@ -164,7 +164,9 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<string>("SecurityStamp");
 
-                    b.Property<long?>("TenantNo");
+                    b.Property<long?>("TenantId");
+
+                    b.Property<int?>("TenantNo");
 
                     b.Property<bool>("TwoFactorEnabled");
 
@@ -181,7 +183,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("TenantNo");
+                    b.HasIndex("TenantId");
 
                     b.ToTable("AspNetUsers");
                 });
@@ -348,7 +350,7 @@ namespace RBACdemo.Infrastructure.Migrations
                 {
                     b.HasOne("RBACdemo.Core.Domain.Tenant", "Tenant")
                         .WithMany()
-                        .HasForeignKey("TenantNo");
+                        .HasForeignKey("TenantId");
                 });
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>

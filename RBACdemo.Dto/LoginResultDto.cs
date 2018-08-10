@@ -8,6 +8,6 @@ namespace RBACdemo.Dto
     {
         public string username { get; set; }
         public string Token { get; set; }
-        public DateTime Expiration { get; set; }
+        public DateTime TokenExpiration { get; set; }
     }
 }

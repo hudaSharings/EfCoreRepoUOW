@@ -1,0 +1,544 @@
+2018-08-10 15:25:30.834 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 15:25:31.538 +05:30 [Information] Request finished in 712.466ms 302 
+2018-08-10 17:31:01.370 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 17:31:01.385 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 17:31:01.588 +05:30 [Information] Request finished in 236.5979ms 200 
+2018-08-10 17:31:02.315 +05:30 [Information] Request finished in 961.7551ms 302 
+2018-08-10 17:31:02.339 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 17:31:02.659 +05:30 [Information] Request finished in 320.2112ms 200 text/html; charset=utf-8
+2018-08-10 17:31:02.748 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/typography.css  
+2018-08-10 17:31:02.773 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/reset.css  
+2018-08-10 17:31:02.785 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/screen.css  
+2018-08-10 17:31:02.804 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery-1.8.0.min.js  
+2018-08-10 17:31:02.814 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/object-assign-pollyfill.js  
+2018-08-10 17:31:02.925 +05:30 [Information] The file "/css/screen.css" was not modified
+2018-08-10 17:31:02.930 +05:30 [Information] The file "/lib/object-assign-pollyfill.js" was not modified
+2018-08-10 17:31:02.937 +05:30 [Information] The file "/lib/jquery-1.8.0.min.js" was not modified
+2018-08-10 17:31:02.968 +05:30 [Information] The file "/css/reset.css" was not modified
+2018-08-10 17:31:02.977 +05:30 [Information] Request finished in 188.6919ms 304 application/javascript
+2018-08-10 17:31:02.985 +05:30 [Information] Request finished in 234.4636ms 304 text/css
+2018-08-10 17:31:03.012 +05:30 [Information] Request finished in 131.9785ms 304 application/javascript
+2018-08-10 17:31:03.027 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.slideto.min.js  
+2018-08-10 17:31:03.047 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.wiggle.min.js  
+2018-08-10 17:31:03.053 +05:30 [Information] Request finished in 219.6414ms 304 text/css
+2018-08-10 17:31:03.056 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/handlebars-4.0.5.js  
+2018-08-10 17:31:03.072 +05:30 [Information] The file "/css/typography.css" was not modified
+2018-08-10 17:31:03.076 +05:30 [Information] The file "/lib/jquery.slideto.min.js" was not modified
+2018-08-10 17:31:03.079 +05:30 [Information] The file "/lib/jquery.wiggle.min.js" was not modified
+2018-08-10 17:31:03.089 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.ba-bbq.min.js  
+2018-08-10 17:31:03.093 +05:30 [Information] Request finished in 71.661ms 304 application/javascript
+2018-08-10 17:31:03.099 +05:30 [Information] The file "/lib/handlebars-4.0.5.js" was not modified
+2018-08-10 17:31:03.106 +05:30 [Information] Request finished in 91.4741ms 304 application/javascript
+2018-08-10 17:31:03.120 +05:30 [Information] Request finished in 86.1164ms 304 application/javascript
+2018-08-10 17:31:03.137 +05:30 [Information] The file "/lib/jquery.ba-bbq.min.js" was not modified
+2018-08-10 17:31:03.149 +05:30 [Information] Request finished in 338.3325ms 304 text/css
+2018-08-10 17:31:03.156 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack_extended.js  
+2018-08-10 17:31:03.167 +05:30 [Information] Request finished in 81.3259ms 304 application/javascript
+2018-08-10 17:31:03.184 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/lodash.min.js  
+2018-08-10 17:31:03.215 +05:30 [Information] The file "/lib/highlight.9.1.0.pack_extended.js" was not modified
+2018-08-10 17:31:03.224 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack.js  
+2018-08-10 17:31:03.231 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/swagger-ui.js  
+2018-08-10 17:31:03.238 +05:30 [Information] Request finished in 84.0896ms 304 application/javascript
+2018-08-10 17:31:03.242 +05:30 [Information] The file "/lib/highlight.9.1.0.pack.js" was not modified
+2018-08-10 17:31:03.250 +05:30 [Information] The file "/lib/lodash.min.js" was not modified
+2018-08-10 17:31:03.262 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jsoneditor.min.js  
+2018-08-10 17:31:03.265 +05:30 [Information] Request finished in 108.281ms 304 application/javascript
+2018-08-10 17:31:03.276 +05:30 [Information] Request finished in 161.9526ms 304 application/javascript
+2018-08-10 17:31:03.279 +05:30 [Information] The file "/swagger-ui.js" was not modified
+2018-08-10 17:31:03.290 +05:30 [Information] The file "/lib/jsoneditor.min.js" was not modified
+2018-08-10 17:31:03.299 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/swagger-oauth.js  
+2018-08-10 17:31:03.305 +05:30 [Information] Request finished in 44.786ms 304 application/javascript
+2018-08-10 17:31:03.308 +05:30 [Information] Request finished in 114.9735ms 304 application/javascript
+2018-08-10 17:31:03.325 +05:30 [Information] The file "/lib/swagger-oauth.js" was not modified
+2018-08-10 17:31:03.337 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/marked.js  
+2018-08-10 17:31:03.340 +05:30 [Information] Request finished in 49.4931ms 304 application/javascript
+2018-08-10 17:31:03.374 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/backbone-min.js  
+2018-08-10 17:31:03.386 +05:30 [Information] The file "/lib/marked.js" was not modified
+2018-08-10 17:31:03.397 +05:30 [Information] Request finished in 110.0569ms 304 application/javascript
+2018-08-10 17:31:03.410 +05:30 [Information] The file "/lib/backbone-min.js" was not modified
+2018-08-10 17:31:03.421 +05:30 [Information] Request finished in 260.4689ms 304 application/javascript
+2018-08-10 17:31:03.478 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/logo_small.png  
+2018-08-10 17:31:03.486 +05:30 [Information] The file "/images/logo_small.png" was not modified
+2018-08-10 17:31:03.493 +05:30 [Information] Request finished in 15.3078ms 304 image/png
+2018-08-10 17:31:03.541 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/print.css  
+2018-08-10 17:31:03.550 +05:30 [Information] The file "/css/print.css" was not modified
+2018-08-10 17:31:03.558 +05:30 [Information] Request finished in 15.9872ms 304 text/css
+2018-08-10 17:31:03.997 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 17:31:04.104 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-32x32.png  
+2018-08-10 17:31:04.196 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-16x16.png  
+2018-08-10 17:31:04.246 +05:30 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-08-10 17:31:04.279 +05:30 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-08-10 17:31:04.279 +05:30 [Information] Request finished in 150.3351ms 200 image/png
+2018-08-10 17:31:04.295 +05:30 [Information] Request finished in 75.7166ms 200 image/png
+2018-08-10 17:31:06.095 +05:30 [Information] Request finished in 2077.9831ms 200 application/json; charset=utf-8
+2018-08-10 17:31:51.879 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/throbber.gif  
+2018-08-10 17:31:51.889 +05:30 [Information] Sending file. Request path: '"/images/throbber.gif"'. Physical path: '"N/A"'
+2018-08-10 17:31:51.897 +05:30 [Information] Request finished in 23.7348ms 200 image/gif
+2018-08-10 17:38:04.173 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/User/Get  
+2018-08-10 17:38:04.279 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:38:04.339 +05:30 [Information] Authorization failed.
+2018-08-10 17:38:04.353 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-10 17:38:04.374 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-10 17:38:04.390 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-10 17:38:04.412 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 110.1469ms
+2018-08-10 17:38:04.419 +05:30 [Information] Request finished in 250.2432ms 401 
+2018-08-10 17:38:21.595 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/User/Get  
+2018-08-10 17:38:21.613 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:38:21.652 +05:30 [Information] Authorization failed.
+2018-08-10 17:38:21.660 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-10 17:38:21.669 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-10 17:38:21.676 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-10 17:38:21.684 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 52.6177ms
+2018-08-10 17:38:21.697 +05:30 [Information] Request finished in 103.072ms 401 
+2018-08-10 17:39:17.010 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 104
+2018-08-10 17:39:17.018 +05:30 [Information] Policy execution failed.
+2018-08-10 17:39:17.022 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:39:17.133 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-10 17:39:17.133 +05:30 [Information] Policy execution failed.
+2018-08-10 17:39:17.133 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:39:23.095 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-10 17:39:23.843 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-10 17:39:26.318 +05:30 [Error] Failed executing DbCommand ("374"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16
+2018-08-10 17:39:26.423 +05:30 [Error] An exception occurred in the database while iterating the results of a query for context type '"RBACdemo.Infrastructure.Persistence.RBACdemoContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16"
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16
+2018-08-10 17:39:26.496 +05:30 [Error] An exception occurred in the database while iterating the results of a query for context type '"RBACdemo.Infrastructure.Persistence.RBACdemoContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16"
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16
+2018-08-10 17:39:42.192 +05:30 [Error] Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at RBACdemo.Infrastructure.Repositories.AccountRepository.SignIn(LoginDto login) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\AccountRepository.cs:line 35
+   at RBACdemo.Infrastructure.Services.AccountService.SignIn(LoginDto login) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\AccountService.cs:line 44
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 44
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:1891e60e-02a3-4646-96e4-b45bb4271ed7
+Error Number:207,State:1,Class:16
+2018-08-10 17:39:42.208 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 17:39:42.221 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 25107.5322ms
+2018-08-10 17:39:42.241 +05:30 [Information] Request finished in 25227.102ms 500 application/json; charset=utf-8
+2018-08-10 17:42:05.916 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 17:42:05.916 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 17:42:06.055 +05:30 [Information] Request finished in 155.6133ms 200 
+2018-08-10 17:42:06.558 +05:30 [Information] Request finished in 659.2394ms 302 
+2018-08-10 17:42:06.585 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 17:42:06.748 +05:30 [Information] Request finished in 162.2774ms 200 text/html; charset=utf-8
+2018-08-10 17:42:07.284 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 17:42:09.006 +05:30 [Information] Request finished in 1696.8462ms 200 application/json; charset=utf-8
+2018-08-10 17:42:18.705 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/User/Get  
+2018-08-10 17:42:18.758 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:42:18.786 +05:30 [Information] Authorization failed.
+2018-08-10 17:42:18.799 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-10 17:42:18.816 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-10 17:42:18.832 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-10 17:42:18.845 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 73.7607ms
+2018-08-10 17:42:18.852 +05:30 [Information] Request finished in 157.4451ms 401 
+2018-08-10 17:42:37.483 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/User/Get  
+2018-08-10 17:42:37.495 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:42:37.506 +05:30 [Information] Authorization failed.
+2018-08-10 17:42:37.516 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-10 17:42:37.569 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-10 17:42:37.580 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-10 17:42:37.586 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 85.3606ms
+2018-08-10 17:42:37.599 +05:30 [Information] Request finished in 162.5704ms 401 
+2018-08-10 17:43:25.872 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 104
+2018-08-10 17:43:25.889 +05:30 [Information] Policy execution failed.
+2018-08-10 17:43:25.889 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:43:25.974 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-10 17:43:25.990 +05:30 [Information] Policy execution failed.
+2018-08-10 17:43:25.990 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:43:28.707 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-10 17:43:46.770 +05:30 [Error] The relationship from 'ApplicationUser.Tenant' to 'Tenant' with foreign key properties {'TenantNo' : int} cannot target the primary key {'Id' : long} because it is not compatible. Configure a principal key or a set of compatible foreign key properties for this relationship.
+System.InvalidOperationException: The relationship from 'ApplicationUser.Tenant' to 'Tenant' with foreign key properties {'TenantNo' : int} cannot target the primary key {'Id' : long} because it is not compatible. Configure a principal key or a set of compatible foreign key properties for this relationship.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNoShadowKeys(IModel model)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model)
+   at Microsoft.EntityFrameworkCore.Internal.SqlServerModelValidator.Validate(IModel model)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, IConventionSetBuilder conventionSetBuilder, IModelValidator validator)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.<>c__DisplayClass5_0.<GetModel>b__1()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, IConventionSetBuilder conventionSetBuilder, IModelValidator validator)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel()
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__7_1(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.get_UsersSet()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.get_Users()
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.FindByNameAsync(String normalizedUserName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at RBACdemo.Infrastructure.Repositories.AccountRepository.SignIn(LoginDto login) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\AccountRepository.cs:line 35
+   at RBACdemo.Infrastructure.Services.AccountService.SignIn(LoginDto login) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\AccountService.cs:line 44
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 44
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-10 17:43:46.795 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 17:43:46.812 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 20846.6471ms
+2018-08-10 17:43:46.820 +05:30 [Information] Request finished in 20971.2127ms 500 application/json; charset=utf-8
+2018-08-10 17:52:42.659 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 17:52:42.659 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 17:52:42.806 +05:30 [Information] Request finished in 162.4512ms 200 
+2018-08-10 17:52:43.341 +05:30 [Information] Request finished in 688.3319ms 302 
+2018-08-10 17:52:43.351 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 17:52:43.518 +05:30 [Information] Request finished in 164.4058ms 200 text/html; charset=utf-8
+2018-08-10 17:52:43.852 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 17:52:45.631 +05:30 [Information] Request finished in 1753.9649ms 200 application/json; charset=utf-8
+2018-08-10 17:53:09.640 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 104
+2018-08-10 17:53:09.650 +05:30 [Information] Policy execution failed.
+2018-08-10 17:53:09.658 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:53:09.773 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-10 17:53:09.784 +05:30 [Information] Policy execution failed.
+2018-08-10 17:53:09.818 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-10 17:53:14.401 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-10 17:53:14.853 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-10 17:53:15.645 +05:30 [Information] Executed DbCommand ("157"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TenantId], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-10 17:53:16.314 +05:30 [Information] Executed DbCommand ("214"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-10 17:53:16.437 +05:30 [Information] Executed DbCommand ("58"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-08-10 17:53:16.489 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-10 17:53:19.795 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5393.6329ms.
+2018-08-10 17:53:48.213 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 17:53:50.260 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 40466.128ms
+2018-08-10 17:53:50.285 +05:30 [Information] Request finished in 40636.6036ms 200 application/json; charset=utf-8
+2018-08-10 17:54:31.394 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/users/get  
+2018-08-10 17:54:31.443 +05:30 [Information] Successfully validated the token.
+2018-08-10 17:54:31.520 +05:30 [Information] Request finished in 124.01ms 404 
+2018-08-10 17:54:42.334 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get  
+2018-08-10 17:54:42.341 +05:30 [Information] Successfully validated the token.
+2018-08-10 17:54:42.352 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:54:42.368 +05:30 [Information] Authorization was successful.
+2018-08-10 17:54:44.957 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" - Validation state: Valid
+2018-08-10 17:56:41.948 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 17:56:41.948 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 17:56:42.093 +05:30 [Information] Request finished in 155.3866ms 200 
+2018-08-10 17:56:42.625 +05:30 [Information] Request finished in 685.6502ms 302 
+2018-08-10 17:56:42.647 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 17:56:42.822 +05:30 [Information] Request finished in 173.0692ms 200 text/html; charset=utf-8
+2018-08-10 17:56:43.151 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 17:56:44.775 +05:30 [Information] Request finished in 1626.9448ms 200 application/json; charset=utf-8
+2018-08-10 17:57:25.853 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get  
+2018-08-10 17:57:25.882 +05:30 [Information] Successfully validated the token.
+2018-08-10 17:57:25.955 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 17:57:25.983 +05:30 [Information] Authorization was successful.
+2018-08-10 17:57:33.673 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" - Validation state: Valid
+2018-08-10 18:00:27.069 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 18:00:27.069 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 18:00:27.214 +05:30 [Information] Request finished in 167.4877ms 200 
+2018-08-10 18:00:27.722 +05:30 [Information] Request finished in 669.9431ms 302 
+2018-08-10 18:00:27.729 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 18:00:27.915 +05:30 [Information] Request finished in 184.1708ms 200 text/html; charset=utf-8
+2018-08-10 18:00:28.251 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 18:00:29.949 +05:30 [Information] Request finished in 1698.4251ms 200 application/json; charset=utf-8
+2018-08-10 18:00:45.602 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get  
+2018-08-10 18:00:45.630 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:00:45.697 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:00:45.800 +05:30 [Information] Authorization was successful.
+2018-08-10 18:01:21.558 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" - Validation state: Valid
+2018-08-10 18:01:24.214 +05:30 [Information] Executed action method "RBACdemo.Controllers.UserController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2640.5983ms.
+2018-08-10 18:01:32.018 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 18:01:32.172 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 46430.2893ms
+2018-08-10 18:01:32.172 +05:30 [Information] Request finished in 46547.4963ms 200 application/json; charset=utf-8
+2018-08-10 18:03:33.205 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:03:33.212 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:03:33.289 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:03:33.289 +05:30 [Information] Authorization was successful.
+2018-08-10 18:04:00.959 +05:30 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2018-08-10 18:04:00.983 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 27693.4747ms
+2018-08-10 18:04:00.997 +05:30 [Information] Request finished in 27783.548ms 400 application/json; charset=utf-8
+2018-08-10 18:04:25.168 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:04:25.175 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:04:25.183 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:04:25.189 +05:30 [Information] Authorization was successful.
+2018-08-10 18:05:11.765 +05:30 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'.
+2018-08-10 18:05:11.772 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 46581.3191ms
+2018-08-10 18:05:11.793 +05:30 [Information] Request finished in 46611.2684ms 400 application/json; charset=utf-8
+2018-08-10 18:11:57.568 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 18:11:57.568 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 18:11:57.709 +05:30 [Information] Request finished in 158.93ms 200 
+2018-08-10 18:11:58.206 +05:30 [Information] Request finished in 655.7787ms 302 
+2018-08-10 18:11:58.219 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 18:11:58.384 +05:30 [Information] Request finished in 169.3086ms 200 text/html; charset=utf-8
+2018-08-10 18:11:58.742 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 18:12:00.458 +05:30 [Information] Request finished in 1699.9675ms 200 application/json; charset=utf-8
+2018-08-10 18:12:08.880 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:12:08.914 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:12:09.003 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:12:09.031 +05:30 [Information] Authorization was successful.
+2018-08-10 18:12:30.412 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" with arguments (["7deb2457-9e24-4e38-a30b-c6ad5a14b61e"]) - Validation state: Valid
+2018-08-10 18:12:45.207 +05:30 [Information] Executed action method "RBACdemo.Controllers.UserController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 14794.7494ms.
+2018-08-10 18:13:00.224 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 18:13:00.261 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 51239.9619ms
+2018-08-10 18:13:00.268 +05:30 [Information] Request finished in 51388.1594ms 200 application/json; charset=utf-8
+2018-08-10 18:22:32.090 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:22:32.286 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:22:32.516 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:22:32.534 +05:30 [Information] Authorization was successful.
+2018-08-10 18:22:32.759 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" with arguments (["7deb2457-9e24-4e38-a30b-c6ad5a14b61e"]) - Validation state: Valid
+2018-08-10 18:22:43.577 +05:30 [Error] Cannot open database "ApplicationDB-" requested by the login. The login failed.
+Login failed for user 'QATALYSTECH\Hammathu'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "ApplicationDB-" requested by the login. The login failed.
+Login failed for user 'QATALYSTECH\Hammathu'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at RBACdemo.Infrastructure.Repositories.Repository`1.Get[Type](Type id) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\Repository.cs:line 22
+   at RBACdemo.Infrastructure.Services.Service`1.Get[Type](Type id) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\Service.cs:line 45
+   at RBACdemo.Controllers.GenericController`2.Get(Keytype id) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\GenericController.cs:line 29
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ClientConnectionId:0c650652-01b2-4023-95a8-afc2f046315a
+Error Number:4060,State:1,Class:11
+2018-08-10 18:22:43.589 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 18:22:43.617 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 11093.8449ms
+2018-08-10 18:22:43.624 +05:30 [Information] Request finished in 11543.0785ms 500 application/json; charset=utf-8
+2018-08-10 18:24:36.301 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 18:24:36.301 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 18:24:36.441 +05:30 [Information] Request finished in 155.5696ms 200 
+2018-08-10 18:24:37.046 +05:30 [Information] Request finished in 741.3916ms 302 
+2018-08-10 18:24:37.055 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 18:24:37.215 +05:30 [Information] Request finished in 158.6979ms 200 text/html; charset=utf-8
+2018-08-10 18:24:37.541 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 18:24:39.227 +05:30 [Information] Request finished in 1664.981ms 200 application/json; charset=utf-8
+2018-08-10 18:24:44.094 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:24:44.136 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:24:44.224 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:24:44.252 +05:30 [Information] Authorization was successful.
+2018-08-10 18:24:54.287 +05:30 [Error] Value cannot be null.
+Parameter name: tenantId
+System.ArgumentNullException: Value cannot be null.
+Parameter name: tenantId
+   at RBACdemo.Infrastructure.Persistence.RBACdemoContextFactory.ValidateTenantId(String tenantId) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Persistence\RBACdemoContextFactory.cs:line 64
+   at RBACdemo.Infrastructure.Persistence.RBACdemoContextFactory.get_TenantId() in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Persistence\RBACdemoContextFactory.cs:line 38
+   at RBACdemo.Infrastructure.Persistence.RBACdemoContextFactory.ChangeDatabaseNameInConnectionString() in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Persistence\RBACdemoContextFactory.cs:line 76
+   at RBACdemo.Infrastructure.Persistence.RBACdemoContextFactory.get_DbContext() in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Persistence\RBACdemoContextFactory.cs:line 28
+   at RBACdemo.Infrastructure.Repositories.Repository`1..ctor(IContextFactory context) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\Repository.cs:line 18
+   at RBACdemo.Infrastructure.Repositories.UserRepository..ctor(IContextFactory context) in C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\UserRepository.cs:line 15
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitTransient(TransientCallSite transientCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-10 18:24:54.288 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 18:24:54.302 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 10063.6899ms
+2018-08-10 18:24:54.310 +05:30 [Information] Request finished in 10217.2746ms 500 application/json; charset=utf-8
+2018-08-10 18:27:18.388 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:27:18.687 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:27:18.977 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:27:18.990 +05:30 [Information] Authorization was successful.
+2018-08-10 18:27:19.285 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" with arguments (["7deb2457-9e24-4e38-a30b-c6ad5a14b61e"]) - Validation state: Valid
+2018-08-10 18:27:37.896 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 18:27:37.895 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 18:27:38.043 +05:30 [Information] Request finished in 166.8279ms 200 
+2018-08-10 18:27:38.547 +05:30 [Information] Request finished in 665.1519ms 302 
+2018-08-10 18:27:38.557 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 18:27:38.724 +05:30 [Information] Request finished in 168.2257ms 200 text/html; charset=utf-8
+2018-08-10 18:27:39.033 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 18:27:40.799 +05:30 [Information] Request finished in 1738.56ms 200 application/json; charset=utf-8
+2018-08-10 18:27:50.925 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/user/get/7deb2457-9e24-4e38-a30b-c6ad5a14b61e  
+2018-08-10 18:27:50.972 +05:30 [Information] Successfully validated the token.
+2018-08-10 18:27:51.044 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing action "RBACdemo.Controllers.UserController.Get (RBACdemo)"
+2018-08-10 18:27:51.073 +05:30 [Information] Authorization was successful.
+2018-08-10 18:27:57.412 +05:30 [Information] Executing action method "RBACdemo.Controllers.UserController.Get (RBACdemo)" with arguments (["7deb2457-9e24-4e38-a30b-c6ad5a14b61e"]) - Validation state: Valid
+2018-08-10 18:28:00.034 +05:30 [Information] Executed action method "RBACdemo.Controllers.UserController.Get (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2582.4394ms.
+2018-08-10 18:28:07.859 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-10 18:28:07.897 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 16836.9283ms
+2018-08-10 18:28:07.905 +05:30 [Information] Request finished in 16980.6557ms 200 application/json; charset=utf-8

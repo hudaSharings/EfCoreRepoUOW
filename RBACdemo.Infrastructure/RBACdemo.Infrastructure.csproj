@@ -20,6 +20,7 @@
     <Compile Remove="Migrations\20180727132146_tetdb.cs" />
     <Compile Remove="Migrations\20180730173308_athometest1.cs" />
     <Compile Remove="Migrations\20180802134929_Sequence.cs" />
+    <Compile Remove="Migrations\20180810121935_tenant1.cs" />
   </ItemGroup>
 
   <ItemGroup>

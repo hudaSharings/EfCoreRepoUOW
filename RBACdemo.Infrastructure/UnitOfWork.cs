@@ -18,8 +18,6 @@ namespace RBACdemo.Infrastructure
         }
        
         public IUserRepository User {  get => new UserRepository(_context); }
-
-        public IRoleRepository Role => new RoleRepository(_context);
         
         public IMenuItemRepository MenuItem =>  new MenuItemRepository(_context);
 

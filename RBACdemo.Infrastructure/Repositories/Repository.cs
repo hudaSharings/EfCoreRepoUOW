@@ -17,7 +17,7 @@ namespace RBACdemo.Infrastructure.Repositories
         {
             Context = context.DbContext;
         }
-        public TEntity Get(int id)
+        public TEntity Get<Type>(Type id)
         {
             return Context.Set<TEntity>().Find(id);
         }
@@ -37,17 +37,62 @@ namespace RBACdemo.Infrastructure.Repositories
         {
             Context.Set<TEntity>().Add(entity);
         }
+        public void AddandSave(TEntity entity)
+        {
+            Context.Set<TEntity>().Add(entity);
+            
+        }
         public void AddRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().AddRange(entities);
+            Save();
+        }
+        public void AddRangeandSave(IEnumerable<TEntity> entities)
+        {
+            Context.Set<TEntity>().AddRange(entities);
+            Save();
         }
         public void Remove(TEntity entity)
         {
             Context.Set<TEntity>().Remove(entity);
         }
+        public void RemoveandSave(TEntity entity)
+        {
+            Context.Set<TEntity>().Remove(entity);
+            Save();
+        }
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
             Context.Set<TEntity>().RemoveRange(entities);
+        }
+        public void RemoveRangeandSave(IEnumerable<TEntity> entities)
+        {
+            Context.Set<TEntity>().RemoveRange(entities);
+            Save();
+        }
+        public void Modify(TEntity entity)
+        {
+            Context.Entry<TEntity>(entity).State = EntityState.Modified;
+        }
+
+        public void ModifyandSave(TEntity entity)
+        {
+            Context.Entry<TEntity>(entity).State = EntityState.Modified;
+            Save();
+        }
+        public void Save()
+        {
+            Context.SaveChanges();
+        }
+
+        public void Remove<Type>(Type id)
+        {
+            Remove(Get(id));
+        }
+
+        public void RemoveandSave<Type>(Type id)
+        {
+            RemoveandSave(Get(id));
         }
     }
 }

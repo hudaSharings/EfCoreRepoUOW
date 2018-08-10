@@ -57,7 +57,7 @@ namespace RBACdemo.Infrastructure.Persistence
         }
         private static void ValidateTenantId(string tenantId)
         {
-            if (tenantId == null)
+            if (string.IsNullOrEmpty(tenantId))
             {
                 throw new ArgumentNullException(nameof(tenantId));
             }

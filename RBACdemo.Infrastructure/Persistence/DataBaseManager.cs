@@ -9,7 +9,8 @@ namespace RBACdemo.Infrastructure.Persistence
     {
         public string GetDataBaseName(string tenantId)
         {
-            return $"ApplicationDB-{tenantId.Trim()}";
+            // return $"ApplicationDB-{tenantId.Trim()}";
+            return tenantId;
         }
     }
 }

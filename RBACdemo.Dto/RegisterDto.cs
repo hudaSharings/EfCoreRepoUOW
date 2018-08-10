@@ -6,13 +6,11 @@ using System.Text;
 
 namespace RBACdemo.Dto
 {
-   public partial class RegisterDto
+    public partial class RegisterDto
     {
         public string UserName { get; set; }
         public string Email { get; set; }
-        [Required]
         public string password { get; set; }
-        [Compare("password")]
         public string ConfirmPassword { get; set; }
     }
 }
