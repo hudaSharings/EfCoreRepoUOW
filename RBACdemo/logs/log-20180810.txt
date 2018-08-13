@@ -542,3 +542,13 @@ Parameter name: tenantId
 2018-08-10 18:28:07.859 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
 2018-08-10 18:28:07.897 +05:30 [Information] Executed action "RBACdemo.Controllers.UserController.Get (RBACdemo)" in 16836.9283ms
 2018-08-10 18:28:07.905 +05:30 [Information] Request finished in 16980.6557ms 200 application/json; charset=utf-8
+2018-08-10 19:20:44.989 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 19:20:45.490 +05:30 [Information] Request finished in 526.6719ms 302 
+2018-08-10 20:14:27.732 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-10 20:14:27.732 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-10 20:14:27.900 +05:30 [Information] Request finished in 185.2296ms 200 
+2018-08-10 20:14:28.513 +05:30 [Information] Request finished in 781.808ms 302 
+2018-08-10 20:14:28.536 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-10 20:14:29.100 +05:30 [Information] Request finished in 564.5933ms 200 text/html; charset=utf-8
+2018-08-10 20:14:30.179 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-10 20:14:32.404 +05:30 [Information] Request finished in 2209.8133ms 200 application/json; charset=utf-8

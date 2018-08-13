@@ -5,14 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using RBACdemo.Infrastructure;
 using RBACdemo.Infrastructure.Persistence;
 
 namespace RBACdemo.Infrastructure.Migrations
 {
     [DbContext(typeof(RBACdemoContext))]
-    [Migration("20180802140947_Sequence")]
-    partial class Sequence
+    [Migration("20180813153738_test35")]
+    partial class test35
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,7 +19,8 @@ namespace RBACdemo.Infrastructure.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("Relational:Sequence:shared.OrderNumbers", "'OrderNumbers', 'shared', '100', '1', '', '', 'Int32', 'False'")
+                .HasAnnotation("Relational:Sequence:shared.OrderNumbers", "'OrderNumbers', 'shared', '1', '1', '', '', 'Int32', 'False'")
+                .HasAnnotation("Relational:Sequence:shared.TenantNumbers", "'TenantNumbers', 'shared', '1', '1', '', '', 'Int32', 'False'")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -148,6 +148,10 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -166,6 +170,8 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<string>("SecurityStamp");
 
+                    b.Property<int?>("TenantNo");
+
                     b.Property<bool>("TwoFactorEnabled");
 
                     b.Property<string>("UserName")
@@ -181,6 +187,8 @@ namespace RBACdemo.Infrastructure.Migrations
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
+                    b.HasIndex("TenantNo");
+
                     b.ToTable("AspNetUsers");
                 });
 
@@ -190,7 +198,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("CreatedBy");
 
                     b.Property<DateTime>("CreatedOn");
 
@@ -212,7 +220,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate();
 
-                    b.Property<int>("UpdatedBy");
+                    b.Property<string>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
@@ -223,13 +231,54 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("MenuItems");
                 });
 
+            modelBuilder.Entity("RBACdemo.Core.Domain.Tenant", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Companyname");
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("DataBaseName");
+
+                    b.Property<string>("DomainName");
+
+                    b.Property<DateTime>("FromDate");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<bool>("IsDisbalbed");
+
+                    b.Property<int>("TenantNo")
+                        .ValueGeneratedOnAdd()
+                        .HasDefaultValueSql("NEXT VALUE FOR shared.TenantNumbers");
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<DateTime>("Todate");
+
+                    b.Property<string>("UpdatedBy");
+
+                    b.Property<DateTime>("UpdatedOn");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tenants");
+                });
+
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("CreatedBy");
 
                     b.Property<DateTime>("CreatedOn");
 
@@ -237,13 +286,13 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("IsDisbalbed");
 
-                    b.Property<long?>("MenuItemNo");
+                    b.Property<long>("MenuItemNo");
 
                     b.Property<byte[]>("TimeStamp")
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate();
 
-                    b.Property<int>("UpdatedBy");
+                    b.Property<string>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
@@ -255,7 +304,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("UserMenuItem");
+                    b.ToTable("UserMenuItems");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -303,11 +352,20 @@ namespace RBACdemo.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationUser", b =>
+                {
+                    b.HasOne("RBACdemo.Core.Domain.Tenant", "Tenant")
+                        .WithMany("Users")
+                        .HasForeignKey("TenantNo")
+                        .HasPrincipalKey("TenantNo");
+                });
+
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
                     b.HasOne("RBACdemo.Core.Domain.MenuItem", "MenuItem")
                         .WithMany("UserMenuItems")
-                        .HasForeignKey("MenuItemNo");
+                        .HasForeignKey("MenuItemNo")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("RBACdemo.Core.Domain.ApplicationUser", "User")
                         .WithMany("UserMenuItems")

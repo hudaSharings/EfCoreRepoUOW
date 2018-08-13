@@ -15,6 +15,7 @@ namespace RBACdemo.Infrastructure.Configurations
             services.AddTransient<IAccountService, AccountService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IMenuItemService, MenuItemService>();
+            services.AddTransient<ITenantService, TenantService>();
         }
     }
 }

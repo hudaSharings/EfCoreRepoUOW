@@ -10,8 +10,8 @@ using RBACdemo.Infrastructure.Persistence;
 namespace RBACdemo.Infrastructure.Migrations
 {
     [DbContext(typeof(RBACdemoContext))]
-    [Migration("20180810091351_tenant")]
-    partial class tenant
+    [Migration("20180813134315_test3")]
+    partial class test3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -148,6 +148,10 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
@@ -166,7 +170,7 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<string>("SecurityStamp");
 
-                    b.Property<long?>("TenantNo");
+                    b.Property<int?>("TenantNo");
 
                     b.Property<bool>("TwoFactorEnabled");
 
@@ -194,7 +198,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("CreatedBy");
 
                     b.Property<DateTime>("CreatedOn");
 
@@ -216,7 +220,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate();
 
-                    b.Property<int>("UpdatedBy");
+                    b.Property<string>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
@@ -235,9 +239,11 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<string>("Companyname");
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("CreatedBy");
 
                     b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("DataBaseName");
 
                     b.Property<string>("DomainName");
 
@@ -257,13 +263,13 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<DateTime>("Todate");
 
-                    b.Property<int>("UpdatedBy");
+                    b.Property<string>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tenant");
+                    b.ToTable("Tenants");
                 });
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
@@ -272,7 +278,7 @@ namespace RBACdemo.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<string>("CreatedBy");
 
                     b.Property<DateTime>("CreatedOn");
 
@@ -280,13 +286,13 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("IsDisbalbed");
 
-                    b.Property<long?>("MenuItemNo");
+                    b.Property<long>("MenuItemNo");
 
                     b.Property<byte[]>("TimeStamp")
                         .IsConcurrencyToken()
                         .ValueGeneratedOnAddOrUpdate();
 
-                    b.Property<int>("UpdatedBy");
+                    b.Property<string>("UpdatedBy");
 
                     b.Property<DateTime>("UpdatedOn");
 
@@ -349,15 +355,17 @@ namespace RBACdemo.Infrastructure.Migrations
             modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationUser", b =>
                 {
                     b.HasOne("RBACdemo.Core.Domain.Tenant", "Tenant")
-                        .WithMany()
-                        .HasForeignKey("TenantNo");
+                        .WithMany("Users")
+                        .HasForeignKey("TenantNo")
+                        .HasPrincipalKey("TenantNo");
                 });
 
             modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
                 {
                     b.HasOne("RBACdemo.Core.Domain.MenuItem", "MenuItem")
                         .WithMany("UserMenuItems")
-                        .HasForeignKey("MenuItemNo");
+                        .HasForeignKey("MenuItemNo")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("RBACdemo.Core.Domain.ApplicationUser", "User")
                         .WithMany("UserMenuItems")

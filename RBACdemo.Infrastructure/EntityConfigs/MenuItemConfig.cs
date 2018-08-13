@@ -8,11 +8,13 @@ namespace RBACdemo.Infrastructure.EntityConfigs
     {
         public void Configure(EntityTypeBuilder<MenuItem> builder)
         {
-            builder.HasKey(x => x.Id);     
+            builder.HasKey(x => x.Id);   
             builder.Property(x=>x.MenuItemNo)
                 .HasDefaultValueSql("NEXT VALUE FOR shared.OrderNumbers");
         }
         
     }
+
+
 
 }

@@ -24,10 +24,11 @@ namespace RBACdemo.Infrastructure.Configurations
             services.AddTransient<UserManager<ApplicationUser>>();
             services.AddTransient<SignInManager<ApplicationUser>>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IMenuItemRepository, MenuItemRepository>();
-            
+            services.AddTransient<ITenantRepository, TenantRepository>();
             
         }
     }

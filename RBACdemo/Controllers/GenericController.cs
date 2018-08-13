@@ -8,8 +8,7 @@ using RBACdemo.Core.Services;
 
 namespace RBACdemo.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    [ApiController]
+   
     public class GenericController<T,PKtype> : BaseController where T:class
     {
         protected  IService<T> Service;
