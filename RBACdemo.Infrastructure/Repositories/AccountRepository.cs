@@ -45,13 +45,12 @@ namespace RBACdemo.Infrastructure.Repositories
             var retres = new LoginResultDto();
             if (res.Succeeded)
             {
-                UserinfoDto userinfoDto = GetUserInfoByUserName(login.Username); 
+                UserinfoDto userinfoDto = GetUserInfoByUserName(login.Username);
                 userinfoDto.Menus = GetMenusByUserId(userinfoDto.userId);
                 var tenantinfo = GetTenantinfoByUserId(userinfoDto.userId);
                 var token = GenerateToken(login, tenantinfo);
                 retres.Token = new JwtSecurityTokenHandler().WriteToken(token);
                 retres.TokenExpiration = token.ValidTo;
-                //  retres.username = login.Username;
                 retres.UserInfo = userinfoDto;
 
             }
@@ -59,13 +58,59 @@ namespace RBACdemo.Infrastructure.Repositories
             return retres;
         }
 
-        private Dictionary<long, string> GetMenusByUserId(string userid)
+        //private Dictionary<long, string> GetMenusByUserId(string userid)
+        //{
+        //    return (from um in DbContext.UserMenuItems.Where(x => x.UserId == userid)
+        //            join m in DbContext.MenuItems on um.MenuItemNo equals m.MenuItemNo
+        //            select new KeyValuePair<long, string>(m.MenuItemNo, m.Name))
+        //        .ToDictionary(x => x.Key, x => x.Value);
+        //}
+
+        private List<MenusDto> GetMenusByUserId(string userId)
         {
-            return (from um in DbContext.UserMenuItems.Where(x => x.UserId == userid)
-                    join m in DbContext.MenuItems on um.MenuItemNo equals m.MenuItemNo
-                    select new KeyValuePair<long, string>(m.MenuItemNo, m.Name))
-                .ToDictionary(x => x.Key, x => x.Value);
+            var menuitems = DbContext.UserMenuItems.Where(x => x.UserId == userId).Select(x => x.MenuItem);          
+            var parentmenus = menuitems.Where(x => x.ParentId == 0);
+            List<MenusDto> menus = new List<MenusDto>();
+
+            foreach (var item in parentmenus)
+            {
+                MenusDto md = new MenusDto();
+                md.ParentId = item.ParentId;
+                md.id = item.Id;
+                md.Path = item.Url;
+                md.Component = item.Name;
+                if (menuitems.Where(x => x.ParentId == item.MenuItemNo).Any())
+                    md.Child = getChildmenus(menuitems.Where(x => x.ParentId == item.MenuItemNo).ToList());
+                menus.Add(md);
+            }          
+
+            return menus;
+
+
         }
+
+        private List<MenusDto> getChildmenus(List<MenuItem> menuitems)
+        {
+           
+            List<MenusDto> menus = new List<MenusDto>();
+
+            foreach (var item in menuitems)
+            {
+                MenusDto md = new MenusDto();
+                md.ParentId = item.ParentId;
+                md.id = item.Id;
+                md.Path = item.Url;
+                md.Component = item.Name;
+                if (menuitems.Where(x => x.ParentId == item.MenuItemNo).Any())
+                    md.Child = getChildmenus(menuitems.Where(x => x.ParentId == item.MenuItemNo).ToList());
+                menus.Add(md);
+            }
+            return menus;
+
+          
+        }
+
+
 
         private Tenant GetTenantinfoByUserId(string userId)
         {
@@ -76,22 +121,22 @@ namespace RBACdemo.Infrastructure.Repositories
 
         private UserinfoDto GetUserInfoByUserName(string userName)
         {
-           return (from u in DbContext.Users.Where(x => x.UserName == userName)
-             join t in DbContext.Tenants on u.TenantNo equals t.TenantNo
-             select new UserinfoDto
-             {
-                 Companyname = t.Companyname,
-                 DataBaseName = t.DataBaseName,
-                 DomainName = t.DomainName,
-                 Email = u.Email,
-                 FirsrName = u.FirstName,
-                 LastName = u.LastName,
-                 FromDate = t.FromDate,
-                 Todate = t.Todate,
-                 TenantNo = t.TenantNo,
-                 username = u.UserName,
-                 userId = u.Id
-             }).FirstOrDefault();
+            return (from u in DbContext.Users.Where(x => x.UserName == userName)
+                    join t in DbContext.Tenants on u.TenantNo equals t.TenantNo
+                    select new UserinfoDto
+                    {
+                        Companyname = t.Companyname,
+                        DataBaseName = t.DataBaseName,
+                        DomainName = t.DomainName,
+                        Email = u.Email,
+                        FirsrName = u.FirstName,
+                        LastName = u.LastName,
+                        FromDate = t.FromDate,
+                        Todate = t.Todate,
+                        TenantNo = t.TenantNo,
+                        username = u.UserName,
+                        userId = u.Id
+                    }).FirstOrDefault();
         }
         private JwtSecurityToken GenerateToken(LoginDto login, Tenant tenantinfo)
         {
