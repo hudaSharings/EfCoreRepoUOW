@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RBACdemo.Core.Domain
 {
-    #region  Entity Models
+    
     public class BaseEntityModel 
     {
         public long Id { get; set; }
@@ -16,6 +16,6 @@ namespace RBACdemo.Core.Domain
         [Timestamp]
         public byte[] TimeStamp { get; set; }
     }
-    #endregion
+ 
 
 }

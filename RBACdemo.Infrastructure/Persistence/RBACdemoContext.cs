@@ -11,9 +11,7 @@ namespace RBACdemo.Infrastructure.Persistence
       
         public DbSet<MenuItem> MenuItems { get; set; }
         public DbSet<Tenant> Tenants { get; set; }
-
-      //  public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-        public DbSet<UserMenuItem> UserMenuItems { get; set; }
+        public DbSet<RoleMenuItem> RoleMenuItems { get; set; }
 
 
         public RBACdemoContext(DbContextOptions<RBACdemoContext> options):base(options)

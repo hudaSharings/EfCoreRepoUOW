@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RBACdemo.Core.Domain
 {
-    #region  Entity Models
+   
     public class ApplicationUser : IdentityUser
     {
         public string FirstName { get; set; }
@@ -14,11 +14,12 @@ namespace RBACdemo.Core.Domain
         public int? TenantNo { get; set; }
       
         public virtual Tenant Tenant { get; set; }
-       
-        public virtual List<UserMenuItem> UserMenuItems { get; set; }
+        public string RoleId { get; set; }
+        public ApplicationRole Role { get; set; }
+
     }
 
 
-    #endregion
+  
 
 }

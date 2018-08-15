@@ -12,8 +12,10 @@ namespace RBACdemo.Core.Services
    public interface IAccountService
     {
         Task<IdentityResult> CreateUserAsync(RegisterDto user, string password);
-        Task<IdentityResult> AddUserToRole(RegisterDto user, string role);
+        Task<IdentityResult> AddUserToRole(UserRoleDto user);
         Task<LoginResultDto> SignIn(LoginDto login);
+        Task<IdentityResult> CreateRoleAsync(string roleName);
+        Task<IdentityResult> CreateRoleClims(string role, string clims);
     }
    
 }

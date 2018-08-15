@@ -18,14 +18,20 @@ namespace RBACdemo.Infrastructure.Services
         {
             _repository = repository;
         }
-        public async Task<IdentityResult> AddUserToRole(RegisterDto user, string role)
+        public async Task<IdentityResult> AddUserToRole(UserRoleDto user)
         {
-            var _user = new ApplicationUser
-            {
-                UserName = user.UserName,
-                Email = user.Email
-            };
-            return await _repository.AddUserToRole(_user, role);
+           
+            return await _repository.AddUserToRole(user);
+        }
+
+        public Task<IdentityResult> CreateRoleAsync(string roleName)
+        {
+            return  _repository.CreateRoleAsync(roleName);
+        }
+
+        public Task<IdentityResult> CreateRoleClims(string role, string clims)
+        {
+            return _repository.CreateRoleClims(role, clims);
         }
 
         public async Task<IdentityResult> CreateUserAsync(RegisterDto user, string password)

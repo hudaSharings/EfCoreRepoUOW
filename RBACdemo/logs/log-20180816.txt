@@ -1,0 +1,952 @@
+2018-08-16 00:03:48.384 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:03:48.384 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:03:48.593 +05:30 [Information] Request finished in 226.3573ms 200 
+2018-08-16 00:03:49.800 +05:30 [Information] Request finished in 1432.0284ms 302 
+2018-08-16 00:03:49.928 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:03:50.722 +05:30 [Information] Request finished in 873.5195ms 200 text/html; charset=utf-8
+2018-08-16 00:03:52.200 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:03:55.890 +05:30 [Information] Request finished in 3761.1728ms 200 application/json; charset=utf-8
+2018-08-16 00:04:53.549 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole application/json 5
+2018-08-16 00:04:53.568 +05:30 [Information] Policy execution successful.
+2018-08-16 00:04:53.661 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:04:53.670 +05:30 [Information] Policy execution successful.
+2018-08-16 00:04:53.704 +05:30 [Information] Authorization failed.
+2018-08-16 00:04:53.728 +05:30 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2018-08-16 00:04:53.764 +05:30 [Information] Executing ChallengeResult with authentication schemes ([]).
+2018-08-16 00:04:53.780 +05:30 [Information] AuthenticationScheme: "Bearer" was challenged.
+2018-08-16 00:04:53.794 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 119.1739ms
+2018-08-16 00:04:53.799 +05:30 [Information] Request finished in 250.4167ms 401 
+2018-08-16 00:04:53.863 +05:30 [Information] Connection id ""0HLG2RMHUC5TM"", Request id ""0HLG2RMHUC5TM:00000003"": the application completed without reading the entire request body.
+2018-08-16 00:05:21.713 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 00:05:21.716 +05:30 [Information] Policy execution successful.
+2018-08-16 00:05:21.740 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 00:05:21.743 +05:30 [Information] Policy execution successful.
+2018-08-16 00:05:25.049 +05:30 [Error] Unable to resolve service for type 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'RBACdemo.Infrastructure.Repositories.AccountRepository'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'RBACdemo.Infrastructure.Repositories.AccountRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 00:05:25.060 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:05:25.082 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 3336.0433ms
+2018-08-16 00:05:25.098 +05:30 [Information] Request finished in 3399.9887ms 500 application/json; charset=utf-8
+2018-08-16 00:05:25.106 +05:30 [Information] Connection id ""0HLG2RMHUC5TM"", Request id ""0HLG2RMHUC5TM:00000004"": the application completed without reading the entire request body.
+2018-08-16 00:06:44.029 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:06:44.030 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:06:44.285 +05:30 [Information] Request finished in 239.3451ms 200 
+2018-08-16 00:06:44.812 +05:30 [Information] Request finished in 785.7948ms 302 
+2018-08-16 00:06:44.819 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:06:45.013 +05:30 [Information] Request finished in 191.1376ms 200 text/html; charset=utf-8
+2018-08-16 00:06:45.605 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:06:48.277 +05:30 [Information] Request finished in 2672.5262ms 200 application/json; charset=utf-8
+2018-08-16 00:07:03.825 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 00:07:03.830 +05:30 [Information] Policy execution successful.
+2018-08-16 00:07:03.942 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 00:07:03.951 +05:30 [Information] Policy execution successful.
+2018-08-16 00:07:06.809 +05:30 [Error] Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 00:07:06.829 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:07:06.865 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 2904.4972ms
+2018-08-16 00:07:06.871 +05:30 [Information] Request finished in 3043.3382ms 500 application/json; charset=utf-8
+2018-08-16 00:07:06.907 +05:30 [Information] Connection id ""0HLG2RO6AEFIF"", Request id ""0HLG2RO6AEFIF:00000003"": the application completed without reading the entire request body.
+2018-08-16 00:08:42.038 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:08:42.038 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:08:42.184 +05:30 [Information] Request finished in 158.1386ms 200 
+2018-08-16 00:08:42.730 +05:30 [Information] Request finished in 661.7233ms 302 
+2018-08-16 00:08:42.749 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:08:42.966 +05:30 [Information] Request finished in 208.33ms 200 text/html; charset=utf-8
+2018-08-16 00:08:43.449 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:08:46.364 +05:30 [Information] Request finished in 2917.4675ms 200 application/json; charset=utf-8
+2018-08-16 00:09:15.314 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 00:09:15.319 +05:30 [Information] Policy execution successful.
+2018-08-16 00:09:15.416 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 00:09:15.425 +05:30 [Information] Policy execution successful.
+2018-08-16 00:09:18.940 +05:30 [Error] Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]'.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IRoleStore`1[RBACdemo.Core.Domain.ApplicationRole]' while attempting to activate 'Microsoft.AspNetCore.Identity.RoleManager`1[RBACdemo.Core.Domain.ApplicationRole]'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 00:09:18.961 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:09:18.997 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 3566.7778ms
+2018-08-16 00:09:19.005 +05:30 [Information] Request finished in 3686.8725ms 500 application/json; charset=utf-8
+2018-08-16 00:09:19.060 +05:30 [Information] Connection id ""0HLG2RP9FL5IU"", Request id ""0HLG2RP9FL5IU:00000003"": the application completed without reading the entire request body.
+2018-08-16 00:11:17.260 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:11:17.260 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:11:17.412 +05:30 [Information] Request finished in 170.0499ms 200 
+2018-08-16 00:11:17.923 +05:30 [Information] Request finished in 666.3927ms 302 
+2018-08-16 00:11:17.937 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:11:18.185 +05:30 [Information] Request finished in 228.3479ms 200 text/html; charset=utf-8
+2018-08-16 00:11:18.808 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:11:21.530 +05:30 [Information] Request finished in 2698.0322ms 200 application/json; charset=utf-8
+2018-08-16 00:11:44.358 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 00:11:44.363 +05:30 [Information] Policy execution successful.
+2018-08-16 00:11:44.462 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 00:11:44.472 +05:30 [Information] Policy execution successful.
+2018-08-16 00:11:49.079 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 00:11:49.985 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 00:11:50.697 +05:30 [Information] Executed DbCommand ("48"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 00:11:51.145 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 00:11:51.295 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 00:11:51.364 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 00:11:51.462 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[UserName] = @__userName_0"
+2018-08-16 00:11:51.533 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Companyname], [t].[CreatedBy], [t].[CreatedOn], [t].[DataBaseName], [t].[DomainName], [t].[FromDate], [t].[IsDeleted], [t].[IsDisbalbed], [t].[TenantNo], [t].[TimeStamp], [t].[Todate], [t].[UpdatedBy], [t].[UpdatedOn]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[Id] = @__userId_0"
+2018-08-16 00:11:51.846 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2747.4109ms.
+2018-08-16 00:11:51.939 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:11:52.020 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 7541.9457ms
+2018-08-16 00:11:52.072 +05:30 [Information] Request finished in 7684.2751ms 200 application/json; charset=utf-8
+2018-08-16 00:14:02.692 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole  0
+2018-08-16 00:14:02.699 +05:30 [Information] Policy execution failed.
+2018-08-16 00:14:02.707 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:14:02.750 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:14:02.804 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:14:02.807 +05:30 [Information] Policy execution failed.
+2018-08-16 00:14:02.812 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:14:02.826 +05:30 [Information] Authorization was successful.
+2018-08-16 00:14:02.866 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-08-16 00:14:02.871 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 62.4668ms
+2018-08-16 00:14:02.887 +05:30 [Information] Request finished in 189.0843ms 415 
+2018-08-16 00:14:59.502 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole  0
+2018-08-16 00:14:59.506 +05:30 [Information] Policy execution failed.
+2018-08-16 00:14:59.511 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:14:59.517 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:14:59.530 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:14:59.540 +05:30 [Information] Policy execution failed.
+2018-08-16 00:14:59.572 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:14:59.581 +05:30 [Information] Authorization was successful.
+2018-08-16 00:14:59.590 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-08-16 00:14:59.597 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 59.2482ms
+2018-08-16 00:14:59.612 +05:30 [Information] Request finished in 99.9414ms 415 
+2018-08-16 00:15:15.862 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole text/plain;charset=UTF-8 7
+2018-08-16 00:15:15.870 +05:30 [Information] Policy execution failed.
+2018-08-16 00:15:15.875 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:15:15.880 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:15:15.884 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:15:15.889 +05:30 [Information] Policy execution failed.
+2018-08-16 00:15:15.893 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:15:15.898 +05:30 [Information] Authorization was successful.
+2018-08-16 00:15:15.903 +05:30 [Information] Executing HttpStatusCodeResult, setting HTTP status code 415
+2018-08-16 00:15:15.908 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 18.7264ms
+2018-08-16 00:15:15.915 +05:30 [Information] Request finished in 52.2761ms 415 
+2018-08-16 00:15:15.926 +05:30 [Information] Connection id ""0HLG2RQNNI42H"", Request id ""0HLG2RQNNI42H:00000003"": the application completed without reading the entire request body.
+2018-08-16 00:15:44.262 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole application/json 20
+2018-08-16 00:15:44.268 +05:30 [Information] Policy execution failed.
+2018-08-16 00:15:44.274 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:15:44.286 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:15:44.310 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:15:44.320 +05:30 [Information] Policy execution failed.
+2018-08-16 00:15:44.325 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:15:44.328 +05:30 [Information] Authorization was successful.
+2018-08-16 00:15:54.487 +05:30 [Information] Executing ObjectResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:15:54.574 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 10257.3707ms
+2018-08-16 00:15:54.580 +05:30 [Information] Request finished in 10523.2826ms 400 application/json; charset=utf-8
+2018-08-16 00:16:38.954 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole application/json 20
+2018-08-16 00:16:38.992 +05:30 [Information] Policy execution failed.
+2018-08-16 00:16:39.000 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:16:39.006 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:16:39.012 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:16:39.017 +05:30 [Information] Policy execution failed.
+2018-08-16 00:16:39.024 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:16:39.027 +05:30 [Information] Authorization was successful.
+2018-08-16 00:18:24.779 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:18:24.779 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:18:24.905 +05:30 [Information] Request finished in 140.4457ms 200 
+2018-08-16 00:18:25.321 +05:30 [Information] Request finished in 562.1399ms 302 
+2018-08-16 00:18:25.328 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:18:25.476 +05:30 [Information] Request finished in 149.1711ms 200 text/html; charset=utf-8
+2018-08-16 00:18:26.121 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:18:27.159 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole application/json 20
+2018-08-16 00:18:27.169 +05:30 [Information] Policy execution failed.
+2018-08-16 00:18:27.174 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:18:27.211 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:18:27.360 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:18:27.370 +05:30 [Information] Policy execution failed.
+2018-08-16 00:18:27.375 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:18:27.402 +05:30 [Information] Authorization was successful.
+2018-08-16 00:18:38.482 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" with arguments ([""]) - Validation state: Valid
+2018-08-16 00:18:51.344 +05:30 [Error] Value cannot be null.
+System.ArgumentNullException: Value cannot be null.
+   at RBACdemo.Controllers.AccountController.AddRole(String roleName) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 55
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 00:18:51.372 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:18:51.405 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 24028.2819ms
+2018-08-16 00:18:51.416 +05:30 [Information] Request finished in 24251.7721ms 500 application/json; charset=utf-8
+2018-08-16 00:18:51.451 +05:30 [Information] Connection id ""0HLG2RUN579P8"", Request id ""0HLG2RUN579P8:00000003"": the application completed without reading the entire request body.
+2018-08-16 00:18:52.382 +05:30 [Information] Request finished in 26262.2671ms 200 application/json; charset=utf-8
+2018-08-16 00:19:23.205 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddRole application/json 20
+2018-08-16 00:19:23.210 +05:30 [Information] Policy execution failed.
+2018-08-16 00:19:23.214 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:19:23.220 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:19:23.226 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:19:23.231 +05:30 [Information] Policy execution failed.
+2018-08-16 00:19:23.234 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:19:23.245 +05:30 [Information] Authorization was successful.
+2018-08-16 00:19:25.165 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" with arguments ([""]) - Validation state: Valid
+2018-08-16 00:20:38.612 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:20:38.612 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:20:38.742 +05:30 [Information] Request finished in 134.0647ms 200 
+2018-08-16 00:20:39.328 +05:30 [Information] Request finished in 717.0623ms 302 
+2018-08-16 00:20:39.332 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:20:39.509 +05:30 [Information] Request finished in 169.4516ms 200 text/html; charset=utf-8
+2018-08-16 00:20:39.896 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:20:42.442 +05:30 [Information] Request finished in 2500.662ms 200 application/json; charset=utf-8
+2018-08-16 00:21:12.296 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/Account/AddRole/Admin  
+2018-08-16 00:21:12.324 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:21:12.381 +05:30 [Information] Request finished in 108.5044ms 404 
+2018-08-16 00:22:08.467 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:22:08.467 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:22:08.636 +05:30 [Information] Request finished in 156.9172ms 200 
+2018-08-16 00:22:09.036 +05:30 [Information] Request finished in 584.673ms 302 
+2018-08-16 00:22:09.055 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:22:09.214 +05:30 [Information] Request finished in 161.9392ms 200 text/html; charset=utf-8
+2018-08-16 00:22:09.683 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:22:12.095 +05:30 [Information] Request finished in 2412.6197ms 200 application/json; charset=utf-8
+2018-08-16 00:22:21.529 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/Account/AddRole/Admin  
+2018-08-16 00:22:21.558 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:22:21.680 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:22:21.717 +05:30 [Information] Authorization was successful.
+2018-08-16 00:22:27.991 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" with arguments (["Admin"]) - Validation state: Valid
+2018-08-16 00:23:02.617 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 00:23:09.226 +05:30 [Information] Executed DbCommand ("39"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 00:23:09.487 +05:30 [Information] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Discriminator], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);"
+2018-08-16 00:23:10.723 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 42717.0834ms.
+2018-08-16 00:23:18.136 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:23:22.282 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 60528.796ms
+2018-08-16 00:23:22.477 +05:30 [Information] Request finished in 60778.1906ms 200 application/json; charset=utf-8
+2018-08-16 00:24:49.919 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/api/Account/AddRole/SuperAdmin  
+2018-08-16 00:24:49.925 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:24:49.955 +05:30 [Information] Route matched with "{action = \"AddRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)"
+2018-08-16 00:24:49.966 +05:30 [Information] Authorization was successful.
+2018-08-16 00:24:51.880 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" with arguments (["SuperAdmin"]) - Validation state: Valid
+2018-08-16 00:24:54.110 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 00:24:54.161 +05:30 [Information] Executed DbCommand ("30"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 00:24:54.203 +05:30 [Information] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Discriminator], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3, @p4);"
+2018-08-16 00:24:54.224 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 2338.0641ms.
+2018-08-16 00:24:54.229 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:24:54.237 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddRole (RBACdemo)" in 4275.2736ms
+2018-08-16 00:24:54.272 +05:30 [Information] Request finished in 4362.0033ms 200 application/json; charset=utf-8
+2018-08-16 00:51:20.826 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:51:20.826 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:51:21.000 +05:30 [Information] Request finished in 180.8208ms 200 
+2018-08-16 00:51:21.410 +05:30 [Information] Request finished in 598.9594ms 302 
+2018-08-16 00:51:21.426 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:51:21.571 +05:30 [Information] Request finished in 147.4112ms 200 text/html; charset=utf-8
+2018-08-16 00:51:22.229 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:51:24.641 +05:30 [Information] Request finished in 2484.9953ms 200 application/json; charset=utf-8
+2018-08-16 00:53:18.957 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/AddUserToRole application/json 51
+2018-08-16 00:53:18.969 +05:30 [Information] Policy execution failed.
+2018-08-16 00:53:18.980 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:53:19.013 +05:30 [Information] Successfully validated the token.
+2018-08-16 00:53:19.159 +05:30 [Information] Route matched with "{action = \"AddUserToRole\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.AddUserToRole (RBACdemo)"
+2018-08-16 00:53:19.172 +05:30 [Information] Policy execution failed.
+2018-08-16 00:53:19.178 +05:30 [Information] Request origin "chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop" does not have permission to access the resource.
+2018-08-16 00:53:19.207 +05:30 [Information] Authorization was successful.
+2018-08-16 00:53:23.028 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.AddUserToRole (RBACdemo)" with arguments (["RBACdemo.Dto.UserRoleDto"]) - Validation state: Valid
+2018-08-16 00:53:34.480 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 00:53:35.929 +05:30 [Information] Executed DbCommand ("12"ms) [Parameters=["@__user_Username_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[AccessFailedCount], [x].[ConcurrencyStamp], [x].[Email], [x].[EmailConfirmed], [x].[FirstName], [x].[LastName], [x].[LockoutEnabled], [x].[LockoutEnd], [x].[NormalizedEmail], [x].[NormalizedUserName], [x].[PasswordHash], [x].[PhoneNumber], [x].[PhoneNumberConfirmed], [x].[RoleId], [x].[SecurityStamp], [x].[TenantNo], [x].[TwoFactorEnabled], [x].[UserName]
+FROM [AspNetUsers] AS [x]
+WHERE [x].[UserName] = @__user_Username_0"
+2018-08-16 00:53:40.813 +05:30 [Information] Executed DbCommand ("38"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedRoleName_0)"
+2018-08-16 00:53:41.023 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-08-16 00:53:41.043 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedRoleName_0)"
+2018-08-16 00:53:41.115 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 00:53:41.363 +05:30 [Information] Executed DbCommand ("27"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([UserId], [RoleId])
+VALUES (@p0, @p1);"
+2018-08-16 00:53:41.486 +05:30 [Information] Executed DbCommand ("66"ms) [Parameters=["@p18='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 450), @p14='?' (Size = 4000), @p15='?' (DbType = Int32), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [FirstName] = @p4, [LastName] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [RoleId] = @p13, [SecurityStamp] = @p14, [TenantNo] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+SELECT @@ROWCOUNT;"
+2018-08-16 00:53:43.994 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.AddUserToRole (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 20950.5735ms.
+2018-08-16 00:53:44.064 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:53:44.121 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.AddUserToRole (RBACdemo)" in 24939.0986ms
+2018-08-16 00:53:44.251 +05:30 [Information] Request finished in 25220.987ms 200 application/json; charset=utf-8
+2018-08-16 00:57:03.783 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:57:04.223 +05:30 [Information] Request finished in 455.2697ms 302 
+2018-08-16 00:57:25.304 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 00:57:25.304 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 00:57:25.448 +05:30 [Information] Request finished in 157.3114ms 200 
+2018-08-16 00:57:26.083 +05:30 [Information] Request finished in 759.7986ms 302 
+2018-08-16 00:57:26.098 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 00:57:26.290 +05:30 [Information] Request finished in 189.557ms 200 text/html; charset=utf-8
+2018-08-16 00:57:26.846 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 00:57:29.482 +05:30 [Information] Request finished in 2639.9087ms 200 application/json; charset=utf-8
+2018-08-16 00:57:48.249 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 00:57:48.255 +05:30 [Information] Policy execution successful.
+2018-08-16 00:57:48.345 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 00:57:48.353 +05:30 [Information] Policy execution successful.
+2018-08-16 00:57:52.460 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 00:57:58.152 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 00:57:58.993 +05:30 [Information] Executed DbCommand ("71"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 00:57:59.375 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 00:57:59.512 +05:30 [Information] Executed DbCommand ("17"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 00:57:59.555 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 00:57:59.646 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 00:57:59.729 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 00:58:06.654 +05:30 [Information] Executed DbCommand ("27"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t0].[Companyname], [t0].[DataBaseName], [t0].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t0].[FromDate], [t0].[Todate], [t0].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [x].[RoleId], [t].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+LEFT JOIN (
+    SELECT [x.Role].*
+    FROM [AspNetRoles] AS [x.Role]
+    WHERE [x.Role].[Discriminator] = N'ApplicationRole'
+) AS [t] ON [x].[RoleId] = [t].[Id]
+INNER JOIN [Tenants] AS [t0] ON [x].[TenantNo] = [t0].[TenantNo]
+WHERE [x].[UserName] = @__userName_0"
+2018-08-16 00:58:58.894 +05:30 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE [x].[RoleId] IS NULL"
+2018-08-16 00:58:59.054 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE [x].[RoleId] IS NULL"
+2018-08-16 00:58:59.191 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE [x].[RoleId] IS NULL"
+2018-08-16 00:59:05.427 +05:30 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE [x].[RoleId] IS NULL AND ([x.MenuItem].[ParentId] = 0)"
+2018-08-16 00:59:09.776 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Companyname], [t].[CreatedBy], [t].[CreatedOn], [t].[DataBaseName], [t].[DomainName], [t].[FromDate], [t].[IsDeleted], [t].[IsDisbalbed], [t].[TenantNo], [t].[TimeStamp], [t].[Todate], [t].[UpdatedBy], [t].[UpdatedOn]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[Id] = @__userId_0"
+2018-08-16 00:59:16.787 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 84313.7221ms.
+2018-08-16 00:59:16.852 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 00:59:16.918 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 88558.8917ms
+2018-08-16 00:59:16.967 +05:30 [Information] Request finished in 88690.2993ms 200 application/json; charset=utf-8
+2018-08-16 01:04:01.070 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:04:01.070 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:04:01.219 +05:30 [Information] Request finished in 164.0076ms 200 
+2018-08-16 01:04:01.623 +05:30 [Information] Request finished in 571.9236ms 302 
+2018-08-16 01:04:01.635 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:04:01.832 +05:30 [Information] Request finished in 194.9268ms 200 text/html; charset=utf-8
+2018-08-16 01:04:02.473 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:04:04.787 +05:30 [Information] Request finished in 2378.7398ms 200 application/json; charset=utf-8
+2018-08-16 01:04:32.198 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:04:32.204 +05:30 [Information] Policy execution successful.
+2018-08-16 01:04:32.300 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:04:32.309 +05:30 [Information] Policy execution successful.
+2018-08-16 01:04:35.235 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:04:37.077 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:04:38.108 +05:30 [Information] Executed DbCommand ("35"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:04:38.521 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:04:38.634 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:04:38.709 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:04:38.814 +05:30 [Information] Executed DbCommand ("18"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:04:38.879 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:04:39.033 +05:30 [Information] Executed DbCommand ("21"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:04:49.778 +05:30 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at RBACdemo.Infrastructure.Repositories.AccountRepository.SignIn(LoginDto login) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\AccountRepository.cs:line 54
+   at RBACdemo.Infrastructure.Services.AccountService.SignIn(LoginDto login) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\AccountService.cs:line 50
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 46
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 01:04:49.806 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 01:04:49.857 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 17541.121ms
+2018-08-16 01:04:49.958 +05:30 [Information] Request finished in 17677.5645ms 500 application/json; charset=utf-8
+2018-08-16 01:05:01.251 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:05:01.255 +05:30 [Information] Policy execution successful.
+2018-08-16 01:05:01.259 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:05:01.266 +05:30 [Information] Policy execution successful.
+2018-08-16 01:05:03.669 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:05:06.837 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:05:06.948 +05:30 [Information] Executed DbCommand ("75"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:05:06.999 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:05:07.013 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:05:07.026 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:05:07.037 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:05:07.043 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:05:10.219 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:05:44.838 +05:30 [Error] Object reference not set to an instance of an object.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at RBACdemo.Infrastructure.Repositories.AccountRepository.SignIn(LoginDto login) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Repositories\AccountRepository.cs:line 54
+   at RBACdemo.Infrastructure.Services.AccountService.SignIn(LoginDto login) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Infrastructure\Services\AccountService.cs:line 50
+   at RBACdemo.Controllers.AccountController.Login(LoginDto user) in C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo\Controllers\AccountController.cs:line 46
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+2018-08-16 01:05:44.851 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 01:05:44.861 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 43597.6867ms
+2018-08-16 01:05:44.868 +05:30 [Information] Request finished in 43615.5336ms 500 application/json; charset=utf-8
+2018-08-16 01:05:48.497 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:05:48.500 +05:30 [Information] Policy execution successful.
+2018-08-16 01:05:48.504 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:05:48.507 +05:30 [Information] Policy execution successful.
+2018-08-16 01:05:50.639 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:05:53.325 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:05:53.382 +05:30 [Information] Executed DbCommand ("51"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:05:53.426 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:05:53.450 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:05:53.462 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:05:53.477 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:05:53.486 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:06:28.927 +05:30 [Information] Executed DbCommand ("14"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:09:04.836 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:09:04.836 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:09:04.958 +05:30 [Information] Request finished in 132.2945ms 200 
+2018-08-16 01:09:05.519 +05:30 [Information] Request finished in 690.0421ms 302 
+2018-08-16 01:09:05.528 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:09:05.691 +05:30 [Information] Request finished in 161.7804ms 200 text/html; charset=utf-8
+2018-08-16 01:09:06.114 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:09:08.457 +05:30 [Information] Request finished in 2353.4325ms 200 application/json; charset=utf-8
+2018-08-16 01:11:50.744 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:11:50.751 +05:30 [Information] Policy execution successful.
+2018-08-16 01:11:50.841 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:11:50.849 +05:30 [Information] Policy execution successful.
+2018-08-16 01:11:53.452 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:11:55.311 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:11:55.997 +05:30 [Information] Executed DbCommand ("93"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:11:56.506 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:11:56.623 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:11:56.669 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:11:56.760 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:11:56.844 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:11:56.991 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:13:01.462 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:13:01.462 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:13:01.591 +05:30 [Information] Request finished in 138.4364ms 200 
+2018-08-16 01:13:02.132 +05:30 [Information] Request finished in 675.938ms 302 
+2018-08-16 01:13:02.142 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:13:02.292 +05:30 [Information] Request finished in 153.0544ms 200 text/html; charset=utf-8
+2018-08-16 01:13:02.870 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:13:05.140 +05:30 [Information] Request finished in 2284.9263ms 200 application/json; charset=utf-8
+2018-08-16 01:14:23.459 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:14:23.466 +05:30 [Information] Policy execution successful.
+2018-08-16 01:14:23.555 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:14:23.567 +05:30 [Information] Policy execution successful.
+2018-08-16 01:14:34.068 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:14:38.500 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:14:39.278 +05:30 [Information] Executed DbCommand ("45"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:14:39.623 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:14:39.730 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:14:39.773 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:14:39.856 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:14:39.936 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:14:40.076 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:15:51.758 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:15:51.758 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:15:51.914 +05:30 [Information] Request finished in 147.2403ms 200 
+2018-08-16 01:15:52.531 +05:30 [Information] Request finished in 746.3809ms 302 
+2018-08-16 01:15:52.548 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:15:52.708 +05:30 [Information] Request finished in 166.4528ms 200 text/html; charset=utf-8
+2018-08-16 01:15:53.104 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:15:55.704 +05:30 [Information] Request finished in 2600.7212ms 200 application/json; charset=utf-8
+2018-08-16 01:16:14.178 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:16:14.202 +05:30 [Information] Policy execution successful.
+2018-08-16 01:16:14.311 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:16:14.322 +05:30 [Information] Policy execution successful.
+2018-08-16 01:16:17.890 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:16:21.370 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:16:22.089 +05:30 [Information] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:16:22.395 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:16:22.485 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:16:22.524 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:16:22.594 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:16:22.640 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:16:32.685 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:16:32.741 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:16:32.835 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:17:11.458 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:17:11.501 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:17:11.572 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[RoleId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:18:46.315 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:18:46.315 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:18:46.490 +05:30 [Information] Request finished in 149.0014ms 200 
+2018-08-16 01:18:47.128 +05:30 [Information] Request finished in 810.4217ms 302 
+2018-08-16 01:18:47.138 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:18:47.336 +05:30 [Information] Request finished in 198.9743ms 200 text/html; charset=utf-8
+2018-08-16 01:18:47.998 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:18:50.377 +05:30 [Information] Request finished in 2471.8807ms 200 application/json; charset=utf-8
+2018-08-16 01:19:08.761 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:19:08.766 +05:30 [Information] Policy execution successful.
+2018-08-16 01:19:08.860 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:19:08.868 +05:30 [Information] Policy execution successful.
+2018-08-16 01:19:12.116 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:19:14.651 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:19:15.388 +05:30 [Information] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:19:15.777 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:19:15.888 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:19:15.931 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:19:16.007 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:19:16.082 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:24:44.214 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:24:44.214 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:24:44.396 +05:30 [Information] Request finished in 182.4437ms 200 
+2018-08-16 01:24:44.996 +05:30 [Information] Request finished in 804.5587ms 302 
+2018-08-16 01:24:45.012 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:24:45.198 +05:30 [Information] Request finished in 187.427ms 200 text/html; charset=utf-8
+2018-08-16 01:24:45.665 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:24:49.035 +05:30 [Information] Request finished in 3373.0573ms 200 application/json; charset=utf-8
+2018-08-16 01:25:16.101 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:25:16.109 +05:30 [Information] Policy execution successful.
+2018-08-16 01:25:16.237 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:25:16.250 +05:30 [Information] Policy execution successful.
+2018-08-16 01:25:20.150 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:25:25.270 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:25:26.222 +05:30 [Information] Executed DbCommand ("59"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:25:26.728 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:25:26.907 +05:30 [Information] Executed DbCommand ("12"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:25:26.970 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:25:27.111 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:25:27.218 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:25:52.392 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RoleId], [a].[SecurityStamp], [a].[TenantNo], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]"
+2018-08-16 01:25:52.503 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RoleId], [a].[SecurityStamp], [a].[TenantNo], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]"
+2018-08-16 01:25:52.671 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[RoleId], [a].[SecurityStamp], [a].[TenantNo], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]"
+2018-08-16 01:26:19.847 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [x].[Id], [x].[AccessFailedCount], [x].[ConcurrencyStamp], [x].[Email], [x].[EmailConfirmed], [x].[FirstName], [x].[LastName], [x].[LockoutEnabled], [x].[LockoutEnd], [x].[NormalizedEmail], [x].[NormalizedUserName], [x].[PasswordHash], [x].[PhoneNumber], [x].[PhoneNumberConfirmed], [x].[RoleId], [x].[SecurityStamp], [x].[TenantNo], [x].[TwoFactorEnabled], [x].[UserName]
+FROM [AspNetUsers] AS [x]
+WHERE [x].[UserName] = @__userName_0"
+2018-08-16 01:28:32.301 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-16 01:28:32.301 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-16 01:28:32.483 +05:30 [Information] Request finished in 175.64ms 200 
+2018-08-16 01:28:33.061 +05:30 [Information] Request finished in 770.0116ms 302 
+2018-08-16 01:28:33.075 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-16 01:28:33.247 +05:30 [Information] Request finished in 157.8892ms 200 text/html; charset=utf-8
+2018-08-16 01:28:33.957 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-16 01:28:37.048 +05:30 [Information] Request finished in 3220.5662ms 200 application/json; charset=utf-8
+2018-08-16 01:28:57.649 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-16 01:28:57.658 +05:30 [Information] Policy execution successful.
+2018-08-16 01:28:57.788 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-16 01:28:57.799 +05:30 [Information] Policy execution successful.
+2018-08-16 01:29:00.844 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-16 01:29:02.619 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-16 01:29:03.639 +05:30 [Information] Executed DbCommand ("50"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-16 01:29:04.443 +05:30 [Information] Executed DbCommand ("36"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-16 01:29:04.643 +05:30 [Information] Executed DbCommand ("28"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE ([role].[Discriminator] = N'ApplicationRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-16 01:29:04.703 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Discriminator], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE ([r].[Discriminator] = N'ApplicationRole') AND ([r].[NormalizedName] = @__normalizedName_0)"
+2018-08-16 01:29:04.779 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-08-16 01:29:04.836 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-16 01:29:08.517 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId], [r].[Id] AS [RoleId], [r].[Name] AS [Role]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+INNER JOIN [AspNetUserRoles] AS [ur] ON [x].[Id] = [ur].[UserId]
+INNER JOIN [AspNetRoles] AS [r] ON [ur].[RoleId] = [r].[Id]
+WHERE ([x].[UserName] = @__userName_0) AND [r].[Discriminator] IN (N'ApplicationRole', N'IdentityRole')"
+2018-08-16 01:29:35.573 +05:30 [Information] Executed DbCommand ("13"ms) [Parameters=["@__roleId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = 0)"
+2018-08-16 01:29:42.041 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__roleId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = 0)"
+2018-08-16 01:29:42.155 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__roleId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = 0)"
+2018-08-16 01:29:47.752 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__roleId_0='?' (Size = 450), @__item_MenuItemNo_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleMenuItems] AS [x]
+        INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+        WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = @__item_MenuItemNo_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-08-16 01:29:47.794 +05:30 [Information] Executed DbCommand ("13"ms) [Parameters=["@__roleId_0='?' (Size = 450), @__item_MenuItemNo_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = @__item_MenuItemNo_1)"
+2018-08-16 01:29:47.812 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?' (Size = 450), @__item_MenuItemNo_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [RoleMenuItems] AS [x]
+        INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+        WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = @__item_MenuItemNo_1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-08-16 01:29:47.835 +05:30 [Information] Executed DbCommand ("12"ms) [Parameters=["@__roleId_0='?' (Size = 450), @__item_MenuItemNo_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x.MenuItem].[Id], [x.MenuItem].[CreatedBy], [x.MenuItem].[CreatedOn], [x.MenuItem].[Icon], [x.MenuItem].[IsDeleted], [x.MenuItem].[IsDisbalbed], [x.MenuItem].[MenuItemNo], [x.MenuItem].[Name], [x.MenuItem].[ParentId], [x.MenuItem].[TimeStamp], [x.MenuItem].[UpdatedBy], [x.MenuItem].[UpdatedOn], [x.MenuItem].[Url]
+FROM [RoleMenuItems] AS [x]
+INNER JOIN [MenuItems] AS [x.MenuItem] ON [x].[MenuItemNo] = [x.MenuItem].[MenuItemNo]
+WHERE ([x].[RoleId] = @__roleId_0) AND ([x.MenuItem].[ParentId] = @__item_MenuItemNo_1)"
+2018-08-16 01:29:59.035 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Companyname], [t].[CreatedBy], [t].[CreatedOn], [t].[DataBaseName], [t].[DomainName], [t].[FromDate], [t].[IsDeleted], [t].[IsDisbalbed], [t].[TenantNo], [t].[TimeStamp], [t].[Todate], [t].[UpdatedBy], [t].[UpdatedOn]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[Id] = @__userId_0"
+2018-08-16 01:29:59.308 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 58425.5913ms.
+2018-08-16 01:29:59.580 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-16 01:29:59.702 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 61889.9801ms
+2018-08-16 01:29:59.784 +05:30 [Information] Request finished in 62087.2579ms 200 application/json; charset=utf-8

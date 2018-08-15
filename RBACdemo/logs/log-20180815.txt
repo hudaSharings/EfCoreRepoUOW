@@ -1,0 +1,126 @@
+2018-08-15 17:36:32.873 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger  
+2018-08-15 17:36:32.873 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:56790/  0
+2018-08-15 17:36:33.244 +05:30 [Information] Request finished in 382.0888ms 200 
+2018-08-15 17:36:34.383 +05:30 [Information] Request finished in 1421.8462ms 302 
+2018-08-15 17:36:34.393 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/index.html?url=/swagger/v1/swagger.json  
+2018-08-15 17:36:34.921 +05:30 [Information] Request finished in 564.131ms 200 text/html; charset=utf-8
+2018-08-15 17:36:35.224 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/screen.css  
+2018-08-15 17:36:35.237 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/reset.css  
+2018-08-15 17:36:35.230 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/typography.css  
+2018-08-15 17:36:35.257 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.slideto.min.js  
+2018-08-15 17:36:35.267 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/object-assign-pollyfill.js  
+2018-08-15 17:36:35.357 +05:30 [Information] Sending file. Request path: '"/css/reset.css"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.357 +05:30 [Information] Sending file. Request path: '"/lib/object-assign-pollyfill.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.364 +05:30 [Information] Sending file. Request path: '"/css/screen.css"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.372 +05:30 [Information] Request finished in 119.7583ms 200 application/javascript
+2018-08-15 17:36:35.380 +05:30 [Information] Request finished in 148.7122ms 200 text/css
+2018-08-15 17:36:35.388 +05:30 [Information] Request finished in 155.8419ms 200 text/css
+2018-08-15 17:36:35.393 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery-1.8.0.min.js  
+2018-08-15 17:36:35.398 +05:30 [Information] Sending file. Request path: '"/css/typography.css"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.398 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.ba-bbq.min.js  
+2018-08-15 17:36:35.406 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/handlebars-4.0.5.js  
+2018-08-15 17:36:35.410 +05:30 [Information] Sending file. Request path: '"/lib/jquery.slideto.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.427 +05:30 [Information] Request finished in 189.4296ms 200 application/javascript
+2018-08-15 17:36:35.432 +05:30 [Information] Request finished in 391.0225ms 200 text/css
+2018-08-15 17:36:35.442 +05:30 [Information] Sending file. Request path: '"/lib/jquery.ba-bbq.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.456 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/lodash.min.js  
+2018-08-15 17:36:35.456 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jquery.wiggle.min.js  
+2018-08-15 17:36:35.469 +05:30 [Information] Request finished in 60.6827ms 200 application/javascript
+2018-08-15 17:36:35.502 +05:30 [Information] Sending file. Request path: '"/lib/lodash.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.480 +05:30 [Information] Sending file. Request path: '"/lib/jquery.wiggle.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.569 +05:30 [Information] Request finished in 107.2359ms 200 application/javascript
+2018-08-15 17:36:35.573 +05:30 [Information] Request finished in 107.7745ms 200 application/javascript
+2018-08-15 17:36:35.589 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/swagger-ui.js  
+2018-08-15 17:36:35.594 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack.js  
+2018-08-15 17:36:35.601 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/jsoneditor.min.js  
+2018-08-15 17:36:35.609 +05:30 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.790 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/highlight.9.1.0.pack_extended.js  
+2018-08-15 17:36:35.837 +05:30 [Information] Request finished in 167.6524ms 200 application/javascript
+2018-08-15 17:36:35.852 +05:30 [Information] Sending file. Request path: '"/lib/highlight.9.1.0.pack_extended.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.865 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/marked.js  
+2018-08-15 17:36:35.901 +05:30 [Information] Request finished in 131.2784ms 200 application/javascript
+2018-08-15 17:36:35.935 +05:30 [Information] Sending file. Request path: '"/lib/marked.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:35.977 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/swagger-oauth.js  
+2018-08-15 17:36:36.057 +05:30 [Information] Sending file. Request path: '"/lib/jsoneditor.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.068 +05:30 [Information] Sending file. Request path: '"/lib/handlebars-4.0.5.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.086 +05:30 [Information] Sending file. Request path: '"/lib/jquery-1.8.0.min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.087 +05:30 [Information] Sending file. Request path: '"/lib/swagger-oauth.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.093 +05:30 [Information] Request finished in 95.0638ms 200 application/javascript
+2018-08-15 17:36:36.104 +05:30 [Information] Request finished in 185.559ms 200 application/javascript
+2018-08-15 17:36:36.116 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/logo_small.png  
+2018-08-15 17:36:36.131 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/css/print.css  
+2018-08-15 17:36:36.132 +05:30 [Information] Request finished in 534.5805ms 200 application/javascript
+2018-08-15 17:36:36.139 +05:30 [Information] Request finished in 734.6362ms 200 application/javascript
+2018-08-15 17:36:36.148 +05:30 [Information] Request finished in 742.8599ms 200 application/javascript
+2018-08-15 17:36:36.195 +05:30 [Information] Sending file. Request path: '"/css/print.css"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.225 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/lib/backbone-min.js  
+2018-08-15 17:36:36.260 +05:30 [Information] Request finished in 83.9065ms 200 text/css
+2018-08-15 17:36:36.325 +05:30 [Information] Sending file. Request path: '"/lib/backbone-min.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.413 +05:30 [Information] Sending file. Request path: '"/images/logo_small.png"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.425 +05:30 [Information] Request finished in 185.1485ms 200 application/javascript
+2018-08-15 17:36:36.437 +05:30 [Information] Request finished in 314.4961ms 200 image/png
+2018-08-15 17:36:36.623 +05:30 [Information] Sending file. Request path: '"/swagger-ui.js"'. Physical path: '"N/A"'
+2018-08-15 17:36:36.633 +05:30 [Information] Request finished in 1066.9025ms 200 application/javascript
+2018-08-15 17:36:37.216 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/v1/swagger.json  
+2018-08-15 17:36:37.448 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-32x32.png  
+2018-08-15 17:36:37.464 +05:30 [Information] Sending file. Request path: '"/images/favicon-32x32.png"'. Physical path: '"N/A"'
+2018-08-15 17:36:37.474 +05:30 [Information] Request finished in 43.2628ms 200 image/png
+2018-08-15 17:36:37.528 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/favicon-16x16.png  
+2018-08-15 17:36:37.532 +05:30 [Information] Sending file. Request path: '"/images/favicon-16x16.png"'. Physical path: '"N/A"'
+2018-08-15 17:36:37.546 +05:30 [Information] Request finished in 7.8668ms 200 image/png
+2018-08-15 17:36:40.709 +05:30 [Information] Request finished in 3563.6251ms 200 application/json; charset=utf-8
+2018-08-15 17:36:44.145 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:44335/swagger/images/throbber.gif  
+2018-08-15 17:36:44.154 +05:30 [Information] Sending file. Request path: '"/images/throbber.gif"'. Physical path: '"N/A"'
+2018-08-15 17:36:44.165 +05:30 [Information] Request finished in 15.7282ms 200 image/gif
+2018-08-15 17:37:23.169 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Register application/json 116
+2018-08-15 17:37:23.175 +05:30 [Information] Policy execution successful.
+2018-08-15 17:37:23.342 +05:30 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Register (RBACdemo)"
+2018-08-15 17:37:23.351 +05:30 [Information] Policy execution successful.
+2018-08-15 17:37:28.934 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Register (RBACdemo)" with arguments (["RBACdemo.Dto.RegisterDto"]) - Validation state: Valid
+2018-08-15 17:37:31.343 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-15 17:37:32.792 +05:30 [Information] Executed DbCommand ("114"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-15 17:37:33.340 +05:30 [Information] Executed DbCommand ("99"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 450), @p15='?' (Size = 4000), @p16='?' (DbType = Int32), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [RoleId], [SecurityStamp], [TenantNo], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);"
+2018-08-15 17:37:33.382 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Register (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4435.4698ms.
+2018-08-15 17:37:35.424 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-15 17:37:35.469 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Register (RBACdemo)" in 12114.0052ms
+2018-08-15 17:37:35.475 +05:30 [Information] Request finished in 12304.4437ms 200 application/json; charset=utf-8
+2018-08-15 17:46:08.402 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:44335/api/Account/Login application/json 99
+2018-08-15 17:46:08.410 +05:30 [Information] Policy execution successful.
+2018-08-15 17:46:08.454 +05:30 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "RBACdemo.Controllers.AccountController.Login (RBACdemo)"
+2018-08-15 17:46:08.459 +05:30 [Information] Policy execution successful.
+2018-08-15 17:46:16.165 +05:30 [Information] Executing action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)" with arguments (["RBACdemo.Dto.LoginDto"]) - Validation state: Valid
+2018-08-15 17:46:19.872 +05:30 [Information] Entity Framework Core "2.1.1-rtm-30846" initialized '"RBACdemoContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-08-15 17:46:19.932 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[FirstName], [u].[LastName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[RoleId], [u].[SecurityStamp], [u].[TenantNo], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-08-15 17:46:20.162 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-08-15 17:46:20.300 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [role].[Discriminator] IN (N'ApplicationRole', N'IdentityRole') AND ([userRole].[UserId] = @__userId_0)"
+2018-08-15 17:46:20.377 +05:30 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-08-15 17:46:20.510 +05:30 [Information] Executed DbCommand ("28"ms) [Parameters=["@__userName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Companyname], [t].[DataBaseName], [t].[DomainName], [x].[Email], [x].[FirstName] AS [FirsrName], [x].[LastName], [t].[FromDate], [t].[Todate], [t].[TenantNo], [x].[UserName], [x].[Id] AS [userId]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[UserName] = @__userName_0"
+2018-08-15 17:46:20.569 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [t].[Id], [t].[Companyname], [t].[CreatedBy], [t].[CreatedOn], [t].[DataBaseName], [t].[DomainName], [t].[FromDate], [t].[IsDeleted], [t].[IsDisbalbed], [t].[TenantNo], [t].[TimeStamp], [t].[Todate], [t].[UpdatedBy], [t].[UpdatedOn]
+FROM [AspNetUsers] AS [x]
+INNER JOIN [Tenants] AS [t] ON [x].[TenantNo] = [t].[TenantNo]
+WHERE [x].[Id] = @__userId_0"
+2018-08-15 17:46:27.225 +05:30 [Information] Executed action method "RBACdemo.Controllers.AccountController.Login (RBACdemo)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 11006.6919ms.
+2018-08-15 17:46:32.739 +05:30 [Information] Executing JsonResult, writing value of type '"RBACdemo.POCO.ApiResult"'.
+2018-08-15 17:46:32.771 +05:30 [Information] Executed action "RBACdemo.Controllers.AccountController.Login (RBACdemo)" in 24309.642ms
+2018-08-15 17:46:32.782 +05:30 [Information] Request finished in 24376.1394ms 200 application/json; charset=utf-8

@@ -16,20 +16,21 @@ using System.Text;
 
 namespace RBACdemo.Infrastructure.Configurations
 {
-  public static  class IocConfigurationRepository
+    public static class IocConfigurationRepository
     {
         public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IContextFactory, RBACdemoContextFactory>();
             services.AddTransient<UserManager<ApplicationUser>>();
             services.AddTransient<SignInManager<ApplicationUser>>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<RoleManager<ApplicationRole>>();
 
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddTransient<IMenuItemRepository, MenuItemRepository>();
             services.AddTransient<ITenantRepository, TenantRepository>();
-            
+
         }
     }
 }

@@ -17,7 +17,10 @@ namespace RBACdemo.Dto
         public string DataBaseName { get; set; }
         public DateTime FromDate { get; set; }
         public DateTime Todate { get; set; }
-
+        public string RoleId { get; set; }
+        public string Role { get; set; }
+        public List<string> RoleClaims { get; set; }
+        public List<string> UserClaims { get; set; }
         //public Dictionary<long,string> Menus { get; set; }
         public List<MenusDto> Menus { get; set; }
 

@@ -29,6 +29,9 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired();
+
                     b.Property<string>("Name")
                         .HasMaxLength(256);
 
@@ -43,6 +46,8 @@ namespace RBACdemo.Infrastructure.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityRole");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -166,6 +171,8 @@ namespace RBACdemo.Infrastructure.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed");
 
+                    b.Property<string>("RoleId");
+
                     b.Property<string>("SecurityStamp");
 
                     b.Property<int?>("TenantNo");
@@ -184,6 +191,8 @@ namespace RBACdemo.Infrastructure.Migrations
                         .IsUnique()
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("RoleId");
 
                     b.HasIndex("TenantNo");
 
@@ -229,6 +238,41 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("MenuItems");
                 });
 
+            modelBuilder.Entity("RBACdemo.Core.Domain.RoleMenuItem", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("CreatedBy");
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<bool>("IsDeleted");
+
+                    b.Property<bool>("IsDisbalbed");
+
+                    b.Property<long>("MenuItemNo");
+
+                    b.Property<string>("RoleId");
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate();
+
+                    b.Property<string>("UpdatedBy");
+
+                    b.Property<DateTime>("UpdatedOn");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuItemNo");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("RoleMenuItems");
+                });
+
             modelBuilder.Entity("RBACdemo.Core.Domain.Tenant", b =>
                 {
                     b.Property<long>("Id")
@@ -270,39 +314,14 @@ namespace RBACdemo.Infrastructure.Migrations
                     b.ToTable("Tenants");
                 });
 
-            modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationRole", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
 
-                    b.Property<string>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedOn");
+                    b.ToTable("ApplicationRole");
 
-                    b.Property<bool>("IsDeleted");
-
-                    b.Property<bool>("IsDisbalbed");
-
-                    b.Property<long>("MenuItemNo");
-
-                    b.Property<byte[]>("TimeStamp")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate();
-
-                    b.Property<string>("UpdatedBy");
-
-                    b.Property<DateTime>("UpdatedOn");
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MenuItemNo");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserMenuItems");
+                    b.HasDiscriminator().HasValue("ApplicationRole");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -352,22 +371,27 @@ namespace RBACdemo.Infrastructure.Migrations
 
             modelBuilder.Entity("RBACdemo.Core.Domain.ApplicationUser", b =>
                 {
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationRole", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
+
                     b.HasOne("RBACdemo.Core.Domain.Tenant", "Tenant")
                         .WithMany("Users")
                         .HasForeignKey("TenantNo")
                         .HasPrincipalKey("TenantNo");
                 });
 
-            modelBuilder.Entity("RBACdemo.Core.Domain.UserMenuItem", b =>
+            modelBuilder.Entity("RBACdemo.Core.Domain.RoleMenuItem", b =>
                 {
                     b.HasOne("RBACdemo.Core.Domain.MenuItem", "MenuItem")
-                        .WithMany("UserMenuItems")
+                        .WithMany("RoleMenuItems")
                         .HasForeignKey("MenuItemNo")
+                        .HasPrincipalKey("MenuItemNo")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("RBACdemo.Core.Domain.ApplicationUser", "User")
-                        .WithMany("UserMenuItems")
-                        .HasForeignKey("UserId");
+                    b.HasOne("RBACdemo.Core.Domain.ApplicationRole", "Role")
+                        .WithMany("RoleMenuItems")
+                        .HasForeignKey("RoleId");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,3 +6,11 @@ C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\ne
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.AssemblyInfo.cs
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.dll
 C:\Users\arunkumarv\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.pdb
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.deps.json
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.dll
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\bin\Debug\netcoreapp2.1\RBACdemo.Utility.pdb
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.AssemblyInfoInputs.cache
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.AssemblyInfo.cs
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.dll
+C:\Users\Huda\Documents\GitHub\EfCoreRepoUOW\RBACdemo.Utility\obj\Debug\netcoreapp2.1\RBACdemo.Utility.pdb

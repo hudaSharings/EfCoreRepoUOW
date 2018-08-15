@@ -16,6 +16,13 @@ namespace RBACdemo.Infrastructure.EntityConfigs
                 .WithMany(u => u.Users)
                 .HasForeignKey(t => t.TenantNo)
                 .HasPrincipalKey(u => u.TenantNo);
+
+            builder.HasOne(r => r.Role)
+                .WithMany(us => us.Users)
+                .HasForeignKey(r => r.RoleId)
+                .HasPrincipalKey(us => us.Id);
+                
+
         }
     }
 }

@@ -10,7 +10,7 @@ namespace RBACdemo.Core.Domain
         public string Url { get; set; }
         public string Icon { get; set; }
 
-        public List<UserMenuItem> UserMenuItems { get; set; }
+        public List<RoleMenuItem> RoleMenuItems { get; set; }
     }
 
 

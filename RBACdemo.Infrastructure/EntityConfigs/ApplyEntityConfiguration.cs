@@ -11,7 +11,7 @@ namespace RBACdemo.Infrastructure.EntityConfigs
         {
             builder.ApplyConfiguration(new MenuItemConfig());
             builder.ApplyConfiguration(new TenantConfig());
-            builder.ApplyConfiguration(new UserMenuItemConfig());
+            builder.ApplyConfiguration(new RoleMenuItemConfig());
             builder.ApplyConfiguration(new ApplicationUserConfig());
         }
 

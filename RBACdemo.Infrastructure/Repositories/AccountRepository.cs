@@ -20,20 +20,25 @@ namespace RBACdemo.Infrastructure.Repositories
 
         UserManager<ApplicationUser> _userManager;
         SignInManager<ApplicationUser> _signInManager;
-
+        RoleManager<ApplicationRole> _roleManager;
+        
         private RBACdemoContext DbContext { get; }
 
-        public AccountRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RBACdemoContext context)
+        public AccountRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RBACdemoContext context, RoleManager<ApplicationRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
             DbContext = context;
         }
 
 
 
-        public async Task<IdentityResult> AddUserToRole(ApplicationUser user, string role)
-        => await _userManager.AddToRoleAsync(user, role);
+        public async Task<IdentityResult> AddUserToRole(UserRoleDto user)
+        {
+            var u = _userManager.Users.FirstOrDefault(x => x.UserName == user.Username);
+            return await _userManager.AddToRoleAsync(u, user.RoleName);
+        }
 
         public async Task<IdentityResult> CreateUserAsync(ApplicationUser user, string password)
         => await _userManager.CreateAsync(user, password);
@@ -46,7 +51,7 @@ namespace RBACdemo.Infrastructure.Repositories
             if (res.Succeeded)
             {
                 UserinfoDto userinfoDto = GetUserInfoByUserName(login.Username);
-                userinfoDto.Menus = GetMenusByUserId(userinfoDto.userId);
+               userinfoDto.Menus = GetMenusByRoleId(userinfoDto.RoleId);
                 var tenantinfo = GetTenantinfoByUserId(userinfoDto.userId);
                 var token = GenerateToken(login, tenantinfo);
                 retres.Token = new JwtSecurityTokenHandler().WriteToken(token);
@@ -66,9 +71,9 @@ namespace RBACdemo.Infrastructure.Repositories
         //        .ToDictionary(x => x.Key, x => x.Value);
         //}
 
-        private List<MenusDto> GetMenusByUserId(string userId)
+        private List<MenusDto> GetMenusByRoleId(string roleId)
         {
-            var menuitems = DbContext.UserMenuItems.Where(x => x.UserId == userId).Select(x => x.MenuItem);          
+            var menuitems = DbContext.RoleMenuItems.Where(x => x.RoleId == roleId).Select(x => x.MenuItem);
             var parentmenus = menuitems.Where(x => x.ParentId == 0);
             List<MenusDto> menus = new List<MenusDto>();
 
@@ -82,7 +87,7 @@ namespace RBACdemo.Infrastructure.Repositories
                 if (menuitems.Where(x => x.ParentId == item.MenuItemNo).Any())
                     md.Child = getChildmenus(menuitems.Where(x => x.ParentId == item.MenuItemNo).ToList());
                 menus.Add(md);
-            }          
+            }
 
             return menus;
 
@@ -91,7 +96,7 @@ namespace RBACdemo.Infrastructure.Repositories
 
         private List<MenusDto> getChildmenus(List<MenuItem> menuitems)
         {
-           
+
             List<MenusDto> menus = new List<MenusDto>();
 
             foreach (var item in menuitems)
@@ -107,7 +112,7 @@ namespace RBACdemo.Infrastructure.Repositories
             }
             return menus;
 
-          
+
         }
 
 
@@ -120,9 +125,12 @@ namespace RBACdemo.Infrastructure.Repositories
         }
 
         private UserinfoDto GetUserInfoByUserName(string userName)
-        {
-            return (from u in DbContext.Users.Where(x => x.UserName == userName)
+        {         
+
+           return (from u in DbContext.Users.Where(x => x.UserName == userName)
                     join t in DbContext.Tenants on u.TenantNo equals t.TenantNo
+                    join ur in DbContext.UserRoles on u.Id equals ur.UserId
+                    join r in DbContext.Roles on ur.RoleId equals r.Id
                     select new UserinfoDto
                     {
                         Companyname = t.Companyname,
@@ -135,9 +143,39 @@ namespace RBACdemo.Infrastructure.Repositories
                         Todate = t.Todate,
                         TenantNo = t.TenantNo,
                         username = u.UserName,
-                        userId = u.Id
+                        userId = u.Id,
+                        RoleId=r.Id,
+                        Role=r.Name
                     }).FirstOrDefault();
+           
         }
+        public Task<IdentityResult> CreateRoleAsync(string roleName)
+        {
+            var role = new ApplicationRole();
+            role.Name = roleName;
+          return  _roleManager.CreateAsync(role);
+        }
+
+        public Task<IdentityResult> CreateRoleClims(string roleName, string clims)
+        {
+            var role = new ApplicationRole();
+            role.Name = roleName;
+            var rid = _roleManager.GetRoleIdAsync(role);
+            if (rid != null)
+            {
+                Task<IdentityResult> result = null;
+                foreach (var item in clims.Split(','))
+                {
+                    string[] itms = item.Split('-');
+                    Claim claim = new Claim(item[0].ToString(), item[1].ToString());
+                  result=  _roleManager.AddClaimAsync(role, claim);
+                }
+                return result;
+            }
+            else
+                throw new ArgumentNullException(roleName);
+        }
+
         private JwtSecurityToken GenerateToken(LoginDto login, Tenant tenantinfo)
         {
             string tenant = EncryptDecrypt.Encrypt(Newtonsoft.Json.JsonConvert.SerializeObject(tenantinfo));

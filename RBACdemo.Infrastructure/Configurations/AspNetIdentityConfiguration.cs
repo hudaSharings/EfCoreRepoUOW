@@ -13,7 +13,7 @@ namespace RBACdemo.Infrastructure.Configurations
     {
         public static void ConfigureService(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
                            .AddEntityFrameworkStores<RBACdemoContext>()
                            .AddDefaultTokenProviders();
         }
