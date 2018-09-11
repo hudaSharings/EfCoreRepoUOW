@@ -23,7 +23,7 @@ Sample Project For  Asp.Net Core 2.1 and Entity framework Core  with Repository 
  <ul>
   <li>Role Based Menu Rendering</li>
   <li>Page Level Security</li>
-  <li>Generating CRUD Template for a Model With The Angular CLI And Schematics (like Scaffolding in MVC)</li>
+
   </ul>
 </li>
 
