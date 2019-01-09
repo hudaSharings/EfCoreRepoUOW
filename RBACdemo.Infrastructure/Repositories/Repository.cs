@@ -40,6 +40,7 @@ namespace RBACdemo.Infrastructure.Repositories
         public void AddandSave(TEntity entity)
         {
             Context.Set<TEntity>().Add(entity);
+            Save();
             
         }
         public void AddRange(IEnumerable<TEntity> entities)
